@@ -101,6 +101,26 @@ function escHtml(str) {
   return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// SVG icons for services (inline, no external files)
+const serviceIcons = {
+  'reparation-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+  'renovation-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+  'nettoyage-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>',
+  'isolation-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>',
+  'charpente': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="22" height="12" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>',
+  'zinguerie': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>',
+  'toiture-ardoise': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>',
+  'toiture-tuile': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>',
+  'toiture-zinc': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polygon points="2 17 12 22 22 17"/><polygon points="2 12 12 17 22 12"/></svg>',
+  'toiture-plate': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="8" x2="22" y2="8"/><rect x="4" y="8" width="16" height="12" rx="1"/><line x1="4" y1="14" x2="20" y2="14"/></svg>',
+  'etancheite-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+  'velux-fenetre-toit': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>',
+  'urgence-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+};
+function getServiceIcon(slug) {
+  return serviceIcons[slug] || serviceIcons['renovation-toiture'];
+}
+
 function layout(title, metaDesc, canonical, breadcrumbs, bodyContent, schemaJsonLd = '') {
   const breadcrumbHtml = breadcrumbs.map((b, i) =>
     i < breadcrumbs.length - 1
@@ -166,16 +186,7 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
 </div>
 </header>
 
-<div class="reassurance">
-<div class="reassurance-inner">
-  <div class="reassurance-item"><span class="check">✓</span> Gratuit et sans engagement</div>
-  <div class="reassurance-item"><span class="check">✓</span> Artisans certifiés RGE</div>
-  <div class="reassurance-item"><span class="check">✓</span> Réponse sous 48h</div>
-  <div class="reassurance-item"><span class="check">✓</span> Jusqu'à 3 devis comparatifs</div>
-</div>
-</div>
-
-<div class="breadcrumb"><div class="container">${breadcrumbHtml}</div></div>
+${breadcrumbs.length > 1 ? `<div class="breadcrumb"><div class="container">${breadcrumbHtml}</div></div>` : ''}
 
 ${bodyContent}
 
@@ -354,9 +365,8 @@ function faqHtml(faqs) {
 </div>`;
 }
 
-function faqSchema(faqs) {
-  if (!faqs || !faqs.length) return '';
-  return JSON.stringify({
+function faqSchemaObj(faqs) {
+  return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": faqs.map(f => ({
@@ -364,7 +374,12 @@ function faqSchema(faqs) {
       "name": f.question,
       "acceptedAnswer": { "@type": "Answer", "text": f.reponse }
     }))
-  });
+  };
+}
+
+function faqSchema(faqs) {
+  if (!faqs || !faqs.length) return '';
+  return JSON.stringify(faqSchemaObj(faqs));
 }
 
 function serviceSchema(lieu) {
@@ -433,7 +448,7 @@ ${howItWorksHtml()}
   <div class="grid-3">
     ${services.map(s => `
     <div class="card">
-      <div class="card-icon">🏠</div>
+      <div class="card-icon">${getServiceIcon(s.slug)}</div>
       <h3><a href="/services/${s.slug}/">${escHtml(s.nom)}</a></h3>
       <p>${escHtml(s.description)}</p>
     </div>`).join('')}
@@ -489,15 +504,50 @@ ${ctaBannerHtml()}
     </div>`).join('')}
   </div>
 </div>
+</section>
+
+<section class="section bg-gray">
+<div class="container">
+  <h2 class="section-title">Questions fréquentes</h2>
+  <div class="faq-section">
+    <div class="faq-item">
+      <button class="faq-question">Comment fonctionne le service de devis couvreur ?</button>
+      <div class="faq-answer"><p>Remplissez le formulaire en 2 minutes avec votre type de travaux et votre ville. Nous transmettons votre demande a des couvreurs qualifies de votre secteur. Vous recevez jusqu'a 3 devis detailles sous 48h, gratuitement et sans engagement.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Le service est-il vraiment gratuit ?</button>
+      <div class="faq-answer"><p>Oui, 100 % gratuit. Vous ne payez rien pour recevoir des devis. Notre service est finance par les artisans partenaires. Vous comparez librement et choisissez le couvreur qui vous convient, sans aucune obligation.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Comment sont selectionnes les couvreurs partenaires ?</button>
+      <div class="faq-answer"><p>Tous nos couvreurs partenaires disposent d'une assurance decennale valide et sont verifies. La majorite sont certifies RGE (Reconnu Garant de l'Environnement), ce qui vous permet de beneficier des aides financieres pour vos travaux d'isolation.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Quel est le prix moyen des travaux de toiture ?</button>
+      <div class="faq-answer"><p>Les prix varient selon le type de travaux : comptez 50 a 120 euros/m2 pour une couverture en tuile, 80 a 150 euros/m2 pour de l'ardoise, 15 a 35 euros/m2 pour un demoussage et 40 a 70 euros/m2 pour une isolation. Les tarifs dependent aussi de votre region et de la complexite du chantier.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Quelles aides financieres pour les travaux de toiture ?</button>
+      <div class="faq-answer"><p>Plusieurs aides existent : MaPrimeRenov' (jusqu'a 75 euros/m2 pour l'isolation), l'eco-PTZ (pret a taux zero jusqu'a 30 000 euros), les Certificats d'Economies d'Energie (CEE) et la TVA reduite a 5,5 % pour les travaux d'amelioration energetique. Un artisan RGE est requis pour en beneficier.</p></div>
+    </div>
+  </div>
+</div>
 </section>`;
 
-  const schema = JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": SITE_NAME,
-    "url": SITE_URL
-  });
-  writePage('/', layout(title, desc, '/', [{ label: 'Accueil', url: '/' }], body, schema));
+  const homepageFaqs = [
+    { question: 'Comment fonctionne le service de devis couvreur ?', reponse: 'Remplissez le formulaire en 2 minutes avec votre type de travaux et votre ville. Nous transmettons votre demande a des couvreurs qualifies de votre secteur. Vous recevez jusqu\'a 3 devis detailles sous 48h, gratuitement et sans engagement.' },
+    { question: 'Le service est-il vraiment gratuit ?', reponse: 'Oui, 100 % gratuit. Vous ne payez rien pour recevoir des devis. Notre service est finance par les artisans partenaires. Vous comparez librement et choisissez le couvreur qui vous convient, sans aucune obligation.' },
+    { question: 'Comment sont selectionnes les couvreurs partenaires ?', reponse: 'Tous nos couvreurs partenaires disposent d\'une assurance decennale valide et sont verifies. La majorite sont certifies RGE, ce qui vous permet de beneficier des aides financieres.' },
+    { question: 'Quel est le prix moyen des travaux de toiture ?', reponse: 'Les prix varient : 50 a 120 euros/m2 pour une couverture en tuile, 80 a 150 euros/m2 pour de l\'ardoise, 15 a 35 euros/m2 pour un demoussage et 40 a 70 euros/m2 pour une isolation.' },
+    { question: 'Quelles aides financieres pour les travaux de toiture ?', reponse: 'MaPrimeRenov\' (jusqu\'a 75 euros/m2), eco-PTZ (jusqu\'a 30 000 euros), CEE et TVA reduite a 5,5 %. Un artisan RGE est requis.' }
+  ];
+
+  const schemas = [
+    JSON.stringify({ "@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME, "url": SITE_URL }),
+    JSON.stringify(faqSchemaObj(homepageFaqs))
+  ].join('</script>\n<script type="application/ld+json">');
+
+  writePage('/', layout(title, desc, '/', [{ label: 'Accueil', url: '/' }], body, schemas));
 }
 
 // ---------------------
@@ -1395,11 +1445,47 @@ ${regions.filter(r => !r.code.startsWith('0')).map(r => `- [Couvreur en ${r.nom}
 // ---------------------
 // Copy assets
 // ---------------------
+function minifyCSS(css) {
+  return css
+    .replace(/\/\*[\s\S]*?\*\//g, '')     // remove comments
+    .replace(/\n\s*/g, ' ')               // collapse newlines
+    .replace(/\s{2,}/g, ' ')              // collapse multiple spaces
+    .replace(/\s*{\s*/g, '{')
+    .replace(/\s*}\s*/g, '}')
+    .replace(/\s*;\s*/g, ';')
+    .replace(/;}/g, '}')
+    .trim();
+}
+
+function minifyJS(js) {
+  return js
+    .replace(/\/\*[\s\S]*?\*\//g, '')      // remove block comments
+    .replace(/\/\/.*$/gm, '')              // remove line comments
+    .replace(/\n\s*/g, ' ')               // collapse newlines
+    .replace(/\s{2,}/g, ' ')              // collapse multiple spaces
+    .trim();
+}
+
 function copyAssets() {
   const srcAssets = join(SRC, 'assets');
   const distAssets = join(DIST, 'assets');
   cpSync(srcAssets, distAssets, { recursive: true });
-  console.log('  📁 Assets copiés');
+
+  // Minify CSS
+  const cssPath = join(distAssets, 'css', 'style.css');
+  if (existsSync(cssPath)) {
+    const css = readFileSync(cssPath, 'utf-8');
+    writeFileSync(cssPath, minifyCSS(css));
+    const saving = Math.round((1 - minifyCSS(css).length / css.length) * 100);
+    console.log('  📁 Assets copiés (CSS minifié -' + saving + '%)');
+  }
+
+  // Minify JS
+  const jsPath = join(distAssets, 'js', 'main.js');
+  if (existsSync(jsPath)) {
+    const js = readFileSync(jsPath, 'utf-8');
+    writeFileSync(jsPath, minifyJS(js));
+  }
 }
 
 // ---------------------

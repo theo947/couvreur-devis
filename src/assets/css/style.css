@@ -112,21 +112,22 @@ ul, ol { padding-left: 1.5em; }
 }
 .main-nav a:hover::after { width: 100%; }
 .nav-cta {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), #f59e0b);
   color: var(--white) !important;
-  padding: .55rem 1.3rem;
+  padding: .6rem 1.5rem;
   border-radius: 50px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: .85rem;
-  box-shadow: 0 2px 8px rgba(230,126,34,.3);
+  box-shadow: 0 2px 10px rgba(230,126,34,.35);
   transition: all var(--transition);
+  letter-spacing: .2px;
 }
 .nav-cta::after { display: none; }
 .nav-cta:hover {
-  background: var(--primary-dark);
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: var(--white) !important;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(230,126,34,.4);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230,126,34,.45);
 }
 
 .mobile-toggle {
@@ -399,16 +400,19 @@ ul, ol { padding-left: 1.5em; }
 .card p { font-size: .9rem; color: var(--gray-600); }
 
 .card-icon {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   background: linear-gradient(135deg, var(--primary-light), #fef9c3);
   border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary);
-  font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+.card-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 /* --- Link lists --- */
@@ -540,27 +544,6 @@ ul, ol { padding-left: 1.5em; }
   .sidebar { position: static; }
 }
 
-/* --- Reassurance bar --- */
-.reassurance {
-  background: var(--green-light);
-  border-bottom: 1px solid #dcfce7;
-  padding: .6rem 0;
-}
-.reassurance-inner {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.reassurance-item {
-  display: flex;
-  align-items: center;
-  gap: .4rem;
-  font-size: .78rem;
-  color: var(--gray-700);
-  font-weight: 600;
-}
-.reassurance-item .check { color: var(--green); font-weight: 800; font-size: .85rem; }
 
 /* --- Stats --- */
 .stats-bar {
@@ -684,9 +667,9 @@ ul, ol { padding-left: 1.5em; }
 .steps-grid::before {
   content: '';
   position: absolute;
-  top: 40px;
-  left: 15%;
-  right: 15%;
+  top: 24px;
+  left: 20%;
+  right: 20%;
   height: 2px;
   background: linear-gradient(90deg, var(--primary), #f59e0b);
   z-index: 0;
@@ -697,18 +680,18 @@ ul, ol { padding-left: 1.5em; }
   z-index: 1;
 }
 .step-number {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary), #f59e0b);
   color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 800;
-  margin: 0 auto 1.25rem;
-  box-shadow: 0 6px 20px rgba(230,126,34,.3);
+  margin: 0 auto 1rem;
+  box-shadow: 0 4px 15px rgba(230,126,34,.25);
 }
 .step-card h3 {
   font-size: 1.05rem;
