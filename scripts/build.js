@@ -14,7 +14,7 @@ const SRC = join(ROOT, 'src');
 const DIST = join(ROOT, 'dist');
 const DATA = join(SRC, 'data');
 
-const SITE_NAME = 'Devis Couvreur';
+const SITE_NAME = 'Devis Couvreur France';
 const SITE_URL = 'https://deviscouvreurfrance.com';
 
 
@@ -164,6 +164,8 @@ function layout(title, metaDesc, canonical, breadcrumbs, bodyContent, schemaJson
 <meta name="twitter:title" content="${escHtml(title)}">
 <meta name="twitter:description" content="${escHtml(metaDesc)}">
 <meta name="theme-color" content="#e67e22">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" onload="this.rel='stylesheet'">
