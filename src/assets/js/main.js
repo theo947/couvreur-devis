@@ -27,15 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const entries = Object.fromEntries(data);
 
       // Basic validation
-      if (!entries.nom || !entries.telephone || !entries.ville) {
-        alert('Veuillez remplir les champs obligatoires : nom, téléphone et ville.');
-        return;
-      }
-
-      // Phone format check
-      const phone = entries.telephone.replace(/\s/g, '');
-      if (!/^0[1-9]\d{8}$/.test(phone)) {
-        alert('Veuillez entrer un numéro de téléphone valide (10 chiffres).');
+      if (!entries.nom || !entries.email || !entries.ville) {
+        alert('Veuillez remplir les champs obligatoires : nom, email et ville.');
         return;
       }
 

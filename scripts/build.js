@@ -16,7 +16,7 @@ const DATA = join(SRC, 'data');
 
 const SITE_NAME = 'Devis Couvreur';
 const SITE_URL = 'https://deviscouvreurfrance.com';
-const PHONE = '01 86 65 00 00';
+
 
 // ---------------------
 // Load data
@@ -161,7 +161,7 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
     <a href="/">Accueil</a>
     <a href="/services/">Services</a>
     <a href="/guide/">Guides</a>
-    <a href="tel:${PHONE.replace(/\s/g, '')}" class="nav-cta">📞 ${PHONE}</a>
+    <a href="#quote-form-1" class="nav-cta">Devis gratuit</a>
   </nav>
 </div>
 </header>
@@ -213,8 +213,6 @@ ${bodyContent}
 </div>
 </footer>
 
-<a href="tel:${PHONE.replace(/\s/g, '')}" class="phone-cta">📞 Appelez un couvreur — ${PHONE}</a>
-
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>`;
@@ -251,13 +249,9 @@ function quoteFormHtml(lieu = '') {
         <input type="text" id="nom-${uid}" name="nom" placeholder="Votre nom" required>
       </div>
       <div class="form-group">
-        <label for="telephone-${uid}">Téléphone *</label>
-        <input type="tel" id="telephone-${uid}" name="telephone" placeholder="06 XX XX XX XX" required>
+        <label for="email-${uid}">Email *</label>
+        <input type="email" id="email-${uid}" name="email" placeholder="votre@email.fr" required>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="email-${uid}">Email</label>
-      <input type="email" id="email-${uid}" name="email" placeholder="votre@email.fr">
     </div>
     <div class="form-group">
       <label for="description-${uid}">Description du projet (optionnel)</label>
@@ -1241,7 +1235,7 @@ function buildLegalPages() {
     {
       slug: 'politique-confidentialite',
       title: 'Politique de Confidentialité',
-      content: `<h2>Données collectées</h2><p>Nous collectons les données que vous nous transmettez via le formulaire de devis : nom, téléphone, email, ville et description du projet. Ces données sont utilisées exclusivement pour vous mettre en relation avec des couvreurs qualifiés.</p><h2>Utilisation des données</h2><p>Vos données sont transmises aux artisans couvreurs de votre secteur géographique afin qu'ils puissent vous contacter et vous proposer un devis. Nous ne vendons pas vos données à des tiers.</p><h2>Durée de conservation</h2><p>Vos données sont conservées pendant 3 ans maximum à compter de votre dernière interaction avec notre service.</p><h2>Vos droits</h2><p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données. Contactez-nous pour exercer ces droits.</p><h2>Cookies</h2><p>Ce site utilise des cookies techniques nécessaires au fonctionnement du service et des cookies analytiques pour mesurer l'audience. Vous pouvez paramétrer votre navigateur pour refuser les cookies.</p>`
+      content: `<h2>Données collectées</h2><p>Nous collectons les données que vous nous transmettez via le formulaire de devis : nom, email, ville et description du projet. Ces données sont utilisées exclusivement pour vous mettre en relation avec des couvreurs qualifiés.</p><h2>Utilisation des données</h2><p>Vos données sont transmises aux artisans couvreurs de votre secteur géographique afin qu'ils puissent vous contacter et vous proposer un devis. Nous ne vendons pas vos données à des tiers.</p><h2>Durée de conservation</h2><p>Vos données sont conservées pendant 3 ans maximum à compter de votre dernière interaction avec notre service.</p><h2>Vos droits</h2><p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, de suppression et de portabilité de vos données. Contactez-nous pour exercer ces droits.</p><h2>Cookies</h2><p>Ce site utilise des cookies techniques nécessaires au fonctionnement du service et des cookies analytiques pour mesurer l'audience. Vous pouvez paramétrer votre navigateur pour refuser les cookies.</p>`
     }
   ];
 

@@ -655,54 +655,6 @@ ul, ol { padding-left: 1.5em; }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
-/* --- Phone CTA (floating mobile) --- */
-.phone-cta {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(135deg, var(--primary), #f59e0b);
-  color: var(--white);
-  text-align: center;
-  padding: .85rem;
-  font-weight: 800;
-  font-size: .95rem;
-  z-index: 99;
-  box-shadow: 0 -4px 20px rgba(0,0,0,.15);
-}
-.phone-cta:hover { color: var(--white); }
-
-@media (max-width: 768px) {
-  .phone-cta { display: block; }
-  body { padding-bottom: 55px; }
-}
-
-/* --- Desktop floating CTA --- */
-@media (min-width: 769px) {
-  .phone-cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    left: auto;
-    width: auto;
-    padding: .75rem 1.5rem;
-    border-radius: 50px;
-    font-size: .88rem;
-    box-shadow: var(--shadow-xl);
-    z-index: 99;
-    animation: float-in .5s ease-out;
-  }
-}
-
-@keyframes float-in {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
 
 /* --- Utility --- */
 .text-center { text-align: center; }
