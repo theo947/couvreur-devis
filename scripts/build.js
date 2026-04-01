@@ -399,8 +399,8 @@ function writePage(urlPath, html) {
 // Generate: Homepage
 // ---------------------
 function buildHomepage() {
-  const title = `Devis Couvreur — Trouvez un couvreur qualifié près de chez vous | ${SITE_NAME}`;
-  const desc = 'Comparez jusqu\'à 3 devis de couvreurs qualifiés gratuitement. Réparation, rénovation, nettoyage de toiture partout en France.';
+  const title = 'Devis Couvreur Gratuit en Ligne — Comparez 3 Artisans (2026)';
+  const desc = 'Comparez jusqu\'à 3 devis de couvreurs certifiés RGE en 2 min. Réparation, rénovation, démoussage, isolation. 100 % gratuit et sans engagement.';
 
   const body = `
 <section class="hero">
@@ -512,13 +512,13 @@ ${ctaBannerHtml()}
 function buildRegionPages() {
   for (const region of regions) {
     const url = `/couvreur/${region.slug}/`;
-    const title = `Couvreur en ${region.nom} — Devis Gratuit et Sans Engagement | ${SITE_NAME}`;
-    const desc = `Besoin d'un couvreur en ${region.nom} ? Recevez jusqu'à 3 devis gratuits. Artisans qualifiés, intervention rapide dans tout${region.nom.startsWith('Le') ? ' le' : 'e la'} région.`;
-
     const regionDepts = departements.filter(d => d.codeRegion === region.code);
     const climat = getClimatZone(region.code);
     const materiaux = getMateriaux(region.code);
     const coeff = getPrixCoeff(region.code);
+
+    const title = `Couvreur ${region.nom} — Devis Gratuit en Ligne (2026)`;
+    const desc = `Trouvez un couvreur en ${region.nom} : comparez 3 devis gratuits d'artisans certifiés RGE. Prix, matériaux (${materiaux.principal.split(',')[0].toLowerCase()}) et avis. Réponse sous 48h.`;
     const pb = enrichment.prixBase;
 
     const linkedServices = [...services].sort(() => Math.random() - 0.5).slice(0, 4);
@@ -626,11 +626,12 @@ function buildDepartmentPages() {
     const climat = getClimatZone(region.code);
     const materiaux = getMateriaux(region.code);
 
-    const title = `Couvreur ${dept.code} — ${dept.nom} | Devis Gratuit | ${SITE_NAME}`;
-    const desc = `Couvreur ${dept.code} (${dept.nom}). Comparez 3 devis gratuits de couvreurs qualifiés ${prep}. ${materiaux.principal}, zone ${climat.code}.`;
     const coeff = getPrixCoeff(region.code);
     const pb = enrichment.prixBase;
     const deptDetail = getDeptDetail(dept.code);
+
+    const title = `Couvreur ${dept.nom} (${dept.code}) — Devis Gratuit (2026)`;
+    const desc = `Couvreur ${prep} : comparez 3 devis gratuits d'artisans certifiés. Prix ${formatPrix(pb.toiture_neuve_tuile, coeff)} (tuile), matériaux locaux. Sans engagement.`;
     const totalPop = deptCommunes.reduce((s, c) => s + (c.population || 0), 0);
 
     const linkedServices = [...services].sort(() => Math.random() - 0.5).slice(0, 4);
@@ -747,8 +748,8 @@ function buildCityPages() {
     const deptDetail = getDeptDetail(dept.code);
     const prep = getDeptPrep(dept);
 
-    const title = `Couvreur à ${nom} (${dept.code}) — Devis Gratuit | ${SITE_NAME}`;
-    const desc = `Couvreur à ${nom} (${cp}, ${dept.nom}). Comparez 3 devis gratuits. ${materiaux.principal}, zone ${climat.code}. Artisans qualifiés ${prep}.`;
+    const title = `Couvreur ${nom} (${cp}) — Devis Gratuit (2026)`;
+    const desc = `Couvreur à ${nom} (${dept.nom}) : comparez 3 devis gratuits d'artisans certifiés. Prix, avis et intervention rapide. 100 % gratuit, sans engagement.`;
 
     // Deterministic service selection based on commune slug hash
     const hash = commune.slug.split('').reduce((a, c) => a + c.charCodeAt(0), 0);
@@ -876,8 +877,8 @@ ${ctaBannerHtml(nom)}`;
 // ---------------------
 function buildServiceIndexPage() {
   const url = '/services/';
-  const title = `Services de Couverture — Tous nos Services Toiture | ${SITE_NAME}`;
-  const desc = 'Découvrez tous nos services de couverture : réparation, rénovation, démoussage, isolation, zinguerie, charpente, Velux. Devis gratuit partout en France.';
+  const title = 'Services Couvreur — Réparation, Rénovation, Démoussage (2026)';
+  const desc = 'Tous nos services de couverture : réparation, rénovation, démoussage, isolation, zinguerie, Velux, charpente. Devis gratuit en ligne, artisans certifiés.';
   const pb = enrichment.prixBase;
 
   const body = `
@@ -978,8 +979,8 @@ function buildServicePages() {
 
   for (const service of services) {
     const url = `/services/${service.slug}/`;
-    const title = `${service.titre} — Devis Gratuit | ${SITE_NAME}`;
-    const desc = service.description;
+    const title = `${service.titre} — Prix et Devis Gratuit (2026)`;
+    const desc = `${service.description.slice(0, 130)}${service.description.length > 130 ? '...' : ''} Comparez 3 devis gratuits.`;
     const c = service.contenu;
 
     // All regions for geo links
@@ -1094,8 +1095,8 @@ function buildServicePages() {
 // ---------------------
 function buildGuideIndexPage() {
   const url = '/guide/';
-  const title = `Guides Toiture — Conseils, Prix et Bonnes Pratiques | ${SITE_NAME}`;
-  const desc = 'Tous nos guides pratiques sur la toiture : prix au m², choix du couvreur, aides financières, entretien, matériaux, assurance. Conseils d\'experts.';
+  const title = 'Guides Toiture — Prix, Conseils et Aides 2026';
+  const desc = 'Guides pratiques toiture : prix au m², comment choisir un couvreur, aides financières (MaPrimeRénov\'), entretien, matériaux. Conseils d\'experts.';
 
   const body = `
 <section class="hero">
@@ -1154,7 +1155,7 @@ function buildGuideIndexPage() {
 function buildGuidePages() {
   for (const guide of guides) {
     const url = `/guide/${guide.slug}/`;
-    const title = `${guide.titre} | ${SITE_NAME}`;
+    const title = `${guide.titre} — Guide Complet (2026)`;
     const desc = guide.metaDescription;
     const c = guide.contenu;
 
