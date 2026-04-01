@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Quote form validation (all forms on page)
+  // Quote form — submit via fetch (AJAX) to FormSubmit.co
   document.querySelectorAll('.quote-form').forEach(form => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -39,14 +39,35 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Success feedback (in production, send to backend)
-      form.innerHTML = `
-        <div style="text-align:center;padding:2rem 0">
-          <div style="font-size:3rem;margin-bottom:1rem">✓</div>
-          <h3 style="margin-bottom:.5rem;color:#27ae60">Demande envoyée !</h3>
-          <p style="color:#495057">Vous recevrez jusqu'à 3 devis gratuits sous 48h.</p>
-        </div>
-      `;
+      // Disable button during send
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Envoi en cours...';
+      btn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      })
+      .then(res => {
+        if (res.ok) {
+          form.innerHTML = `
+            <div style="text-align:center;padding:2rem 0">
+              <div style="font-size:3rem;margin-bottom:1rem">✓</div>
+              <h3 style="margin-bottom:.5rem;color:#27ae60">Demande envoyée !</h3>
+              <p style="color:#495057">Vous recevrez jusqu'à 3 devis gratuits sous 48h.</p>
+            </div>
+          `;
+        } else {
+          throw new Error('Erreur serveur');
+        }
+      })
+      .catch(() => {
+        alert('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.');
+        btn.textContent = originalText;
+        btn.disabled = false;
+      });
     });
   });
 

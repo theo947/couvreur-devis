@@ -228,7 +228,12 @@ function quoteFormHtml(lieu = '') {
 <div class="quote-form-card">
   <h2>Demandez vos devis gratuits</h2>
   <p class="subtitle">Recevez jusqu'à 3 devis de couvreurs qualifiés${lieu ? ' à ' + escHtml(lieu) : ''}</p>
-  <form class="quote-form" id="quote-form-${uid}" action="#" method="POST">
+  <form class="quote-form" id="quote-form-${uid}" action="https://formsubmit.co/theo@datashake.fr" method="POST">
+    <input type="hidden" name="_subject" value="Nouveau devis couvreur${lieu ? ' — ' + escHtml(lieu) : ''}">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_next" value="${SITE_URL}/merci.html">
     <div class="form-group">
       <label for="travaux-${uid}">Type de travaux *</label>
       <select id="travaux-${uid}" name="travaux" required>
@@ -1289,6 +1294,24 @@ function build404Page() {
   console.log('  📄 404.html');
 }
 
+function buildMerciPage() {
+  const body = `
+<section class="section" style="padding:4rem 0;text-align:center">
+<div class="container">
+  <div style="font-size:4rem;margin-bottom:1rem;color:#27ae60">✓</div>
+  <h1 style="font-size:2rem;margin-bottom:1rem">Demande envoyée avec succès !</h1>
+  <p style="color:var(--gray-500);max-width:550px;margin:0 auto 2rem">Merci pour votre demande de devis. Vous recevrez jusqu'à 3 propositions de couvreurs qualifiés sous 48 heures.</p>
+  <a href="/" class="btn-primary" style="display:inline-flex;text-decoration:none">Retour à l'accueil</a>
+</div>
+</section>`;
+
+  const html = layout('Demande envoyée | ' + SITE_NAME, 'Votre demande de devis couvreur a bien été envoyée.', '/merci.html',
+    [{ label: 'Accueil', url: '/' }, { label: 'Confirmation', url: '/merci.html' }],
+    body);
+  writeFileSync(join(DIST, 'merci.html'), html);
+  console.log('  📄 merci.html');
+}
+
 // ---------------------
 // Generate: Sitemap, Robots, llms.txt
 // ---------------------
@@ -1423,7 +1446,8 @@ function copyAssets() {
 
   buildLegalPages();
   build404Page();
-  console.log('  ✓ Pages légales + 404');
+  buildMerciPage();
+  console.log('  ✓ Pages légales + 404 + merci');
 
   console.log('\n📦 Assets et fichiers techniques...');
   copyAssets();
