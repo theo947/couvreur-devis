@@ -15,7 +15,7 @@ const DIST = join(ROOT, 'dist');
 const DATA = join(SRC, 'data');
 
 const SITE_NAME = 'Devis Couvreur';
-const SITE_URL = 'https://devis-couvreur.fr';
+const SITE_URL = 'https://deviscouvreurfrance.com';
 const PHONE = '01 86 65 00 00';
 
 // ---------------------
