@@ -1,0 +1,63 @@
+/* Couvreur Devis — JS Principal */
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
+  const toggle = document.querySelector('.mobile-toggle');
+  const nav = document.querySelector('.main-nav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  }
+
+  // FAQ accordions
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasActive = item.classList.contains('active');
+      // Close all in same section
+      item.closest('.faq-section')?.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!wasActive) item.classList.add('active');
+    });
+  });
+
+  // Quote form validation (all forms on page)
+  document.querySelectorAll('.quote-form').forEach(form => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const entries = Object.fromEntries(data);
+
+      // Basic validation
+      if (!entries.nom || !entries.telephone || !entries.ville) {
+        alert('Veuillez remplir les champs obligatoires : nom, téléphone et ville.');
+        return;
+      }
+
+      // Phone format check
+      const phone = entries.telephone.replace(/\s/g, '');
+      if (!/^0[1-9]\d{8}$/.test(phone)) {
+        alert('Veuillez entrer un numéro de téléphone valide (10 chiffres).');
+        return;
+      }
+
+      // Success feedback (in production, send to backend)
+      form.innerHTML = `
+        <div style="text-align:center;padding:2rem 0">
+          <div style="font-size:3rem;margin-bottom:1rem">✓</div>
+          <h3 style="margin-bottom:.5rem;color:#27ae60">Demande envoyée !</h3>
+          <p style="color:#495057">Vous recevrez jusqu'à 3 devis gratuits sous 48h.</p>
+        </div>
+      `;
+    });
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+});

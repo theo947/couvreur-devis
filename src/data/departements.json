@@ -1,0 +1,5705 @@
+[
+  {
+    "code": "01",
+    "nom": "Ain",
+    "slug": "ain",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "01053",
+      "01283",
+      "01033",
+      "01004",
+      "01354",
+      "01173",
+      "01160",
+      "01143",
+      "01249",
+      "01034",
+      "01313",
+      "01244",
+      "01202",
+      "01451",
+      "01427",
+      "01262",
+      "01419",
+      "01289",
+      "01194",
+      "01344",
+      "01071",
+      "01322",
+      "01093",
+      "01043",
+      "01443",
+      "01281"
+    ],
+    "departementsProches": [
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      },
+      {
+        "code": "38",
+        "nom": "Isère",
+        "slug": "isere"
+      }
+    ]
+  },
+  {
+    "code": "02",
+    "nom": "Aisne",
+    "slug": "aisne",
+    "codeRegion": "32",
+    "regionNom": "Hauts-de-France",
+    "regionSlug": "hauts-de-france",
+    "communes": [
+      "02691",
+      "02722",
+      "02408",
+      "02168",
+      "02738",
+      "02173",
+      "02810",
+      "02381",
+      "02095",
+      "02340"
+    ],
+    "departementsProches": [
+      {
+        "code": "59",
+        "nom": "Nord",
+        "slug": "nord"
+      },
+      {
+        "code": "60",
+        "nom": "Oise",
+        "slug": "oise"
+      },
+      {
+        "code": "62",
+        "nom": "Pas-de-Calais",
+        "slug": "pas-de-calais"
+      },
+      {
+        "code": "80",
+        "nom": "Somme",
+        "slug": "somme"
+      }
+    ]
+  },
+  {
+    "code": "03",
+    "nom": "Allier",
+    "slug": "allier",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "03185",
+      "03310",
+      "03190",
+      "03095",
+      "03321",
+      "03023",
+      "03101",
+      "03082",
+      "03118"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      },
+      {
+        "code": "38",
+        "nom": "Isère",
+        "slug": "isere"
+      }
+    ]
+  },
+  {
+    "code": "04",
+    "nom": "Alpes-de-Haute-Provence",
+    "slug": "alpes-de-haute-provence",
+    "codeRegion": "93",
+    "regionNom": "Provence-Alpes-Côte d'Azur",
+    "regionSlug": "provence-alpes-cote-d-azur",
+    "communes": [
+      "04112",
+      "04070",
+      "04209",
+      "04143",
+      "04088",
+      "04049"
+    ],
+    "departementsProches": [
+      {
+        "code": "05",
+        "nom": "Hautes-Alpes",
+        "slug": "hautes-alpes"
+      },
+      {
+        "code": "06",
+        "nom": "Alpes-Maritimes",
+        "slug": "alpes-maritimes"
+      },
+      {
+        "code": "13",
+        "nom": "Bouches-du-Rhône",
+        "slug": "bouches-du-rhone"
+      },
+      {
+        "code": "83",
+        "nom": "Var",
+        "slug": "var"
+      },
+      {
+        "code": "84",
+        "nom": "Vaucluse",
+        "slug": "vaucluse"
+      }
+    ]
+  },
+  {
+    "code": "05",
+    "nom": "Hautes-Alpes",
+    "slug": "hautes-alpes",
+    "codeRegion": "93",
+    "regionNom": "Provence-Alpes-Côte d'Azur",
+    "regionSlug": "provence-alpes-cote-d-azur",
+    "communes": [
+      "05061",
+      "05023",
+      "05046"
+    ],
+    "departementsProches": [
+      {
+        "code": "04",
+        "nom": "Alpes-de-Haute-Provence",
+        "slug": "alpes-de-haute-provence"
+      },
+      {
+        "code": "06",
+        "nom": "Alpes-Maritimes",
+        "slug": "alpes-maritimes"
+      },
+      {
+        "code": "13",
+        "nom": "Bouches-du-Rhône",
+        "slug": "bouches-du-rhone"
+      },
+      {
+        "code": "83",
+        "nom": "Var",
+        "slug": "var"
+      },
+      {
+        "code": "84",
+        "nom": "Vaucluse",
+        "slug": "vaucluse"
+      }
+    ]
+  },
+  {
+    "code": "06",
+    "nom": "Alpes-Maritimes",
+    "slug": "alpes-maritimes",
+    "codeRegion": "93",
+    "regionNom": "Provence-Alpes-Côte d'Azur",
+    "regionSlug": "provence-alpes-cote-d-azur",
+    "communes": [
+      "06088",
+      "06004",
+      "06029",
+      "06027",
+      "06069",
+      "06030",
+      "06123",
+      "06083",
+      "06155",
+      "06079",
+      "06157",
+      "06085",
+      "06161",
+      "06033",
+      "06104",
+      "06152",
+      "06012",
+      "06084",
+      "06149",
+      "06018",
+      "06095",
+      "06090",
+      "06044",
+      "06048",
+      "06105",
+      "06065",
+      "06114",
+      "06108",
+      "06054",
+      "06075",
+      "06159"
+    ],
+    "departementsProches": [
+      {
+        "code": "04",
+        "nom": "Alpes-de-Haute-Provence",
+        "slug": "alpes-de-haute-provence"
+      },
+      {
+        "code": "05",
+        "nom": "Hautes-Alpes",
+        "slug": "hautes-alpes"
+      },
+      {
+        "code": "13",
+        "nom": "Bouches-du-Rhône",
+        "slug": "bouches-du-rhone"
+      },
+      {
+        "code": "83",
+        "nom": "Var",
+        "slug": "var"
+      },
+      {
+        "code": "84",
+        "nom": "Vaucluse",
+        "slug": "vaucluse"
+      }
+    ]
+  },
+  {
+    "code": "07",
+    "nom": "Ardèche",
+    "slug": "ardeche",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "07010",
+      "07019",
+      "07324",
+      "07102",
+      "07319",
+      "07186",
+      "07042",
+      "07281"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      },
+      {
+        "code": "38",
+        "nom": "Isère",
+        "slug": "isere"
+      }
+    ]
+  },
+  {
+    "code": "08",
+    "nom": "Ardennes",
+    "slug": "ardennes",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "08105",
+      "08409",
+      "08362",
+      "08190",
+      "08363",
+      "08328"
+    ],
+    "departementsProches": [
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      },
+      {
+        "code": "55",
+        "nom": "Meuse",
+        "slug": "meuse"
+      }
+    ]
+  },
+  {
+    "code": "09",
+    "nom": "Ariège",
+    "slug": "ariege",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "09225",
+      "09122",
+      "09261",
+      "09160"
+    ],
+    "departementsProches": [
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      },
+      {
+        "code": "32",
+        "nom": "Gers",
+        "slug": "gers"
+      }
+    ]
+  },
+  {
+    "code": "10",
+    "nom": "Aube",
+    "slug": "aube",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "10387",
+      "10323",
+      "10333",
+      "10081",
+      "10362",
+      "10343",
+      "10268",
+      "10297"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      },
+      {
+        "code": "55",
+        "nom": "Meuse",
+        "slug": "meuse"
+      }
+    ]
+  },
+  {
+    "code": "11",
+    "nom": "Aude",
+    "slug": "aude",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "11262",
+      "11069",
+      "11076",
+      "11206",
+      "11203",
+      "11266",
+      "11106",
+      "11379",
+      "11397",
+      "11170"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      },
+      {
+        "code": "32",
+        "nom": "Gers",
+        "slug": "gers"
+      }
+    ]
+  },
+  {
+    "code": "12",
+    "nom": "Aveyron",
+    "slug": "aveyron",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "12202",
+      "12145",
+      "12176",
+      "12300",
+      "12208",
+      "12133",
+      "12089"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      },
+      {
+        "code": "32",
+        "nom": "Gers",
+        "slug": "gers"
+      }
+    ]
+  },
+  {
+    "code": "13",
+    "nom": "Bouches-du-Rhône",
+    "slug": "bouches-du-rhone",
+    "codeRegion": "93",
+    "regionNom": "Provence-Alpes-Côte d'Azur",
+    "regionSlug": "provence-alpes-cote-d-azur",
+    "communes": [
+      "13055",
+      "13001",
+      "13004",
+      "13056",
+      "13005",
+      "13047",
+      "13103",
+      "13028",
+      "13117",
+      "13054",
+      "13063",
+      "13071",
+      "13041",
+      "13002",
+      "13026",
+      "13027",
+      "13039",
+      "13077",
+      "13108",
+      "13015",
+      "13097",
+      "13014",
+      "13007",
+      "13081",
+      "13106",
+      "13075",
+      "13069",
+      "13110",
+      "13043",
+      "13040",
+      "13019",
+      "13050",
+      "13051",
+      "13100",
+      "13037",
+      "13112",
+      "13086",
+      "13092",
+      "13078",
+      "13032",
+      "13113",
+      "13104",
+      "13035",
+      "13105",
+      "13119",
+      "13060",
+      "13102",
+      "13022",
+      "13070",
+      "13042",
+      "13016",
+      "13030",
+      "13098",
+      "13053",
+      "13091",
+      "13066",
+      "13080",
+      "13114",
+      "13085",
+      "13107",
+      "13073",
+      "13033",
+      "13021",
+      "13044",
+      "13084",
+      "13087",
+      "13074",
+      "13088"
+    ],
+    "departementsProches": [
+      {
+        "code": "04",
+        "nom": "Alpes-de-Haute-Provence",
+        "slug": "alpes-de-haute-provence"
+      },
+      {
+        "code": "05",
+        "nom": "Hautes-Alpes",
+        "slug": "hautes-alpes"
+      },
+      {
+        "code": "06",
+        "nom": "Alpes-Maritimes",
+        "slug": "alpes-maritimes"
+      },
+      {
+        "code": "83",
+        "nom": "Var",
+        "slug": "var"
+      },
+      {
+        "code": "84",
+        "nom": "Vaucluse",
+        "slug": "vaucluse"
+      }
+    ]
+  },
+  {
+    "code": "14",
+    "nom": "Calvados",
+    "slug": "calvados",
+    "codeRegion": "28",
+    "regionNom": "Normandie",
+    "regionSlug": "normandie",
+    "communes": [
+      "14118",
+      "14327",
+      "14366",
+      "14762",
+      "14047",
+      "14341",
+      "14437",
+      "14431",
+      "14488",
+      "14061",
+      "14258",
+      "14167",
+      "14654",
+      "14333",
+      "14371",
+      "14098",
+      "14076",
+      "14174",
+      "14271",
+      "14726",
+      "14181",
+      "14514",
+      "14228",
+      "14225",
+      "14301"
+    ],
+    "departementsProches": [
+      {
+        "code": "27",
+        "nom": "Eure",
+        "slug": "eure"
+      },
+      {
+        "code": "50",
+        "nom": "Manche",
+        "slug": "manche"
+      },
+      {
+        "code": "61",
+        "nom": "Orne",
+        "slug": "orne"
+      },
+      {
+        "code": "76",
+        "nom": "Seine-Maritime",
+        "slug": "seine-maritime"
+      }
+    ]
+  },
+  {
+    "code": "15",
+    "nom": "Cantal",
+    "slug": "cantal",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "15014",
+      "15187",
+      "15012"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      },
+      {
+        "code": "38",
+        "nom": "Isère",
+        "slug": "isere"
+      }
+    ]
+  },
+  {
+    "code": "16",
+    "nom": "Charente",
+    "slug": "charente",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "16015",
+      "16102",
+      "16374",
+      "16113",
+      "16358",
+      "16291",
+      "16154",
+      "16166",
+      "16078"
+    ],
+    "departementsProches": [
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde",
+        "slug": "gironde"
+      }
+    ]
+  },
+  {
+    "code": "17",
+    "nom": "Charente-Maritime",
+    "slug": "charente-maritime",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "17300",
+      "17415",
+      "17299",
+      "17306",
+      "17028",
+      "17274",
+      "17449",
+      "17200",
+      "17421",
+      "17434",
+      "17347",
+      "17291",
+      "17094",
+      "17385",
+      "17142",
+      "17219",
+      "17264",
+      "17414",
+      "17333",
+      "17407"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde",
+        "slug": "gironde"
+      }
+    ]
+  },
+  {
+    "code": "18",
+    "nom": "Cher",
+    "slug": "cher",
+    "codeRegion": "24",
+    "regionNom": "Centre-Val de Loire",
+    "regionSlug": "centre-val-de-loire",
+    "communes": [
+      "18033",
+      "18279",
+      "18197",
+      "18205",
+      "18207",
+      "18141",
+      "18015"
+    ],
+    "departementsProches": [
+      {
+        "code": "28",
+        "nom": "Eure-et-Loir",
+        "slug": "eure-et-loir"
+      },
+      {
+        "code": "36",
+        "nom": "Indre",
+        "slug": "indre"
+      },
+      {
+        "code": "37",
+        "nom": "Indre-et-Loire",
+        "slug": "indre-et-loire"
+      },
+      {
+        "code": "41",
+        "nom": "Loir-et-Cher",
+        "slug": "loir-et-cher"
+      },
+      {
+        "code": "45",
+        "nom": "Loiret",
+        "slug": "loiret"
+      }
+    ]
+  },
+  {
+    "code": "19",
+    "nom": "Corrèze",
+    "slug": "correze",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "19031",
+      "19272",
+      "19275",
+      "19123",
+      "19229"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde",
+        "slug": "gironde"
+      }
+    ]
+  },
+  {
+    "code": "21",
+    "nom": "Côte-d'Or",
+    "slug": "cote-d-or",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "21231",
+      "21054",
+      "21166",
+      "21617",
+      "21171",
+      "21278",
+      "21515",
+      "21355",
+      "21038",
+      "21540",
+      "21154",
+      "21390",
+      "21464",
+      "21292"
+    ],
+    "departementsProches": [
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      },
+      {
+        "code": "71",
+        "nom": "Saône-et-Loire",
+        "slug": "saone-et-loire"
+      }
+    ]
+  },
+  {
+    "code": "22",
+    "nom": "Côtes-d'Armor",
+    "slug": "cotes-d-armor",
+    "codeRegion": "53",
+    "regionNom": "Bretagne",
+    "regionSlug": "bretagne",
+    "communes": [
+      "22278",
+      "22113",
+      "22093",
+      "22050",
+      "22187",
+      "22215",
+      "22136",
+      "22360",
+      "22106",
+      "22251",
+      "22162",
+      "22168",
+      "22070",
+      "22055",
+      "22176",
+      "22046",
+      "22225",
+      "22389"
+    ],
+    "departementsProches": [
+      {
+        "code": "29",
+        "nom": "Finistère",
+        "slug": "finistere"
+      },
+      {
+        "code": "35",
+        "nom": "Ille-et-Vilaine",
+        "slug": "ille-et-vilaine"
+      },
+      {
+        "code": "56",
+        "nom": "Morbihan",
+        "slug": "morbihan"
+      }
+    ]
+  },
+  {
+    "code": "23",
+    "nom": "Creuse",
+    "slug": "creuse",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "23096"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde",
+        "slug": "gironde"
+      }
+    ]
+  },
+  {
+    "code": "24",
+    "nom": "Dordogne",
+    "slug": "dordogne",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "24322",
+      "24037",
+      "24053",
+      "24520",
+      "24138",
+      "24557",
+      "24547",
+      "24294",
+      "24372"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "33",
+        "nom": "Gironde",
+        "slug": "gironde"
+      }
+    ]
+  },
+  {
+    "code": "25",
+    "nom": "Doubs",
+    "slug": "doubs",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "25056",
+      "25388",
+      "25462",
+      "25031",
+      "25580",
+      "25411",
+      "25284",
+      "25539",
+      "25578",
+      "25057",
+      "25321",
+      "25047",
+      "25527"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      },
+      {
+        "code": "71",
+        "nom": "Saône-et-Loire",
+        "slug": "saone-et-loire"
+      }
+    ]
+  },
+  {
+    "code": "26",
+    "nom": "Drôme",
+    "slug": "drome",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "26362",
+      "26198",
+      "26281",
+      "26058",
+      "26235",
+      "26252",
+      "26057",
+      "26165",
+      "26324",
+      "26108",
+      "26325",
+      "26064",
+      "26220",
+      "26166",
+      "26088",
+      "26313",
+      "26116",
+      "26347",
+      "26124"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "38",
+        "nom": "Isère",
+        "slug": "isere"
+      }
+    ]
+  },
+  {
+    "code": "27",
+    "nom": "Eure",
+    "slug": "eure",
+    "codeRegion": "28",
+    "regionNom": "Normandie",
+    "regionSlug": "normandie",
+    "communes": [
+      "27229",
+      "27681",
+      "27375",
+      "27701",
+      "27284",
+      "27467",
+      "27056",
+      "27016",
+      "27679",
+      "27275",
+      "27198",
+      "27213",
+      "27602",
+      "27022",
+      "27448"
+    ],
+    "departementsProches": [
+      {
+        "code": "14",
+        "nom": "Calvados",
+        "slug": "calvados"
+      },
+      {
+        "code": "50",
+        "nom": "Manche",
+        "slug": "manche"
+      },
+      {
+        "code": "61",
+        "nom": "Orne",
+        "slug": "orne"
+      },
+      {
+        "code": "76",
+        "nom": "Seine-Maritime",
+        "slug": "seine-maritime"
+      }
+    ]
+  },
+  {
+    "code": "28",
+    "nom": "Eure-et-Loir",
+    "slug": "eure-et-loir",
+    "codeRegion": "24",
+    "regionNom": "Centre-Val de Loire",
+    "regionSlug": "centre-val-de-loire",
+    "communes": [
+      "28085",
+      "28134",
+      "28218",
+      "28088",
+      "28404",
+      "28229",
+      "28280",
+      "28220",
+      "28015",
+      "28140",
+      "28209",
+      "28103"
+    ],
+    "departementsProches": [
+      {
+        "code": "18",
+        "nom": "Cher",
+        "slug": "cher"
+      },
+      {
+        "code": "36",
+        "nom": "Indre",
+        "slug": "indre"
+      },
+      {
+        "code": "37",
+        "nom": "Indre-et-Loire",
+        "slug": "indre-et-loire"
+      },
+      {
+        "code": "41",
+        "nom": "Loir-et-Cher",
+        "slug": "loir-et-cher"
+      },
+      {
+        "code": "45",
+        "nom": "Loiret",
+        "slug": "loiret"
+      }
+    ]
+  },
+  {
+    "code": "29",
+    "nom": "Finistère",
+    "slug": "finistere",
+    "codeRegion": "53",
+    "regionNom": "Bretagne",
+    "regionSlug": "bretagne",
+    "communes": [
+      "29019",
+      "29232",
+      "29039",
+      "29103",
+      "29075",
+      "29151",
+      "29046",
+      "29212",
+      "29189",
+      "29233",
+      "29235",
+      "29058",
+      "29105",
+      "29160",
+      "29051",
+      "29260",
+      "29220",
+      "29069",
+      "29124",
+      "29241",
+      "29042",
+      "29024",
+      "29293",
+      "29259",
+      "29195",
+      "29150",
+      "29178",
+      "29061",
+      "29174",
+      "29020",
+      "29004",
+      "29117",
+      "29158",
+      "29274",
+      "29130",
+      "29026",
+      "29199"
+    ],
+    "departementsProches": [
+      {
+        "code": "22",
+        "nom": "Côtes-d'Armor",
+        "slug": "cotes-d-armor"
+      },
+      {
+        "code": "35",
+        "nom": "Ille-et-Vilaine",
+        "slug": "ille-et-vilaine"
+      },
+      {
+        "code": "56",
+        "nom": "Morbihan",
+        "slug": "morbihan"
+      }
+    ]
+  },
+  {
+    "code": "2A",
+    "nom": "Corse-du-Sud",
+    "slug": "corse-du-sud",
+    "codeRegion": "94",
+    "regionNom": "Corse",
+    "regionSlug": "corse",
+    "communes": [
+      "2A004",
+      "2A247"
+    ],
+    "departementsProches": [
+      {
+        "code": "2B",
+        "nom": "Haute-Corse",
+        "slug": "haute-corse"
+      }
+    ]
+  },
+  {
+    "code": "2B",
+    "nom": "Haute-Corse",
+    "slug": "haute-corse",
+    "codeRegion": "94",
+    "regionNom": "Corse",
+    "regionSlug": "corse",
+    "communes": [
+      "2B033",
+      "2B042",
+      "2B096",
+      "2B037",
+      "2B148",
+      "2B120",
+      "2B050"
+    ],
+    "departementsProches": [
+      {
+        "code": "2A",
+        "nom": "Corse-du-Sud",
+        "slug": "corse-du-sud"
+      }
+    ]
+  },
+  {
+    "code": "30",
+    "nom": "Gard",
+    "slug": "gard",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "30189",
+      "30007",
+      "30028",
+      "30032",
+      "30258",
+      "30351",
+      "30341",
+      "30202",
+      "30011",
+      "30003",
+      "30133",
+      "30334",
+      "30156",
+      "30217",
+      "30034",
+      "30243",
+      "30155",
+      "30141",
+      "30062",
+      "30169",
+      "30047",
+      "30033",
+      "30344",
+      "30006",
+      "30294",
+      "30221",
+      "30125",
+      "30321"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      },
+      {
+        "code": "32",
+        "nom": "Gers",
+        "slug": "gers"
+      }
+    ]
+  },
+  {
+    "code": "31",
+    "nom": "Haute-Garonne",
+    "slug": "haute-garonne",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "31555",
+      "31149",
+      "31557",
+      "31069",
+      "31395",
+      "31424",
+      "31157",
+      "31044",
+      "31113",
+      "31446",
+      "31506",
+      "31187",
+      "31561",
+      "31483",
+      "31116",
+      "31488",
+      "31588",
+      "31547",
+      "31033",
+      "31291",
+      "31499",
+      "31203",
+      "31433",
+      "31451",
+      "31022",
+      "31282",
+      "31232",
+      "31150",
+      "31417",
+      "31056",
+      "31490",
+      "31526",
+      "31032",
+      "31118",
+      "31169",
+      "31341",
+      "31202",
+      "31248",
+      "31165",
+      "31467",
+      "31584",
+      "31091",
+      "31445",
+      "31351",
+      "31188",
+      "31182",
+      "31107",
+      "31458",
+      "31582"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "32",
+        "nom": "Gers",
+        "slug": "gers"
+      }
+    ]
+  },
+  {
+    "code": "32",
+    "nom": "Gers",
+    "slug": "gers",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "32013",
+      "32160",
+      "32107",
+      "32132"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "33",
+    "nom": "Gironde",
+    "slug": "gironde",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "33063",
+      "33281",
+      "33318",
+      "33522",
+      "33550",
+      "33449",
+      "33039",
+      "33529",
+      "33192",
+      "33119",
+      "33249",
+      "33069",
+      "33243",
+      "33162",
+      "33199",
+      "33075",
+      "33167",
+      "33003",
+      "33056",
+      "33122",
+      "33005",
+      "33366",
+      "33284",
+      "33051",
+      "33200",
+      "33009",
+      "33519",
+      "33312",
+      "33238",
+      "33433",
+      "33422",
+      "33019",
+      "33527",
+      "33013",
+      "33138",
+      "33032",
+      "33096",
+      "33498",
+      "33273",
+      "33236",
+      "33376",
+      "33227",
+      "33229",
+      "33322",
+      "33080",
+      "33011",
+      "33207",
+      "33042",
+      "33393",
+      "33240",
+      "33029",
+      "33090",
+      "33214",
+      "33555",
+      "33256",
+      "33535",
+      "33314",
+      "33058"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "34",
+    "nom": "Hérault",
+    "slug": "herault",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "34172",
+      "34032",
+      "34301",
+      "34003",
+      "34145",
+      "34057",
+      "34108",
+      "34129",
+      "34154",
+      "34123",
+      "34270",
+      "34157",
+      "34337",
+      "34255",
+      "34198",
+      "34079",
+      "34090",
+      "34116",
+      "34299",
+      "34344",
+      "34202",
+      "34150",
+      "34022",
+      "34199",
+      "34095",
+      "34088",
+      "34327",
+      "34142",
+      "34023",
+      "34151",
+      "34120",
+      "34058",
+      "34213",
+      "34114",
+      "34113",
+      "34239",
+      "34217",
+      "34192",
+      "34077",
+      "34332",
+      "34031",
+      "34028",
+      "34259",
+      "34298",
+      "34300",
+      "34069",
+      "34101",
+      "34247"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "35",
+    "nom": "Ille-et-Vilaine",
+    "slug": "ille-et-vilaine",
+    "codeRegion": "53",
+    "regionNom": "Bretagne",
+    "regionSlug": "bretagne",
+    "communes": [
+      "35238",
+      "35288",
+      "35115",
+      "35047",
+      "35360",
+      "35051",
+      "35281",
+      "35024",
+      "35210",
+      "35069",
+      "35093",
+      "35055",
+      "35278",
+      "35240",
+      "35236",
+      "35126",
+      "35152",
+      "35066",
+      "35334",
+      "35136",
+      "35206",
+      "35352",
+      "35196",
+      "35012",
+      "35173",
+      "35068",
+      "35176",
+      "35228",
+      "35001",
+      "35188",
+      "35184",
+      "35353",
+      "35085",
+      "35037",
+      "35207",
+      "35120",
+      "35095",
+      "35208",
+      "35049",
+      "35275",
+      "35139",
+      "35257",
+      "35177"
+    ],
+    "departementsProches": [
+      {
+        "code": "22",
+        "nom": "Côtes-d'Armor",
+        "slug": "cotes-d-armor"
+      },
+      {
+        "code": "29",
+        "nom": "Finistère",
+        "slug": "finistere"
+      },
+      {
+        "code": "56",
+        "nom": "Morbihan",
+        "slug": "morbihan"
+      }
+    ]
+  },
+  {
+    "code": "36",
+    "nom": "Indre",
+    "slug": "indre",
+    "codeRegion": "24",
+    "regionNom": "Centre-Val de Loire",
+    "regionSlug": "centre-val-de-loire",
+    "communes": [
+      "36044",
+      "36088",
+      "36063",
+      "36018",
+      "36159"
+    ],
+    "departementsProches": [
+      {
+        "code": "18",
+        "nom": "Cher",
+        "slug": "cher"
+      },
+      {
+        "code": "28",
+        "nom": "Eure-et-Loir",
+        "slug": "eure-et-loir"
+      },
+      {
+        "code": "37",
+        "nom": "Indre-et-Loire",
+        "slug": "indre-et-loire"
+      },
+      {
+        "code": "41",
+        "nom": "Loir-et-Cher",
+        "slug": "loir-et-cher"
+      },
+      {
+        "code": "45",
+        "nom": "Loiret",
+        "slug": "loiret"
+      }
+    ]
+  },
+  {
+    "code": "37",
+    "nom": "Indre-et-Loire",
+    "slug": "indre-et-loire",
+    "codeRegion": "24",
+    "regionNom": "Centre-Val de Loire",
+    "regionSlug": "centre-val-de-loire",
+    "communes": [
+      "37261",
+      "37122",
+      "37214",
+      "37233",
+      "37208",
+      "37003",
+      "37050",
+      "37156",
+      "37109",
+      "37195",
+      "37018",
+      "37072",
+      "37159",
+      "37266",
+      "37104",
+      "37132",
+      "37273",
+      "37027",
+      "37139"
+    ],
+    "departementsProches": [
+      {
+        "code": "18",
+        "nom": "Cher",
+        "slug": "cher"
+      },
+      {
+        "code": "28",
+        "nom": "Eure-et-Loir",
+        "slug": "eure-et-loir"
+      },
+      {
+        "code": "36",
+        "nom": "Indre",
+        "slug": "indre"
+      },
+      {
+        "code": "41",
+        "nom": "Loir-et-Cher",
+        "slug": "loir-et-cher"
+      },
+      {
+        "code": "45",
+        "nom": "Loiret",
+        "slug": "loiret"
+      }
+    ]
+  },
+  {
+    "code": "38",
+    "nom": "Isère",
+    "slug": "isere",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "38185",
+      "38421",
+      "38151",
+      "38544",
+      "38053",
+      "38169",
+      "38563",
+      "38553",
+      "38229",
+      "38382",
+      "38193",
+      "38485",
+      "38474",
+      "38317",
+      "38085",
+      "38158",
+      "38565",
+      "38140",
+      "38344",
+      "38524",
+      "38545",
+      "38509",
+      "38486",
+      "38507",
+      "38111",
+      "38239",
+      "38537",
+      "38416",
+      "38022",
+      "38517",
+      "38547",
+      "38179",
+      "38314",
+      "38562",
+      "38397",
+      "38425",
+      "38001",
+      "38150",
+      "38298",
+      "38087",
+      "38337",
+      "38516",
+      "38316",
+      "38318",
+      "38449",
+      "38423",
+      "38249",
+      "38422",
+      "38133",
+      "38557",
+      "38097",
+      "38034"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "39",
+    "nom": "Jura",
+    "slug": "jura",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "39198",
+      "39300",
+      "39478",
+      "39097",
+      "39368"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      },
+      {
+        "code": "71",
+        "nom": "Saône-et-Loire",
+        "slug": "saone-et-loire"
+      }
+    ]
+  },
+  {
+    "code": "40",
+    "nom": "Landes",
+    "slug": "landes",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "40192",
+      "40088",
+      "40046",
+      "40279",
+      "40312",
+      "40281",
+      "40065",
+      "40310",
+      "40284",
+      "40184",
+      "40217",
+      "40133",
+      "40209",
+      "40273",
+      "40001",
+      "40282",
+      "40197"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "41",
+    "nom": "Loir-et-Cher",
+    "slug": "loir-et-cher",
+    "codeRegion": "24",
+    "regionNom": "Centre-Val de Loire",
+    "regionSlug": "centre-val-de-loire",
+    "communes": [
+      "41018",
+      "41194",
+      "41269",
+      "41295",
+      "41059",
+      "41136"
+    ],
+    "departementsProches": [
+      {
+        "code": "18",
+        "nom": "Cher",
+        "slug": "cher"
+      },
+      {
+        "code": "28",
+        "nom": "Eure-et-Loir",
+        "slug": "eure-et-loir"
+      },
+      {
+        "code": "36",
+        "nom": "Indre",
+        "slug": "indre"
+      },
+      {
+        "code": "37",
+        "nom": "Indre-et-Loire",
+        "slug": "indre-et-loire"
+      },
+      {
+        "code": "45",
+        "nom": "Loiret",
+        "slug": "loiret"
+      }
+    ]
+  },
+  {
+    "code": "42",
+    "nom": "Loire",
+    "slug": "loire",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "42218",
+      "42207",
+      "42187",
+      "42095",
+      "42147",
+      "42279",
+      "42186",
+      "42044",
+      "42184",
+      "42005",
+      "42189",
+      "42323",
+      "42316",
+      "42094",
+      "42302",
+      "42183",
+      "42330",
+      "42127",
+      "42305",
+      "42071",
+      "42304",
+      "42237",
+      "42275",
+      "42223",
+      "42222",
+      "42149",
+      "42059",
+      "42332",
+      "42256"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "43",
+    "nom": "Haute-Loire",
+    "slug": "haute-loire",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "43157",
+      "43137",
+      "43268",
+      "43040",
+      "43012",
+      "43224"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "44",
+    "nom": "Loire-Atlantique",
+    "slug": "loire-atlantique",
+    "codeRegion": "52",
+    "regionNom": "Pays de la Loire",
+    "regionSlug": "pays-de-la-loire",
+    "communes": [
+      "44109",
+      "44184",
+      "44162",
+      "44143",
+      "44190",
+      "44114",
+      "44215",
+      "44047",
+      "44026",
+      "44035",
+      "44020",
+      "44131",
+      "44055",
+      "44069",
+      "44172",
+      "44154",
+      "44132",
+      "44036",
+      "44003",
+      "44129",
+      "44204",
+      "44209",
+      "44015",
+      "44009",
+      "44110",
+      "44195",
+      "44212",
+      "44188",
+      "44198",
+      "44194",
+      "44084",
+      "44210",
+      "44018",
+      "44052",
+      "44169",
+      "44158",
+      "44087",
+      "44213",
+      "44201",
+      "44043",
+      "44005",
+      "44103",
+      "44029",
+      "44072",
+      "44186",
+      "44130",
+      "44066",
+      "44151",
+      "44180",
+      "44217",
+      "44073",
+      "44041",
+      "44101",
+      "44071",
+      "44166",
+      "44182",
+      "44098",
+      "44082",
+      "44179",
+      "44128",
+      "44120",
+      "44175",
+      "44067",
+      "44064",
+      "44021"
+    ],
+    "departementsProches": [
+      {
+        "code": "49",
+        "nom": "Maine-et-Loire",
+        "slug": "maine-et-loire"
+      },
+      {
+        "code": "53",
+        "nom": "Mayenne",
+        "slug": "mayenne"
+      },
+      {
+        "code": "72",
+        "nom": "Sarthe",
+        "slug": "sarthe"
+      },
+      {
+        "code": "85",
+        "nom": "Vendée",
+        "slug": "vendee"
+      }
+    ]
+  },
+  {
+    "code": "45",
+    "nom": "Loiret",
+    "slug": "loiret",
+    "codeRegion": "24",
+    "regionNom": "Centre-Val de Loire",
+    "regionSlug": "centre-val-de-loire",
+    "communes": [
+      "45234",
+      "45232",
+      "45284",
+      "45147",
+      "45302",
+      "45285",
+      "45208",
+      "45004",
+      "45155",
+      "45068",
+      "45075",
+      "45169",
+      "45286",
+      "45089",
+      "45252",
+      "45082",
+      "45028",
+      "45191",
+      "45274",
+      "45146",
+      "45338",
+      "45203",
+      "45298",
+      "45315"
+    ],
+    "departementsProches": [
+      {
+        "code": "18",
+        "nom": "Cher",
+        "slug": "cher"
+      },
+      {
+        "code": "28",
+        "nom": "Eure-et-Loir",
+        "slug": "eure-et-loir"
+      },
+      {
+        "code": "36",
+        "nom": "Indre",
+        "slug": "indre"
+      },
+      {
+        "code": "37",
+        "nom": "Indre-et-Loire",
+        "slug": "indre-et-loire"
+      },
+      {
+        "code": "41",
+        "nom": "Loir-et-Cher",
+        "slug": "loir-et-cher"
+      }
+    ]
+  },
+  {
+    "code": "46",
+    "nom": "Lot",
+    "slug": "lot",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "46042",
+      "46102"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "47",
+    "nom": "Lot-et-Garonne",
+    "slug": "lot-et-garonne",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "47001",
+      "47323",
+      "47157",
+      "47310",
+      "47201",
+      "47195",
+      "47252",
+      "47032",
+      "47031",
+      "47100"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "48",
+    "nom": "Lozère",
+    "slug": "lozere",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "48095"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "49",
+    "nom": "Maine-et-Loire",
+    "slug": "maine-et-loire",
+    "codeRegion": "52",
+    "regionNom": "Pays de la Loire",
+    "regionSlug": "pays-de-la-loire",
+    "communes": [
+      "49007",
+      "49099",
+      "49328",
+      "49301",
+      "49023",
+      "49092",
+      "49244",
+      "49331",
+      "49126",
+      "49307",
+      "49353",
+      "49218",
+      "49015",
+      "49246",
+      "49018",
+      "49125",
+      "49050",
+      "49267",
+      "49248",
+      "49080",
+      "49261",
+      "49323",
+      "49214",
+      "49373",
+      "49021",
+      "49063",
+      "49035",
+      "49200",
+      "49180",
+      "49223",
+      "49345",
+      "49367",
+      "49194",
+      "49020",
+      "49377",
+      "49228",
+      "49176"
+    ],
+    "departementsProches": [
+      {
+        "code": "44",
+        "nom": "Loire-Atlantique",
+        "slug": "loire-atlantique"
+      },
+      {
+        "code": "53",
+        "nom": "Mayenne",
+        "slug": "mayenne"
+      },
+      {
+        "code": "72",
+        "nom": "Sarthe",
+        "slug": "sarthe"
+      },
+      {
+        "code": "85",
+        "nom": "Vendée",
+        "slug": "vendee"
+      }
+    ]
+  },
+  {
+    "code": "50",
+    "nom": "Manche",
+    "slug": "manche",
+    "codeRegion": "28",
+    "regionNom": "Normandie",
+    "regionSlug": "normandie",
+    "communes": [
+      "50129",
+      "50502",
+      "50218",
+      "50041",
+      "50099",
+      "50025",
+      "50147",
+      "50615",
+      "50082",
+      "50484",
+      "50487"
+    ],
+    "departementsProches": [
+      {
+        "code": "14",
+        "nom": "Calvados",
+        "slug": "calvados"
+      },
+      {
+        "code": "27",
+        "nom": "Eure",
+        "slug": "eure"
+      },
+      {
+        "code": "61",
+        "nom": "Orne",
+        "slug": "orne"
+      },
+      {
+        "code": "76",
+        "nom": "Seine-Maritime",
+        "slug": "seine-maritime"
+      }
+    ]
+  },
+  {
+    "code": "51",
+    "nom": "Marne",
+    "slug": "marne",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "51454",
+      "51108",
+      "51230",
+      "51649",
+      "51573",
+      "51055",
+      "51172",
+      "51250",
+      "51506",
+      "51030",
+      "51058"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      },
+      {
+        "code": "55",
+        "nom": "Meuse",
+        "slug": "meuse"
+      }
+    ]
+  },
+  {
+    "code": "52",
+    "nom": "Haute-Marne",
+    "slug": "haute-marne",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "52448",
+      "52121",
+      "52269"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      },
+      {
+        "code": "55",
+        "nom": "Meuse",
+        "slug": "meuse"
+      }
+    ]
+  },
+  {
+    "code": "53",
+    "nom": "Mayenne",
+    "slug": "mayenne",
+    "codeRegion": "52",
+    "regionNom": "Pays de la Loire",
+    "regionSlug": "pays-de-la-loire",
+    "communes": [
+      "53130",
+      "53062",
+      "53147",
+      "53097",
+      "53201",
+      "53054",
+      "53034",
+      "53096"
+    ],
+    "departementsProches": [
+      {
+        "code": "44",
+        "nom": "Loire-Atlantique",
+        "slug": "loire-atlantique"
+      },
+      {
+        "code": "49",
+        "nom": "Maine-et-Loire",
+        "slug": "maine-et-loire"
+      },
+      {
+        "code": "72",
+        "nom": "Sarthe",
+        "slug": "sarthe"
+      },
+      {
+        "code": "85",
+        "nom": "Vendée",
+        "slug": "vendee"
+      }
+    ]
+  },
+  {
+    "code": "54",
+    "nom": "Meurthe-et-Moselle",
+    "slug": "meurthe-et-moselle",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "54395",
+      "54547",
+      "54329",
+      "54528",
+      "54323",
+      "54304",
+      "54578",
+      "54431",
+      "54580",
+      "54357",
+      "54482",
+      "54159",
+      "54382",
+      "54274",
+      "54526",
+      "54184",
+      "54099",
+      "54273",
+      "54339",
+      "54483",
+      "54300",
+      "54115",
+      "54397",
+      "54215",
+      "54280",
+      "54263",
+      "54328",
+      "54318",
+      "54257",
+      "54498",
+      "54322",
+      "54439"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "55",
+        "nom": "Meuse",
+        "slug": "meuse"
+      }
+    ]
+  },
+  {
+    "code": "55",
+    "nom": "Meuse",
+    "slug": "meuse",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "55545",
+      "55029",
+      "55122"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      }
+    ]
+  },
+  {
+    "code": "56",
+    "nom": "Morbihan",
+    "slug": "morbihan",
+    "codeRegion": "53",
+    "regionNom": "Bretagne",
+    "regionSlug": "bretagne",
+    "communes": [
+      "56121",
+      "56260",
+      "56098",
+      "56162",
+      "56083",
+      "56178",
+      "56007",
+      "56206",
+      "56078",
+      "56165",
+      "56243",
+      "56240",
+      "56185",
+      "56251",
+      "56107",
+      "56184",
+      "56101",
+      "56177",
+      "56036",
+      "56094",
+      "56023",
+      "56164",
+      "56090",
+      "56053",
+      "56010",
+      "56158",
+      "56176",
+      "56075",
+      "56067",
+      "56193",
+      "56003",
+      "56166",
+      "56169",
+      "56248",
+      "56143",
+      "56008"
+    ],
+    "departementsProches": [
+      {
+        "code": "22",
+        "nom": "Côtes-d'Armor",
+        "slug": "cotes-d-armor"
+      },
+      {
+        "code": "29",
+        "nom": "Finistère",
+        "slug": "finistere"
+      },
+      {
+        "code": "35",
+        "nom": "Ille-et-Vilaine",
+        "slug": "ille-et-vilaine"
+      }
+    ]
+  },
+  {
+    "code": "57",
+    "nom": "Moselle",
+    "slug": "moselle",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "57463",
+      "57672",
+      "57480",
+      "57227",
+      "57631",
+      "57757",
+      "57306",
+      "57751",
+      "57206",
+      "57606",
+      "57240",
+      "57160",
+      "57630",
+      "57221",
+      "57433",
+      "57660",
+      "57019",
+      "57447",
+      "57591",
+      "57283",
+      "57663",
+      "57269",
+      "57666",
+      "57323",
+      "57038",
+      "57491",
+      "57683",
+      "57443",
+      "57537",
+      "57058",
+      "57332",
+      "57012",
+      "57474",
+      "57097",
+      "57487",
+      "57207",
+      "57336",
+      "57209"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      }
+    ]
+  },
+  {
+    "code": "58",
+    "nom": "Nièvre",
+    "slug": "nievre",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "58194",
+      "58086",
+      "58303"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      },
+      {
+        "code": "71",
+        "nom": "Saône-et-Loire",
+        "slug": "saone-et-loire"
+      }
+    ]
+  },
+  {
+    "code": "59",
+    "nom": "Nord",
+    "slug": "nord",
+    "codeRegion": "32",
+    "regionNom": "Hauts-de-France",
+    "regionSlug": "hauts-de-france",
+    "communes": [
+      "59350",
+      "59599",
+      "59512",
+      "59183",
+      "59009",
+      "59606",
+      "59650",
+      "59178",
+      "59378",
+      "59122",
+      "59392",
+      "59328",
+      "59017",
+      "59360",
+      "59295",
+      "59368",
+      "59410",
+      "59155",
+      "59646",
+      "59279",
+      "59172",
+      "59163",
+      "59271",
+      "59507",
+      "59220",
+      "59299",
+      "59569",
+      "59526",
+      "59648",
+      "59286",
+      "59043",
+      "59291",
+      "59508",
+      "59367",
+      "59139",
+      "59421",
+      "59560",
+      "59527",
+      "59014",
+      "59152",
+      "59386",
+      "59491",
+      "59383",
+      "59574",
+      "59112",
+      "59249",
+      "59273",
+      "59636",
+      "59544",
+      "59011",
+      "59616",
+      "59324",
+      "59179",
+      "59426",
+      "59008",
+      "59400",
+      "59090",
+      "59343",
+      "59339",
+      "59153",
+      "59205",
+      "59143",
+      "59033",
+      "59447",
+      "59457",
+      "59449",
+      "59588",
+      "59352",
+      "59317",
+      "59131",
+      "59431",
+      "59653",
+      "59253",
+      "59654",
+      "59586",
+      "59028",
+      "59032",
+      "59094",
+      "59482",
+      "59079",
+      "59136",
+      "59225",
+      "59051",
+      "59212",
+      "59165",
+      "59365",
+      "59327",
+      "59452",
+      "59456",
+      "59603",
+      "59509",
+      "59359",
+      "59484",
+      "59239",
+      "59553",
+      "59524",
+      "59632",
+      "59268",
+      "59663",
+      "59044",
+      "59227",
+      "59656",
+      "59234",
+      "59202",
+      "59170",
+      "59052",
+      "59230",
+      "59459"
+    ],
+    "departementsProches": [
+      {
+        "code": "02",
+        "nom": "Aisne",
+        "slug": "aisne"
+      },
+      {
+        "code": "60",
+        "nom": "Oise",
+        "slug": "oise"
+      },
+      {
+        "code": "62",
+        "nom": "Pas-de-Calais",
+        "slug": "pas-de-calais"
+      },
+      {
+        "code": "80",
+        "nom": "Somme",
+        "slug": "somme"
+      }
+    ]
+  },
+  {
+    "code": "60",
+    "nom": "Oise",
+    "slug": "oise",
+    "codeRegion": "32",
+    "regionNom": "Hauts-de-France",
+    "regionSlug": "hauts-de-france",
+    "communes": [
+      "60057",
+      "60159",
+      "60175",
+      "60463",
+      "60612",
+      "60176",
+      "60414",
+      "60395",
+      "60471",
+      "60509",
+      "60141",
+      "60157",
+      "60139",
+      "60346",
+      "60282",
+      "60382",
+      "60360",
+      "60684",
+      "60581",
+      "60338",
+      "60439"
+    ],
+    "departementsProches": [
+      {
+        "code": "02",
+        "nom": "Aisne",
+        "slug": "aisne"
+      },
+      {
+        "code": "59",
+        "nom": "Nord",
+        "slug": "nord"
+      },
+      {
+        "code": "62",
+        "nom": "Pas-de-Calais",
+        "slug": "pas-de-calais"
+      },
+      {
+        "code": "80",
+        "nom": "Somme",
+        "slug": "somme"
+      }
+    ]
+  },
+  {
+    "code": "61",
+    "nom": "Orne",
+    "slug": "orne",
+    "codeRegion": "28",
+    "regionNom": "Normandie",
+    "regionSlug": "normandie",
+    "communes": [
+      "61001",
+      "61169",
+      "61006",
+      "61214",
+      "61168"
+    ],
+    "departementsProches": [
+      {
+        "code": "14",
+        "nom": "Calvados",
+        "slug": "calvados"
+      },
+      {
+        "code": "27",
+        "nom": "Eure",
+        "slug": "eure"
+      },
+      {
+        "code": "50",
+        "nom": "Manche",
+        "slug": "manche"
+      },
+      {
+        "code": "76",
+        "nom": "Seine-Maritime",
+        "slug": "seine-maritime"
+      }
+    ]
+  },
+  {
+    "code": "62",
+    "nom": "Pas-de-Calais",
+    "slug": "pas-de-calais",
+    "codeRegion": "32",
+    "regionNom": "Hauts-de-France",
+    "regionSlug": "hauts-de-france",
+    "communes": [
+      "62193",
+      "62041",
+      "62160",
+      "62498",
+      "62510",
+      "62427",
+      "62119",
+      "62178",
+      "62215",
+      "62065",
+      "62765",
+      "62643",
+      "62108",
+      "62413",
+      "62186",
+      "62570",
+      "62617",
+      "62758",
+      "62318",
+      "62525",
+      "62548",
+      "62637",
+      "62516",
+      "62250",
+      "62048",
+      "62587",
+      "62014",
+      "62040",
+      "62771",
+      "62126",
+      "62667",
+      "62895",
+      "62473",
+      "62724",
+      "62842",
+      "62563",
+      "62907",
+      "62133",
+      "62004",
+      "62249",
+      "62083",
+      "62497",
+      "62457",
+      "62628",
+      "62528",
+      "62270",
+      "62386",
+      "62753",
+      "62893",
+      "62274",
+      "62351",
+      "62443",
+      "62624",
+      "62737",
+      "62276",
+      "62757",
+      "62035",
+      "62645",
+      "62263",
+      "62099",
+      "62397",
+      "62244",
+      "62555",
+      "62194",
+      "62057",
+      "62173",
+      "62560",
+      "62523",
+      "62261",
+      "62132",
+      "62400",
+      "62491",
+      "62746",
+      "62502"
+    ],
+    "departementsProches": [
+      {
+        "code": "02",
+        "nom": "Aisne",
+        "slug": "aisne"
+      },
+      {
+        "code": "59",
+        "nom": "Nord",
+        "slug": "nord"
+      },
+      {
+        "code": "60",
+        "nom": "Oise",
+        "slug": "oise"
+      },
+      {
+        "code": "80",
+        "nom": "Somme",
+        "slug": "somme"
+      }
+    ]
+  },
+  {
+    "code": "63",
+    "nom": "Puy-de-Dôme",
+    "slug": "puy-de-dome",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "63113",
+      "63124",
+      "63300",
+      "63075",
+      "63178",
+      "63284",
+      "63430",
+      "63032",
+      "63014",
+      "63164",
+      "63063",
+      "63193",
+      "63307",
+      "63070",
+      "63195",
+      "63003",
+      "63103",
+      "63069",
+      "63457"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "64",
+    "nom": "Pyrénées-Atlantiques",
+    "slug": "pyrenees-atlantiques",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "64445",
+      "64102",
+      "64024",
+      "64122",
+      "64260",
+      "64483",
+      "64129",
+      "64348",
+      "64430",
+      "64422",
+      "64545",
+      "64335",
+      "64140",
+      "64547",
+      "64125",
+      "64256",
+      "64495",
+      "64284",
+      "64160",
+      "64189",
+      "64496",
+      "64410",
+      "64230",
+      "64407",
+      "64269"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "65",
+    "nom": "Hautes-Pyrénées",
+    "slug": "hautes-pyrenees",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "65440",
+      "65286",
+      "65047",
+      "65059",
+      "65258",
+      "65100",
+      "65417"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "66",
+    "nom": "Pyrénées-Orientales",
+    "slug": "pyrenees-orientales",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "66136",
+      "66037",
+      "66171",
+      "66172",
+      "66141",
+      "66008",
+      "66028",
+      "66180",
+      "66065",
+      "66164",
+      "66210",
+      "66195",
+      "66021",
+      "66049",
+      "66213",
+      "66038",
+      "66149",
+      "66017",
+      "66189",
+      "66088",
+      "66144",
+      "66024"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "67",
+    "nom": "Bas-Rhin",
+    "slug": "bas-rhin",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "67482",
+      "67180",
+      "67447",
+      "67218",
+      "67267",
+      "67462",
+      "67043",
+      "67365",
+      "67348",
+      "67046",
+      "67204",
+      "67437",
+      "67130",
+      "67067",
+      "67300",
+      "67471",
+      "67152",
+      "67544",
+      "67118",
+      "67021",
+      "67506",
+      "67313",
+      "67028",
+      "67131",
+      "67519",
+      "67343",
+      "67137",
+      "67520",
+      "67411",
+      "67388",
+      "67106",
+      "67309",
+      "67151",
+      "67458",
+      "67372"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      }
+    ]
+  },
+  {
+    "code": "68",
+    "nom": "Haut-Rhin",
+    "slug": "haut-rhin",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "68224",
+      "68066",
+      "68297",
+      "68376",
+      "68154",
+      "68278",
+      "68166",
+      "68271",
+      "68063",
+      "68112",
+      "68375",
+      "68256",
+      "68056",
+      "68374",
+      "68334",
+      "68149",
+      "68082",
+      "68315",
+      "68195",
+      "68145",
+      "68163",
+      "68004",
+      "68300",
+      "68042",
+      "68118"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      }
+    ]
+  },
+  {
+    "code": "69",
+    "nom": "Rhône",
+    "slug": "rhone",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "69123",
+      "69266",
+      "69259",
+      "69256",
+      "69290",
+      "69034",
+      "69029",
+      "69149",
+      "69282",
+      "69264",
+      "69286",
+      "69275",
+      "69244",
+      "69202",
+      "69091",
+      "69204",
+      "69199",
+      "69081",
+      "69089",
+      "69019",
+      "69283",
+      "69277",
+      "69027",
+      "69069",
+      "69273",
+      "69271",
+      "69243",
+      "69276",
+      "69096",
+      "69043",
+      "69072",
+      "69100",
+      "69009",
+      "69092",
+      "69143",
+      "69194",
+      "69292",
+      "69287",
+      "69088",
+      "69028",
+      "69112",
+      "69010",
+      "69142",
+      "69094",
+      "69191",
+      "69040",
+      "69255",
+      "69141",
+      "69291",
+      "69279",
+      "69288",
+      "69248",
+      "69297",
+      "69278",
+      "69205",
+      "69044",
+      "69157",
+      "69260"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "70",
+    "nom": "Haute-Saône",
+    "slug": "haute-saone",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "70550",
+      "70285",
+      "70310",
+      "70311",
+      "70279"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "71",
+        "nom": "Saône-et-Loire",
+        "slug": "saone-et-loire"
+      }
+    ]
+  },
+  {
+    "code": "71",
+    "nom": "Saône-et-Loire",
+    "slug": "saone-et-loire",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "71076",
+      "71270",
+      "71153",
+      "71306",
+      "71014",
+      "71342",
+      "71486",
+      "71105",
+      "71176",
+      "71230",
+      "71263",
+      "71475",
+      "71118",
+      "71445",
+      "71040",
+      "71543",
+      "71073"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      }
+    ]
+  },
+  {
+    "code": "72",
+    "nom": "Sarthe",
+    "slug": "sarthe",
+    "codeRegion": "52",
+    "regionNom": "Pays de la Loire",
+    "regionSlug": "pays-de-la-loire",
+    "communes": [
+      "72181",
+      "72154",
+      "72264",
+      "72003",
+      "72132",
+      "72095",
+      "72058",
+      "72071",
+      "72008",
+      "72231",
+      "72213"
+    ],
+    "departementsProches": [
+      {
+        "code": "44",
+        "nom": "Loire-Atlantique",
+        "slug": "loire-atlantique"
+      },
+      {
+        "code": "49",
+        "nom": "Maine-et-Loire",
+        "slug": "maine-et-loire"
+      },
+      {
+        "code": "53",
+        "nom": "Mayenne",
+        "slug": "mayenne"
+      },
+      {
+        "code": "85",
+        "nom": "Vendée",
+        "slug": "vendee"
+      }
+    ]
+  },
+  {
+    "code": "73",
+    "nom": "Savoie",
+    "slug": "savoie",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "73065",
+      "73008",
+      "73011",
+      "73179",
+      "73213",
+      "73248",
+      "73054",
+      "73303",
+      "73087",
+      "73222",
+      "73010",
+      "73064",
+      "73029",
+      "73051",
+      "73031"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "74",
+    "nom": "Haute-Savoie",
+    "slug": "haute-savoie",
+    "codeRegion": "84",
+    "regionNom": "Auvergne-Rhône-Alpes",
+    "regionSlug": "auvergne-rhone-alpes",
+    "communes": [
+      "74010",
+      "74281",
+      "74012",
+      "74081",
+      "74256",
+      "74225",
+      "74243",
+      "74042",
+      "74133",
+      "74224",
+      "74298",
+      "74208",
+      "74282",
+      "74305",
+      "74213",
+      "74119",
+      "74264",
+      "74112",
+      "74056",
+      "74220",
+      "74250",
+      "74218",
+      "74094",
+      "74123",
+      "74105",
+      "74280",
+      "74164",
+      "74263",
+      "74242",
+      "74008",
+      "74043",
+      "74278",
+      "74169",
+      "74272",
+      "74309",
+      "74236",
+      "74096",
+      "74026",
+      "74288",
+      "74005"
+    ],
+    "departementsProches": [
+      {
+        "code": "01",
+        "nom": "Ain",
+        "slug": "ain"
+      },
+      {
+        "code": "03",
+        "nom": "Allier",
+        "slug": "allier"
+      },
+      {
+        "code": "07",
+        "nom": "Ardèche",
+        "slug": "ardeche"
+      },
+      {
+        "code": "15",
+        "nom": "Cantal",
+        "slug": "cantal"
+      },
+      {
+        "code": "26",
+        "nom": "Drôme",
+        "slug": "drome"
+      }
+    ]
+  },
+  {
+    "code": "75",
+    "nom": "Paris",
+    "slug": "paris",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "75056"
+    ],
+    "departementsProches": [
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      },
+      {
+        "code": "93",
+        "nom": "Seine-Saint-Denis",
+        "slug": "seine-saint-denis"
+      }
+    ]
+  },
+  {
+    "code": "76",
+    "nom": "Seine-Maritime",
+    "slug": "seine-maritime",
+    "codeRegion": "28",
+    "regionNom": "Normandie",
+    "regionSlug": "normandie",
+    "communes": [
+      "76351",
+      "76540",
+      "76575",
+      "76681",
+      "76217",
+      "76322",
+      "76498",
+      "76451",
+      "76259",
+      "76447",
+      "76231",
+      "76108",
+      "76157",
+      "76484",
+      "76057",
+      "76114",
+      "76758",
+      "76410",
+      "76216",
+      "76476",
+      "76165",
+      "76319",
+      "76212",
+      "76618",
+      "76305",
+      "76497",
+      "76384",
+      "76561",
+      "76095",
+      "76640",
+      "76341",
+      "76429",
+      "76474",
+      "76552",
+      "76255",
+      "76103",
+      "76402",
+      "76481",
+      "76475",
+      "76495",
+      "76312"
+    ],
+    "departementsProches": [
+      {
+        "code": "14",
+        "nom": "Calvados",
+        "slug": "calvados"
+      },
+      {
+        "code": "27",
+        "nom": "Eure",
+        "slug": "eure"
+      },
+      {
+        "code": "50",
+        "nom": "Manche",
+        "slug": "manche"
+      },
+      {
+        "code": "61",
+        "nom": "Orne",
+        "slug": "orne"
+      }
+    ]
+  },
+  {
+    "code": "77",
+    "nom": "Seine-et-Marne",
+    "slug": "seine-et-marne",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "77284",
+      "77108",
+      "77288",
+      "77373",
+      "77445",
+      "77058",
+      "77083",
+      "77514",
+      "77152",
+      "77122",
+      "77390",
+      "77468",
+      "77305",
+      "77243",
+      "77350",
+      "77294",
+      "77285",
+      "77053",
+      "77296",
+      "77131",
+      "77337",
+      "77407",
+      "77307",
+      "77186",
+      "77258",
+      "77251",
+      "77479",
+      "77014",
+      "77118",
+      "77333",
+      "77316",
+      "77153",
+      "77379",
+      "77487",
+      "77067",
+      "77464",
+      "77449",
+      "77183",
+      "77495",
+      "77268",
+      "77327",
+      "77215",
+      "77470",
+      "77111",
+      "77169",
+      "77139",
+      "77330",
+      "77018",
+      "77249",
+      "77438",
+      "77349",
+      "77079",
+      "77430",
+      "77326",
+      "77037",
+      "77171",
+      "77192",
+      "77320",
+      "77382",
+      "77143",
+      "77431",
+      "77317",
+      "77055",
+      "77475",
+      "77513"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      },
+      {
+        "code": "93",
+        "nom": "Seine-Saint-Denis",
+        "slug": "seine-saint-denis"
+      }
+    ]
+  },
+  {
+    "code": "78",
+    "nom": "Yvelines",
+    "slug": "yvelines",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "78646",
+      "78586",
+      "78551",
+      "78361",
+      "78498",
+      "78172",
+      "78621",
+      "78440",
+      "78311",
+      "78423",
+      "78490",
+      "78158",
+      "78146",
+      "78297",
+      "78517",
+      "78208",
+      "78358",
+      "78640",
+      "78362",
+      "78005",
+      "78545",
+      "78123",
+      "78383",
+      "78126",
+      "78335",
+      "78686",
+      "78165",
+      "78372",
+      "78073",
+      "78642",
+      "78481",
+      "78650",
+      "78124",
+      "78418",
+      "78015",
+      "78242",
+      "78029",
+      "78624",
+      "78674",
+      "78190",
+      "78138",
+      "78688",
+      "78643",
+      "78356",
+      "78092",
+      "78401",
+      "78350",
+      "78322",
+      "78267",
+      "78575",
+      "78455",
+      "78062",
+      "78531",
+      "78397",
+      "78466",
+      "78217",
+      "78220",
+      "78486",
+      "78354",
+      "78396",
+      "78380",
+      "78321",
+      "78644",
+      "78672",
+      "78537",
+      "78133",
+      "78117",
+      "78502",
+      "78160",
+      "78638",
+      "78224",
+      "78089"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      },
+      {
+        "code": "93",
+        "nom": "Seine-Saint-Denis",
+        "slug": "seine-saint-denis"
+      }
+    ]
+  },
+  {
+    "code": "79",
+    "nom": "Deux-Sèvres",
+    "slug": "deux-sevres",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "79191",
+      "79049",
+      "79329",
+      "79202",
+      "79079",
+      "79270",
+      "79081",
+      "79174",
+      "79048",
+      "79195",
+      "79003",
+      "79179"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "80",
+    "nom": "Somme",
+    "slug": "somme",
+    "codeRegion": "32",
+    "regionNom": "Hauts-de-France",
+    "regionSlug": "hauts-de-france",
+    "communes": [
+      "80021",
+      "80001",
+      "80016",
+      "80620",
+      "80212",
+      "80561",
+      "80685",
+      "80253",
+      "80489"
+    ],
+    "departementsProches": [
+      {
+        "code": "02",
+        "nom": "Aisne",
+        "slug": "aisne"
+      },
+      {
+        "code": "59",
+        "nom": "Nord",
+        "slug": "nord"
+      },
+      {
+        "code": "60",
+        "nom": "Oise",
+        "slug": "oise"
+      },
+      {
+        "code": "62",
+        "nom": "Pas-de-Calais",
+        "slug": "pas-de-calais"
+      }
+    ]
+  },
+  {
+    "code": "81",
+    "nom": "Tarn",
+    "slug": "tarn",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "81004",
+      "81065",
+      "81099",
+      "81105",
+      "81140",
+      "81163",
+      "81060",
+      "81271",
+      "81120",
+      "81257",
+      "81220",
+      "81021"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "82",
+    "nom": "Tarn-et-Garonne",
+    "slug": "tarn-et-garonne",
+    "codeRegion": "76",
+    "regionNom": "Occitanie",
+    "regionSlug": "occitanie",
+    "communes": [
+      "82121",
+      "82033",
+      "82112",
+      "82037",
+      "82125",
+      "82134",
+      "82186"
+    ],
+    "departementsProches": [
+      {
+        "code": "09",
+        "nom": "Ariège",
+        "slug": "ariege"
+      },
+      {
+        "code": "11",
+        "nom": "Aude",
+        "slug": "aude"
+      },
+      {
+        "code": "12",
+        "nom": "Aveyron",
+        "slug": "aveyron"
+      },
+      {
+        "code": "30",
+        "nom": "Gard",
+        "slug": "gard"
+      },
+      {
+        "code": "31",
+        "nom": "Haute-Garonne",
+        "slug": "haute-garonne"
+      }
+    ]
+  },
+  {
+    "code": "83",
+    "nom": "Var",
+    "slug": "var",
+    "codeRegion": "93",
+    "regionNom": "Provence-Alpes-Côte d'Azur",
+    "regionSlug": "provence-alpes-cote-d-azur",
+    "communes": [
+      "83137",
+      "83126",
+      "83061",
+      "83069",
+      "83050",
+      "83118",
+      "83129",
+      "83062",
+      "83144",
+      "83047",
+      "83123",
+      "83116",
+      "83023",
+      "83107",
+      "83090",
+      "83115",
+      "83049",
+      "83148",
+      "83130",
+      "83042",
+      "83112",
+      "83073",
+      "83098",
+      "83071",
+      "83016",
+      "83086",
+      "83054",
+      "83072",
+      "83034",
+      "83099",
+      "83019",
+      "83009",
+      "83036",
+      "83004",
+      "83081",
+      "83141",
+      "83070",
+      "83131",
+      "83055",
+      "83091",
+      "83035",
+      "83153",
+      "83120",
+      "83064",
+      "83027",
+      "83106",
+      "83097",
+      "83087",
+      "83140",
+      "83031"
+    ],
+    "departementsProches": [
+      {
+        "code": "04",
+        "nom": "Alpes-de-Haute-Provence",
+        "slug": "alpes-de-haute-provence"
+      },
+      {
+        "code": "05",
+        "nom": "Hautes-Alpes",
+        "slug": "hautes-alpes"
+      },
+      {
+        "code": "06",
+        "nom": "Alpes-Maritimes",
+        "slug": "alpes-maritimes"
+      },
+      {
+        "code": "13",
+        "nom": "Bouches-du-Rhône",
+        "slug": "bouches-du-rhone"
+      },
+      {
+        "code": "84",
+        "nom": "Vaucluse",
+        "slug": "vaucluse"
+      }
+    ]
+  },
+  {
+    "code": "84",
+    "nom": "Vaucluse",
+    "slug": "vaucluse",
+    "codeRegion": "93",
+    "regionNom": "Provence-Alpes-Côte d'Azur",
+    "regionSlug": "provence-alpes-cote-d-azur",
+    "communes": [
+      "84007",
+      "84031",
+      "84087",
+      "84035",
+      "84054",
+      "84089",
+      "84129",
+      "84092",
+      "84019",
+      "84080",
+      "84141",
+      "84088",
+      "84003",
+      "84138",
+      "84081",
+      "84043",
+      "84132",
+      "84039",
+      "84072",
+      "84137",
+      "84004",
+      "84122",
+      "84091",
+      "84016",
+      "84034",
+      "84119",
+      "84056"
+    ],
+    "departementsProches": [
+      {
+        "code": "04",
+        "nom": "Alpes-de-Haute-Provence",
+        "slug": "alpes-de-haute-provence"
+      },
+      {
+        "code": "05",
+        "nom": "Hautes-Alpes",
+        "slug": "hautes-alpes"
+      },
+      {
+        "code": "06",
+        "nom": "Alpes-Maritimes",
+        "slug": "alpes-maritimes"
+      },
+      {
+        "code": "13",
+        "nom": "Bouches-du-Rhône",
+        "slug": "bouches-du-rhone"
+      },
+      {
+        "code": "83",
+        "nom": "Var",
+        "slug": "var"
+      }
+    ]
+  },
+  {
+    "code": "85",
+    "nom": "Vendée",
+    "slug": "vendee",
+    "codeRegion": "52",
+    "regionNom": "Pays de la Loire",
+    "regionSlug": "pays-de-la-loire",
+    "communes": [
+      "85191",
+      "85194",
+      "85047",
+      "85146",
+      "85109",
+      "85092",
+      "85226",
+      "85003",
+      "85128",
+      "85234",
+      "85178",
+      "85051",
+      "85288",
+      "85222",
+      "85008",
+      "85084",
+      "85090",
+      "85019",
+      "85151",
+      "85076",
+      "85182",
+      "85302",
+      "85152",
+      "85096",
+      "85089",
+      "85035",
+      "85155"
+    ],
+    "departementsProches": [
+      {
+        "code": "44",
+        "nom": "Loire-Atlantique",
+        "slug": "loire-atlantique"
+      },
+      {
+        "code": "49",
+        "nom": "Maine-et-Loire",
+        "slug": "maine-et-loire"
+      },
+      {
+        "code": "53",
+        "nom": "Mayenne",
+        "slug": "mayenne"
+      },
+      {
+        "code": "72",
+        "nom": "Sarthe",
+        "slug": "sarthe"
+      }
+    ]
+  },
+  {
+    "code": "86",
+    "nom": "Vienne",
+    "slug": "vienne",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "86194",
+      "86066",
+      "86041",
+      "86115",
+      "86214",
+      "86070",
+      "86137",
+      "86297",
+      "86158",
+      "86174",
+      "86165",
+      "86281",
+      "86177",
+      "86157"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "87",
+    "nom": "Haute-Vienne",
+    "slug": "haute-vienne",
+    "codeRegion": "75",
+    "regionNom": "Nouvelle-Aquitaine",
+    "regionSlug": "nouvelle-aquitaine",
+    "communes": [
+      "87085",
+      "87154",
+      "87114",
+      "87050",
+      "87075",
+      "87187",
+      "87065",
+      "87001",
+      "87113",
+      "87002",
+      "87048"
+    ],
+    "departementsProches": [
+      {
+        "code": "16",
+        "nom": "Charente",
+        "slug": "charente"
+      },
+      {
+        "code": "17",
+        "nom": "Charente-Maritime",
+        "slug": "charente-maritime"
+      },
+      {
+        "code": "19",
+        "nom": "Corrèze",
+        "slug": "correze"
+      },
+      {
+        "code": "23",
+        "nom": "Creuse",
+        "slug": "creuse"
+      },
+      {
+        "code": "24",
+        "nom": "Dordogne",
+        "slug": "dordogne"
+      }
+    ]
+  },
+  {
+    "code": "88",
+    "nom": "Vosges",
+    "slug": "vosges",
+    "codeRegion": "44",
+    "regionNom": "Grand Est",
+    "regionSlug": "grand-est",
+    "communes": [
+      "88160",
+      "88413",
+      "88209",
+      "88465",
+      "88196",
+      "88383",
+      "88321",
+      "88372",
+      "88367"
+    ],
+    "departementsProches": [
+      {
+        "code": "08",
+        "nom": "Ardennes",
+        "slug": "ardennes"
+      },
+      {
+        "code": "10",
+        "nom": "Aube",
+        "slug": "aube"
+      },
+      {
+        "code": "51",
+        "nom": "Marne",
+        "slug": "marne"
+      },
+      {
+        "code": "52",
+        "nom": "Haute-Marne",
+        "slug": "haute-marne"
+      },
+      {
+        "code": "54",
+        "nom": "Meurthe-et-Moselle",
+        "slug": "meurthe-et-moselle"
+      }
+    ]
+  },
+  {
+    "code": "89",
+    "nom": "Yonne",
+    "slug": "yonne",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "89024",
+      "89387",
+      "89206",
+      "89257",
+      "89025",
+      "89464"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      }
+    ]
+  },
+  {
+    "code": "90",
+    "nom": "Territoire de Belfort",
+    "slug": "territoire-de-belfort",
+    "codeRegion": "27",
+    "regionNom": "Bourgogne-Franche-Comté",
+    "regionSlug": "bourgogne-franche-comte",
+    "communes": [
+      "90010",
+      "90033",
+      "90099"
+    ],
+    "departementsProches": [
+      {
+        "code": "21",
+        "nom": "Côte-d'Or",
+        "slug": "cote-d-or"
+      },
+      {
+        "code": "25",
+        "nom": "Doubs",
+        "slug": "doubs"
+      },
+      {
+        "code": "39",
+        "nom": "Jura",
+        "slug": "jura"
+      },
+      {
+        "code": "58",
+        "nom": "Nièvre",
+        "slug": "nievre"
+      },
+      {
+        "code": "70",
+        "nom": "Haute-Saône",
+        "slug": "haute-saone"
+      }
+    ]
+  },
+  {
+    "code": "91",
+    "nom": "Essonne",
+    "slug": "essonne",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "91228",
+      "91174",
+      "91377",
+      "91589",
+      "91477",
+      "91027",
+      "91549",
+      "91657",
+      "91521",
+      "91687",
+      "91201",
+      "91691",
+      "91223",
+      "91286",
+      "91103",
+      "91692",
+      "91114",
+      "91421",
+      "91272",
+      "91345",
+      "91570",
+      "91434",
+      "91161",
+      "91326",
+      "91471",
+      "91386",
+      "91645",
+      "91432",
+      "91235",
+      "91573",
+      "91021",
+      "91552",
+      "91215",
+      "91200",
+      "91312",
+      "91086",
+      "91216",
+      "91661",
+      "91425",
+      "91191",
+      "91122",
+      "91514",
+      "91105",
+      "91363",
+      "91479",
+      "91045",
+      "91665",
+      "91097",
+      "91339",
+      "91553",
+      "91600",
+      "91340",
+      "91667",
+      "91207",
+      "91689",
+      "91226",
+      "91315",
+      "91587",
+      "91338",
+      "91347",
+      "91577",
+      "91659",
+      "91376",
+      "91330",
+      "91461",
+      "91540"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      },
+      {
+        "code": "93",
+        "nom": "Seine-Saint-Denis",
+        "slug": "seine-saint-denis"
+      }
+    ]
+  },
+  {
+    "code": "92",
+    "nom": "Hauts-de-Seine",
+    "slug": "hauts-de-seine",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "92012",
+      "92050",
+      "92004",
+      "92025",
+      "92026",
+      "92063",
+      "92044",
+      "92040",
+      "92024",
+      "92002",
+      "92051",
+      "92023",
+      "92036",
+      "92073",
+      "92048",
+      "92049",
+      "92007",
+      "92062",
+      "92020",
+      "92019",
+      "92046",
+      "92035",
+      "92064",
+      "92009",
+      "92060",
+      "92075",
+      "92078",
+      "92032",
+      "92072",
+      "92014",
+      "92071",
+      "92022",
+      "92033",
+      "92077",
+      "92076"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "93",
+        "nom": "Seine-Saint-Denis",
+        "slug": "seine-saint-denis"
+      }
+    ]
+  },
+  {
+    "code": "93",
+    "nom": "Seine-Saint-Denis",
+    "slug": "seine-saint-denis",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "93066",
+      "93048",
+      "93001",
+      "93005",
+      "93051",
+      "93029",
+      "93007",
+      "93055",
+      "93008",
+      "93070",
+      "93031",
+      "93071",
+      "93010",
+      "93046",
+      "93064",
+      "93027",
+      "93053",
+      "93006",
+      "93032",
+      "93078",
+      "93072",
+      "93050",
+      "93073",
+      "93063",
+      "93077",
+      "93014",
+      "93047",
+      "93057",
+      "93045",
+      "93049",
+      "93061",
+      "93013",
+      "93062",
+      "93079",
+      "93030",
+      "93039",
+      "93074",
+      "93033",
+      "93015"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      }
+    ]
+  },
+  {
+    "code": "94",
+    "nom": "Val-de-Marne",
+    "slug": "val-de-marne",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "94081",
+      "94028",
+      "94017",
+      "94068",
+      "94041",
+      "94076",
+      "94046",
+      "94033",
+      "94080",
+      "94022",
+      "94002",
+      "94078",
+      "94058",
+      "94079",
+      "94073",
+      "94052",
+      "94038",
+      "94016",
+      "94034",
+      "94018",
+      "94071",
+      "94044",
+      "94054",
+      "94043",
+      "94003",
+      "94059",
+      "94067",
+      "94077",
+      "94042",
+      "94037",
+      "94021",
+      "94019",
+      "94015",
+      "94011",
+      "94004",
+      "94069",
+      "94074",
+      "94060",
+      "94075",
+      "94055",
+      "94001",
+      "94065"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      }
+    ]
+  },
+  {
+    "code": "95",
+    "nom": "Val-d'Oise",
+    "slug": "val-d-oise",
+    "codeRegion": "11",
+    "regionNom": "Île-de-France",
+    "regionSlug": "ile-de-france",
+    "communes": [
+      "95018",
+      "95127",
+      "95585",
+      "95268",
+      "95252",
+      "95063",
+      "95500",
+      "95306",
+      "95280",
+      "95680",
+      "95219",
+      "95277",
+      "95607",
+      "95176",
+      "95582",
+      "95203",
+      "95572",
+      "95197",
+      "95424",
+      "95428",
+      "95555",
+      "95218",
+      "95598",
+      "95476",
+      "95323",
+      "95563",
+      "95637",
+      "95199",
+      "95427",
+      "95539",
+      "95019",
+      "95487",
+      "95351",
+      "95313",
+      "95210",
+      "95250",
+      "95052",
+      "95488",
+      "95394",
+      "95229",
+      "95051",
+      "95060",
+      "95491",
+      "95288",
+      "95574",
+      "95183",
+      "95205",
+      "95039",
+      "95091",
+      "95388",
+      "95371",
+      "95355",
+      "95480",
+      "95652",
+      "95392",
+      "95134",
+      "95352"
+    ],
+    "departementsProches": [
+      {
+        "code": "75",
+        "nom": "Paris",
+        "slug": "paris"
+      },
+      {
+        "code": "77",
+        "nom": "Seine-et-Marne",
+        "slug": "seine-et-marne"
+      },
+      {
+        "code": "78",
+        "nom": "Yvelines",
+        "slug": "yvelines"
+      },
+      {
+        "code": "91",
+        "nom": "Essonne",
+        "slug": "essonne"
+      },
+      {
+        "code": "92",
+        "nom": "Hauts-de-Seine",
+        "slug": "hauts-de-seine"
+      }
+    ]
+  },
+  {
+    "code": "971",
+    "nom": "Guadeloupe",
+    "slug": "guadeloupe",
+    "codeRegion": "01",
+    "regionNom": "Guadeloupe",
+    "regionSlug": "guadeloupe",
+    "communes": [
+      "97101",
+      "97103",
+      "97113",
+      "97118",
+      "97128",
+      "97117",
+      "97115",
+      "97129",
+      "97107",
+      "97116",
+      "97120",
+      "97125",
+      "97124",
+      "97105",
+      "97119",
+      "97114",
+      "97132",
+      "97109",
+      "97134",
+      "97106",
+      "97121",
+      "97122",
+      "97104"
+    ],
+    "departementsProches": []
+  },
+  {
+    "code": "972",
+    "nom": "Martinique",
+    "slug": "martinique",
+    "codeRegion": "02",
+    "regionNom": "Martinique",
+    "regionSlug": "martinique",
+    "communes": [
+      "97209",
+      "97213",
+      "97222",
+      "97229",
+      "97207",
+      "97224",
+      "97210",
+      "97228",
+      "97221",
+      "97220",
+      "97230",
+      "97223",
+      "97212",
+      "97227",
+      "97217",
+      "97232",
+      "97214",
+      "97231",
+      "97206"
+    ],
+    "departementsProches": []
+  },
+  {
+    "code": "973",
+    "nom": "Guyane",
+    "slug": "guyane",
+    "codeRegion": "03",
+    "regionNom": "Guyane",
+    "regionSlug": "guyane",
+    "communes": [
+      "97302",
+      "97311",
+      "97307",
+      "97309",
+      "97304",
+      "97305",
+      "97306",
+      "97360",
+      "97357",
+      "97353",
+      "97362"
+    ],
+    "departementsProches": []
+  },
+  {
+    "code": "974",
+    "nom": "La Réunion",
+    "slug": "la-reunion",
+    "codeRegion": "04",
+    "regionNom": "La Réunion",
+    "regionSlug": "la-reunion",
+    "communes": [
+      "97411",
+      "97415",
+      "97416",
+      "97422",
+      "97409",
+      "97414",
+      "97412",
+      "97410",
+      "97418",
+      "97408",
+      "97413",
+      "97407",
+      "97420",
+      "97404",
+      "97405",
+      "97402",
+      "97401",
+      "97421",
+      "97423",
+      "97403",
+      "97406",
+      "97419",
+      "97417",
+      "97424"
+    ],
+    "departementsProches": []
+  },
+  {
+    "code": "976",
+    "nom": "Mayotte",
+    "slug": "mayotte",
+    "codeRegion": "06",
+    "regionNom": "Mayotte",
+    "regionSlug": "mayotte",
+    "communes": [
+      "97611",
+      "97610",
+      "97608",
+      "97607",
+      "97602",
+      "97617",
+      "97615",
+      "97616",
+      "97603",
+      "97614",
+      "97606",
+      "97605",
+      "97612",
+      "97613",
+      "97604",
+      "97609",
+      "97601"
+    ],
+    "departementsProches": []
+  }
+]

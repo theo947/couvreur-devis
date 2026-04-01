@@ -1,0 +1,12 @@
+{
+  "name": "couvreur-devis",
+  "version": "1.0.0",
+  "description": "Site SEO programmatique - Devis couvreur en France",
+  "type": "module",
+  "scripts": {
+    "fetch-data": "node scripts/fetch-geo-data.js",
+    "build": "node scripts/build.js",
+    "dev": "node scripts/dev-server.js"
+  },
+  "dependencies": {}
+}
