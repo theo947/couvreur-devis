@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       fetch(form.action, {
         method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
+        body: JSON.stringify(Object.fromEntries(data)),
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }
       })
       .then(res => {
         if (res.ok) {

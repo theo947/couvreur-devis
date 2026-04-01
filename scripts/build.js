@@ -228,12 +228,12 @@ function quoteFormHtml(lieu = '') {
 <div class="quote-form-card">
   <h2>Demandez vos devis gratuits</h2>
   <p class="subtitle">Recevez jusqu'à 3 devis de couvreurs qualifiés${lieu ? ' à ' + escHtml(lieu) : ''}</p>
-  <form class="quote-form" id="quote-form-${uid}" action="https://formsubmit.co/theo@datashake.fr" method="POST">
-    <input type="hidden" name="_subject" value="Nouveau devis couvreur${lieu ? ' — ' + escHtml(lieu) : ''}">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_next" value="${SITE_URL}/merci.html">
+  <form class="quote-form" id="quote-form-${uid}" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="6b3293a5-195f-4d6b-8d4c-b3e21c37c613">
+    <input type="hidden" name="subject" value="Nouveau devis couvreur${lieu ? ' — ' + escHtml(lieu) : ''}">
+    <input type="hidden" name="from_name" value="Devis Couvreur France">
+    <input type="checkbox" name="botcheck" style="display:none">
+    <input type="hidden" name="redirect" value="${SITE_URL}/merci.html">
     <div class="form-group">
       <label for="travaux-${uid}">Type de travaux *</label>
       <select id="travaux-${uid}" name="travaux" required>
