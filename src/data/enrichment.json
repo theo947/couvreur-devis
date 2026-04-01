@@ -39,7 +39,8 @@
     "charpente": {"min": 20, "max": 50, "unite": "€/m²"},
     "toiture_neuve_tuile": {"min": 40, "max": 80, "unite": "€/m²"},
     "toiture_neuve_ardoise": {"min": 100, "max": 150, "unite": "€/m²"},
-    "toiture_neuve_zinc": {"min": 60, "max": 120, "unite": "€/m²"}
+    "toiture_neuve_zinc": {"min": 60, "max": 120, "unite": "€/m²"},
+    "toiture_bac_acier": {"min": 20, "max": 60, "unite": "€/m²"}
   },
   "departementDetails": {
     "75": {"article": "à", "prep": "à Paris", "specificites": "Le parc immobilier parisien est dominé par les immeubles haussmanniens avec toitures en zinc. Les travaux nécessitent souvent des autorisations spécifiques de la Mairie et de l'Architecte des Bâtiments de France dans les périmètres protégés."},

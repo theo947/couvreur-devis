@@ -295,5 +295,29 @@
         {"question": "Peut-on bâcher sa toiture soi-même ?", "reponse": "C'est fortement déconseillé en raison des risques de chute, surtout pendant une tempête. De plus, un bâchage mal réalisé peut aggraver les dégâts. Attendez l'intervention d'un professionnel équipé."}
       ]
     }
+  },
+  {
+    "slug": "toiture-bac-acier",
+    "nom": "Toiture en bac acier",
+    "titre": "Toiture Bac Acier — Pose et Rénovation",
+    "description": "Pose, rénovation ou remplacement de toiture en bac acier. Matériau économique et durable pour maisons, garages et bâtiments. Devis gratuit.",
+    "motsCles": ["toiture bac acier", "bac acier toiture", "couverture bac acier", "toit bac acier prix"],
+    "contenu": {
+      "intro": "Le bac acier est une solution de couverture économique, légère et durable qui séduit de plus en plus de propriétaires. Longtemps cantonné aux bâtiments agricoles et industriels, il s'impose désormais pour les maisons individuelles, les extensions, les garages et les toits plats. Avec un prix de 20 à 60 euros/m² posé, c'est le matériau le plus abordable du marché, sans sacrifier la longévité (30 à 50 ans).",
+      "sections": [
+        {"h2": "Qu'est-ce qu'une toiture en bac acier ?", "texte": "Le bac acier est une tôle d'acier galvanisé, profilée en forme de U ou de trapèze, qui assure à la fois la couverture et la rigidité structurelle du toit. Il existe en version simple peau (une couche), double peau (deux couches avec isolant entre les deux) ou sandwich (isolant intégré). Les finitions laquées permettent de choisir parmi de nombreuses couleurs : gris anthracite, rouge brique, vert mousse, bleu ardoise. Le bac acier se pose sur des pentes faibles (dès 5 %) et convient aux toitures de toutes tailles."},
+        {"h2": "Avantages et inconvénients du bac acier", "texte": "Les avantages sont nombreux : prix très compétitif (20-60 euros/m²), légèreté (5-7 kg/m² contre 40-60 kg/m² pour la tuile), pose rapide grâce aux grandes plaques, étanchéité excellente, résistance au feu et recyclabilité à 100 %. Les inconvénients à connaître : isolation acoustique faible (bruit de pluie), condensation possible sans écran adapté, dilatation thermique nécessitant des fixations spéciales, et esthétique parfois jugée moins noble que la tuile ou l'ardoise. Le bac acier sandwich avec isolant intégré (polyuréthane ou laine de roche) résout la plupart de ces inconvénients."},
+        {"h2": "Prix d'une toiture bac acier en 2026", "texte": "Le bac acier simple peau coûte 20 à 35 euros/m² posé, le bac acier double peau avec isolation entre 40 et 70 euros/m², et le bac acier sandwich (isolant intégré) entre 50 et 90 euros/m². Pour une toiture de 100 m², le budget total se situe entre 2 000 et 9 000 euros selon le type choisi. Les facteurs de variation sont : l'épaisseur de la tôle (0,50 à 0,75 mm), la finition (galvanisé brut ou laqué), le type d'isolant et la complexité de la pose (pente, accessibilité, nombre de découpes)."},
+        {"h2": "Pose et entretien du bac acier", "texte": "La pose du bac acier se fait sur une ossature de pannes métalliques ou en bois, espacées de 1,50 à 2,50 m selon la charge. Les plaques se fixent par vis autoperceuses avec rondelles d'étanchéité. Un recouvrement de 15 à 20 cm entre plaques garantit l'étanchéité. L'entretien est minimal : un nettoyage annuel au jet d'eau basse pression et une vérification des fixations et des joints suffisent. Le bac acier ne nécessite ni démoussage ni traitement anti-mousse, contrairement à la tuile."},
+        {"h2": "Bac acier et réglementation", "texte": "Avant de choisir le bac acier, consultez le Plan Local d'Urbanisme (PLU) de votre commune. Certaines zones protégées ou centres-villes historiques interdisent ce matériau pour des raisons esthétiques. En zone pavillonnaire et périurbaine, le bac acier laqué de couleur sombre est généralement autorisé. Pour les bâtiments agricoles et industriels, aucune restriction ne s'applique. La pose doit respecter le DTU 40.35 (couverture en plaques nervurées d'acier)."}
+      ],
+      "faq": [
+        {"question": "Quelle est la durée de vie d'une toiture bac acier ?", "reponse": "Un bac acier de qualité dure 30 à 50 ans. Le bac acier galvanisé offre une durée de vie de 30 ans minimum. Avec une finition laquée ou une protection supplémentaire (aluminium-zinc), la longévité atteint 40 à 50 ans sans entretien majeur."},
+        {"question": "Le bac acier est-il bruyant quand il pleut ?", "reponse": "Un bac acier simple peau peut effectivement amplifier le bruit de la pluie. La solution : opter pour un bac acier sandwich avec isolant intégré (polyuréthane ou laine de roche) qui atténue considérablement le bruit. L'ajout d'un faux-plafond avec isolant améliore encore le confort acoustique."},
+        {"question": "Peut-on poser du bac acier sur une charpente bois ?", "reponse": "Oui, le bac acier se pose très bien sur une charpente bois traditionnelle. Sa légèreté (5-7 kg/m²) convient particulièrement aux charpentes anciennes ou légères. Assurez-vous que l'entraxe des pannes correspond aux recommandations du fabricant."},
+        {"question": "Faut-il un permis de construire pour une toiture bac acier ?", "reponse": "Un changement de matériau de couverture nécessite une déclaration préalable de travaux en mairie. Si la surface ou la hauteur du bâtiment change, un permis de construire peut être requis. Vérifiez le PLU de votre commune pour les restrictions éventuelles sur les matériaux."},
+        {"question": "Le bac acier est-il adapté aux toits plats ?", "reponse": "Oui, le bac acier convient aux toitures à faible pente (dès 5 %). Pour les toits plats (pente inférieure à 5 %), une membrane d'étanchéité complémentaire (EPDM ou bitume) est nécessaire. Le bac acier sert alors de support structurel à l'étanchéité."}
+      ]
+    }
   }
 ]

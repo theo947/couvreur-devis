@@ -116,6 +116,7 @@ const serviceIcons = {
   'etancheite-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
   'velux-fenetre-toit': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>',
   'urgence-toiture': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+  'toiture-bac-acier': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20"/><path d="M4 20V8l8-6 8 6v12"/><path d="M2 8h20"/><line x1="8" y1="8" x2="8" y2="20"/><line x1="16" y1="8" x2="16" y2="20"/></svg>',
 };
 function getServiceIcon(slug) {
   return serviceIcons[slug] || serviceIcons['renovation-toiture'];
@@ -1019,6 +1020,7 @@ function buildServicePages() {
     'toiture-tuile': 'toiture_neuve_tuile',
     'toiture-ardoise': 'toiture_neuve_ardoise',
     'toiture-zinc': 'toiture_neuve_zinc',
+    'toiture-bac-acier': 'toiture_bac_acier',
   };
 
   for (const service of services) {
@@ -1440,6 +1442,11 @@ ${regions.filter(r => !r.code.startsWith('0')).map(r => `- [Couvreur en ${r.nom}
 `;
   writeFileSync(join(DIST, 'llms.txt'), llmsTxt);
   console.log('  📄 llms.txt');
+
+  // IndexNow — key file for Bing/Yandex fast indexing
+  const indexNowKey = 'b4d7c2e8f1a3956d0e7b4c8a2f1d3e5b';
+  writeFileSync(join(DIST, `${indexNowKey}.txt`), indexNowKey);
+  console.log('  📄 IndexNow key');
 }
 
 // ---------------------
