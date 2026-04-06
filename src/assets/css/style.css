@@ -520,15 +520,17 @@ ul, ol { padding-left: 1.5em; }
 .faq-item.active .faq-question { color: var(--primary); }
 .faq-item.active .faq-question .toggle { transform: rotate(45deg); background: var(--primary); color: var(--white); }
 .faq-answer {
-  padding: 0 1.25rem;
-  max-height: 0;
+  padding: 0 1.25rem 1.25rem;
+  max-height: none;
   overflow: hidden;
   transition: max-height .35s cubic-bezier(.4,0,.2,1), padding .35s cubic-bezier(.4,0,.2,1);
   color: var(--gray-600);
   font-size: .9rem;
   line-height: 1.75;
 }
-.faq-item.active .faq-answer { max-height: 600px; padding: 0 1.25rem 1.25rem; }
+/* JS ajoute .js-ready sur body au chargement → accordéon actif */
+body.js-ready .faq-answer { max-height: 0; padding: 0 1.25rem; }
+body.js-ready .faq-item.active .faq-answer { max-height: 600px; padding: 0 1.25rem 1.25rem; }
 
 /* --- Page Layout with sidebar --- */
 .page-layout {

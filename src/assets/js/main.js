@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => nav.classList.toggle('active'));
   }
 
-  // FAQ accordions
+  // FAQ accordions — activer l'accordéon JS (réponses visibles par défaut sans JS)
+  document.body.classList.add('js-ready');
   document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.closest('.faq-item');
