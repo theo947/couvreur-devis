@@ -8,16 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener('click', () => nav.classList.toggle('active'));
   }
 
-  // FAQ accordions — activer l'accordéon JS (réponses visibles par défaut sans JS)
-  document.body.classList.add('js-ready');
-  document.querySelectorAll('.faq-question').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const item = btn.closest('.faq-item');
-      const wasActive = item.classList.contains('active');
-      // Close all in same section
-      item.closest('.faq-section')?.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
-      if (!wasActive) item.classList.add('active');
-    });
+  // FAQ : <details>/<summary> natif — ferme les autres à l'ouverture d'un item
+  document.querySelectorAll('.faq-section').forEach(section => {
+    section.addEventListener('toggle', e => {
+      if (e.target.open) {
+        section.querySelectorAll('.faq-item[open]').forEach(d => {
+          if (d !== e.target) d.removeAttribute('open');
+        });
+      }
+    }, true);
   });
 
   // Quote form — submit via fetch (AJAX) to FormSubmit.co

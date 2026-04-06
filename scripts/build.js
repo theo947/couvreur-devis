@@ -360,11 +360,11 @@ function faqHtml(faqs) {
   return `
 <div class="faq-section">
   <h2>Questions fréquentes</h2>
-  ${faqs.map(f => `
-  <div class="faq-item">
-    <div class="faq-question"><span>${escHtml(f.question)}</span><span class="toggle">+</span></div>
+  ${faqs.map((f, i) => `
+  <details class="faq-item"${i === 0 ? ' open' : ''}>
+    <summary class="faq-question">${escHtml(f.question)}</summary>
     <div class="faq-answer"><p>${escHtml(f.reponse)}</p></div>
-  </div>`).join('')}
+  </details>`).join('')}
 </div>`;
 }
 
@@ -528,26 +528,26 @@ ${ctaBannerHtml()}
 <div class="container">
   <h2 class="section-title">Questions fréquentes</h2>
   <div class="faq-section">
-    <div class="faq-item">
-      <button class="faq-question">Comment fonctionne le service de devis couvreur ?</button>
+    <details class="faq-item" open>
+      <summary class="faq-question">Comment fonctionne le service de devis couvreur ?</summary>
       <div class="faq-answer"><p>Remplissez le formulaire en 2 minutes avec votre type de travaux et votre ville. Nous transmettons votre demande a des couvreurs qualifies de votre secteur. Vous recevez jusqu'a 3 devis detailles sous 48h, gratuitement et sans engagement.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Le service est-il vraiment gratuit ?</button>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">Le service est-il vraiment gratuit ?</summary>
       <div class="faq-answer"><p>Oui, 100 % gratuit. Vous ne payez rien pour recevoir des devis. Notre service est finance par les artisans partenaires. Vous comparez librement et choisissez le couvreur qui vous convient, sans aucune obligation.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Comment sont selectionnes les couvreurs partenaires ?</button>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">Comment sont selectionnes les couvreurs partenaires ?</summary>
       <div class="faq-answer"><p>Tous nos couvreurs partenaires disposent d'une assurance decennale valide et sont verifies. La majorite sont certifies RGE (Reconnu Garant de l'Environnement), ce qui vous permet de beneficier des aides financieres pour vos travaux d'isolation.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Quel est le prix moyen des travaux de toiture ?</button>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">Quel est le prix moyen des travaux de toiture ?</summary>
       <div class="faq-answer"><p>Les prix varient selon le type de travaux : comptez 50 a 120 euros/m2 pour une couverture en tuile, 80 a 150 euros/m2 pour de l'ardoise, 15 a 35 euros/m2 pour un demoussage et 40 a 70 euros/m2 pour une isolation. Les tarifs dependent aussi de votre region et de la complexite du chantier.</p></div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Quelles aides financieres pour les travaux de toiture ?</button>
+    </details>
+    <details class="faq-item">
+      <summary class="faq-question">Quelles aides financieres pour les travaux de toiture ?</summary>
       <div class="faq-answer"><p>Plusieurs aides existent : MaPrimeRenov' (jusqu'a 75 euros/m2 pour l'isolation), l'eco-PTZ (pret a taux zero jusqu'a 30 000 euros), les Certificats d'Economies d'Energie (CEE) et la TVA reduite a 5,5 % pour les travaux d'amelioration energetique. Un artisan RGE est requis pour en beneficier.</p></div>
-    </div>
+    </details>
   </div>
 </div>
 </section>`;
