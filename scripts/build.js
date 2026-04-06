@@ -446,6 +446,19 @@ ${howItWorksHtml()}
 
 <section class="section bg-gray">
 <div class="container">
+  <h2 class="section-title">Trouvez un couvreur par région</h2>
+  <p class="section-subtitle">Couvreurs qualifiés dans toute la France</p>
+  <div class="link-grid">
+    ${regions.map(r => `
+    <a href="/couvreur/${r.slug}/" class="link-item">
+      Couvreur en ${escHtml(r.nom)} <span class="arrow">→</span>
+    </a>`).join('')}
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
   <h2 class="section-title">Nos services de couverture</h2>
   <p class="section-subtitle">Des artisans qualifiés pour tous vos travaux de toiture</p>
   <div class="grid-3">
@@ -460,19 +473,6 @@ ${howItWorksHtml()}
 </section>
 
 ${testimonialsHtml()}
-
-<section class="section bg-gray">
-<div class="container">
-  <h2 class="section-title">Trouvez un couvreur par région</h2>
-  <p class="section-subtitle">Couvreurs qualifiés dans toute la France</p>
-  <div class="link-grid">
-    ${regions.map(r => `
-    <a href="/couvreur/${r.slug}/" class="link-item">
-      Couvreur en ${escHtml(r.nom)} <span class="arrow">→</span>
-    </a>`).join('')}
-  </div>
-</div>
-</section>
 
 <section class="section">
 <div class="container">
