@@ -476,6 +476,21 @@ ${testimonialsHtml()}
 
 <section class="section">
 <div class="container">
+  <h2 class="section-title">Couvreur par département</h2>
+  <p class="section-subtitle">Trouvez un artisan couvreur dans votre département</p>
+  <div class="link-grid">
+    ${departements.map(d => {
+      const region = regionByCode.get(d.regionCode);
+      if (!region) return '';
+      return `<a href="/couvreur/${region.slug}/${d.slug}/" class="link-item">Couvreur ${escHtml(d.nom)} (${d.code}) <span class="arrow">→</span></a>`;
+    }).join('\n    ')}
+  </div>
+  <p style="text-align:center;margin-top:1.5rem"><a href="/plan-du-site/" class="link-item">Voir toutes les villes →</a></p>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
   <h2 class="section-title">Pourquoi passer par ${SITE_NAME} ?</h2>
   <div class="grid-3">
     <div class="card">
@@ -1277,6 +1292,51 @@ ${ctaBannerHtml()}`;
 }
 
 // ---------------------
+// Generate: HTML Sitemap page
+// ---------------------
+function buildHtmlSitemapPage() {
+  const url = '/plan-du-site/';
+  const title = `Plan du site — ${SITE_NAME}`;
+  const desc = 'Toutes les pages du site Devis Couvreur France : régions, départements, villes, services et guides.';
+
+  const regionSections = regions.map(r => {
+    const depts = departements.filter(d => d.regionCode === r.code);
+    return `
+    <div style="margin-bottom:2rem">
+      <h3><a href="/couvreur/${r.slug}/">${escHtml(r.nom)}</a></h3>
+      <div class="link-grid" style="margin-top:.5rem">
+        ${depts.map(d => `<a href="/couvreur/${r.slug}/${d.slug}/" class="link-item">${escHtml(d.nom)} (${d.code}) <span class="arrow">→</span></a>`).join('\n        ')}
+      </div>
+    </div>`;
+  }).join('');
+
+  const body = `
+<section class="section">
+<div class="container">
+  <h1>Plan du site</h1>
+  <p style="color:var(--gray-500);margin-bottom:2rem">Accédez à toutes les pages du site pour trouver un couvreur qualifié en France.</p>
+
+  <h2 style="margin-bottom:1rem">Services de couverture</h2>
+  <div class="link-grid" style="margin-bottom:2rem">
+    ${services.map(s => `<a href="/services/${s.slug}/" class="link-item">${escHtml(s.nom)} <span class="arrow">→</span></a>`).join('\n    ')}
+  </div>
+
+  <h2 style="margin-bottom:1rem">Guides et conseils</h2>
+  <div class="link-grid" style="margin-bottom:2rem">
+    ${guides.map(g => `<a href="/guide/${g.slug}/" class="link-item">${escHtml(g.titre.split('—')[0].trim())} <span class="arrow">→</span></a>`).join('\n    ')}
+  </div>
+
+  <h2 style="margin-bottom:1rem">Couverture géographique par région</h2>
+  ${regionSections}
+</div>
+</section>`;
+
+  writePage(url, layout(title, desc, url,
+    [{ label: 'Accueil', url: '/' }, { label: 'Plan du site', url }],
+    body));
+}
+
+// ---------------------
 // Generate: Legal pages
 // ---------------------
 function buildLegalPages() {
@@ -1365,7 +1425,7 @@ function buildMerciPage() {
 // Generate: Sitemap, Robots, llms.txt
 // ---------------------
 function buildSitemap() {
-  const today = '2026-03-30';
+  const today = new Date().toISOString().split('T')[0];
 
   // Exclude legal pages from sitemap (they are noindex)
   const sitemapUrls = allUrls.filter(u => !u.startsWith('/mentions-legales') && !u.startsWith('/politique-confidentialite'));
@@ -1401,9 +1461,6 @@ ${entries.join('\n')}
 Allow: /
 Disallow: /mentions-legales/
 Disallow: /politique-confidentialite/
-
-# Crawl budget optimization
-Crawl-delay: 1
 
 Sitemap: ${SITE_URL}/sitemap.xml
 
@@ -1533,6 +1590,9 @@ function copyAssets() {
   buildGuideIndexPage();
   buildGuidePages();
   console.log(`  ✓ ${guides.length + 1} pages guides (index + ${guides.length})`);
+
+  buildHtmlSitemapPage();
+  console.log('  ✓ Plan du site HTML');
 
   buildLegalPages();
   build404Page();
