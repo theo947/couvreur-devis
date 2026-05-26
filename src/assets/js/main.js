@@ -131,14 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <div style="font-size:3rem;margin-bottom:1rem">✓</div>
         <h3 style="margin-bottom:.5rem;color:#27ae60">Demande enregistrée !</h3>
         <p style="color:#495057">Un couvreur va vous recontacter rapidement. Pensez à valider votre demande si vous recevez un SMS.</p>
-        ${hasSpinner ? '<div id="vud_spin_775925" style="margin-top:1.5rem"></div>' : ''}
+        ${hasSpinner ? '<div id="vud_spin_197782" style="margin-top:1.5rem"></div>' : ''}
       </div>
     `;
     if (hasSpinner) {
       const vudJs = document.createElement('script');
       vudJs.type = 'text/javascript';
       vudJs.src = 'https://www.viteundevis.com/mb/spinner.php?devis_id=' +
-        encodeURIComponent(devisId) + '&devis_hash=' + encodeURIComponent(devisHash) + '&box=775925';
+        encodeURIComponent(devisId) + '&devis_hash=' + encodeURIComponent(devisHash) + '&box=197782';
       const s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(vudJs, s);
     }
