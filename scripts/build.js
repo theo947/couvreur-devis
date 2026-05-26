@@ -184,7 +184,7 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
     <a href="/">Accueil</a>
     <a href="/services/">Services</a>
     <a href="/guide/">Guides</a>
-    <a href="#quote-form-1" class="nav-cta">Devis gratuit</a>
+    <a href="/#quote-form-1" class="nav-cta">Devis gratuit</a>
   </nav>
 </div>
 </header>
@@ -227,6 +227,9 @@ ${bodyContent}
 </div>
 </footer>
 
+<div class="sticky-cta-mobile">
+  <a href="/#quote-form-1" class="btn-primary">Devis gratuit en 2 min</a>
+</div>
 <script src="/assets/js/main.js" defer></script>
 </body>
 </html>`;
@@ -240,82 +243,101 @@ function quoteFormHtml(lieu = '') {
 <div class="quote-form-card">
   <h2>Demandez vos devis gratuits</h2>
   <p class="subtitle">Recevez jusqu'à 3 devis de couvreurs qualifiés${lieu ? ' à ' + escHtml(lieu) : ''}</p>
+  <div class="form-steps-bar">
+    <div class="form-step-indicator active" data-step="1"><span class="step-dot">1</span> Projet</div>
+    <div class="form-step-indicator" data-step="2"><span class="step-dot">2</span> Chantier</div>
+    <div class="form-step-indicator" data-step="3"><span class="step-dot">3</span> Contact</div>
+  </div>
   <form class="quote-form" id="quote-form-${uid}" action="/api/lead" method="POST">
-    <div class="form-group">
-      <label for="travaux-${uid}">Type de travaux *</label>
-      <select id="travaux-${uid}" name="travaux" required>
-        <option value="">Sélectionnez...</option>
-        ${services.map(s => `<option value="${s.slug}">${escHtml(s.nom)}</option>`).join('\n        ')}
-      </select>
-    </div>
-    <div class="form-row">
+    <div class="form-step form-step-active" data-step="1">
       <div class="form-group">
-        <label for="cp-${uid}">Code postal du chantier *</label>
-        <input type="text" id="cp-${uid}" name="cp" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Ex : 75001" required>
-      </div>
-      <div class="form-group">
-        <label for="ville-${uid}">Ville du chantier *</label>
-        <input type="text" id="ville-${uid}" name="ville" placeholder="${escHtml(lieuPlaceholder)}" required>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="adresse-${uid}">Adresse du chantier *</label>
-      <input type="text" id="adresse-${uid}" name="adresse" placeholder="N° et nom de rue" required>
-    </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label for="bien-${uid}">Type de bien *</label>
-        <select id="bien-${uid}" name="type_bien" required>
-          <option value="2">Maison</option>
-          <option value="1">Appartement</option>
-          <option value="3">Immeuble</option>
-          <option value="6">Autre</option>
+        <label for="travaux-${uid}">Type de travaux *</label>
+        <select id="travaux-${uid}" name="travaux" required>
+          <option value="">Sélectionnez...</option>
+          ${services.map(s => `<option value="${s.slug}">${escHtml(s.nom)}</option>`).join('\n          ')}
         </select>
       </div>
       <div class="form-group">
-        <label for="situation-${uid}">Vous êtes *</label>
-        <select id="situation-${uid}" name="situation" required>
-          <option value="1">Propriétaire</option>
-          <option value="2">Locataire</option>
-          <option value="4">Autre</option>
+        <label for="delais-${uid}">Délai pour les travaux *</label>
+        <select id="delais-${uid}" name="delais" required>
+          <option value="">Sélectionnez...</option>
+          <option value="1">Urgent</option>
+          <option value="2">Dans les 6 mois</option>
+          <option value="3">Dans l'année</option>
+          <option value="4">Dans plus d'un an</option>
         </select>
       </div>
-    </div>
-    <div class="form-group">
-      <label for="delais-${uid}">Délai pour les travaux *</label>
-      <select id="delais-${uid}" name="delais" required>
-        <option value="">Sélectionnez...</option>
-        <option value="1">Urgent</option>
-        <option value="2">Dans les 6 mois</option>
-        <option value="3">Dans l'année</option>
-        <option value="4">Dans plus d'un an</option>
-      </select>
-    </div>
-    <div class="form-row">
       <div class="form-group">
-        <label for="prenom-${uid}">Prénom *</label>
-        <input type="text" id="prenom-${uid}" name="prenom" placeholder="Votre prénom" required>
+        <label for="description-${uid}">Description du projet *</label>
+        <textarea id="description-${uid}" name="description" placeholder="Décrivez vos travaux : type de toiture, surface, matériaux, nature du problème..." required></textarea>
+      </div>
+      <button type="button" class="btn-primary form-next-btn" data-next="2">Continuer</button>
+    </div>
+    <div class="form-step" data-step="2">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cp-${uid}">Code postal *</label>
+          <input type="text" id="cp-${uid}" name="cp" class="cp-input" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Ex : 75001" required>
+        </div>
+        <div class="form-group">
+          <label for="ville-${uid}">Ville *</label>
+          <input type="text" id="ville-${uid}" name="ville" class="ville-input" placeholder="${escHtml(lieuPlaceholder)}" required>
+        </div>
       </div>
       <div class="form-group">
-        <label for="nom-${uid}">Nom *</label>
-        <input type="text" id="nom-${uid}" name="nom" placeholder="Votre nom" required>
+        <label for="adresse-${uid}">Adresse du chantier *</label>
+        <input type="text" id="adresse-${uid}" name="adresse" placeholder="N° et nom de rue" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="bien-${uid}">Type de bien *</label>
+          <select id="bien-${uid}" name="type_bien" required>
+            <option value="2">Maison</option>
+            <option value="1">Appartement</option>
+            <option value="3">Immeuble</option>
+            <option value="6">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="situation-${uid}">Vous êtes *</label>
+          <select id="situation-${uid}" name="situation" required>
+            <option value="1">Propriétaire</option>
+            <option value="2">Locataire</option>
+            <option value="4">Autre</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-nav-row">
+        <button type="button" class="btn-back form-back-btn" data-prev="1">Retour</button>
+        <button type="button" class="btn-primary form-next-btn" data-next="3">Continuer</button>
       </div>
     </div>
-    <div class="form-row">
-      <div class="form-group">
-        <label for="email-${uid}">Email *</label>
-        <input type="email" id="email-${uid}" name="email" placeholder="votre@email.fr" required>
+    <div class="form-step" data-step="3">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="prenom-${uid}">Prénom *</label>
+          <input type="text" id="prenom-${uid}" name="prenom" placeholder="Votre prénom" required>
+        </div>
+        <div class="form-group">
+          <label for="nom-${uid}">Nom *</label>
+          <input type="text" id="nom-${uid}" name="nom" placeholder="Votre nom" required>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="tel-${uid}">Téléphone *</label>
-        <input type="tel" id="tel-${uid}" name="tel" inputmode="tel" placeholder="06 00 00 00 00" required>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email-${uid}">Email *</label>
+          <input type="email" id="email-${uid}" name="email" placeholder="votre@email.fr" required>
+        </div>
+        <div class="form-group">
+          <label for="tel-${uid}">Téléphone *</label>
+          <input type="tel" id="tel-${uid}" name="tel" inputmode="tel" placeholder="06 00 00 00 00" required>
+        </div>
+      </div>
+      <div class="form-nav-row">
+        <button type="button" class="btn-back form-back-btn" data-prev="2">Retour</button>
+        <button type="submit" class="btn-primary">Recevoir mes devis gratuits</button>
       </div>
     </div>
-    <div class="form-group">
-      <label for="description-${uid}">Description du projet *</label>
-      <textarea id="description-${uid}" name="description" placeholder="Décrivez vos travaux : type de toiture, surface, matériaux, nature du problème..." required></textarea>
-    </div>
-    <button type="submit" class="btn-primary">Recevoir mes devis gratuits</button>
     <div class="form-trust">
       <div class="form-trust-item"><span class="lock-icon">🔒</span> Données protégées</div>
       <div class="form-trust-item"><span class="lock-icon">✓</span> Sans engagement</div>
@@ -1569,10 +1591,10 @@ function minifyCSS(css) {
 
 function minifyJS(js) {
   return js
-    .replace(/\/\*[\s\S]*?\*\//g, '')      // remove block comments
-    .replace(/\/\/.*$/gm, '')              // remove line comments
-    .replace(/\n\s*/g, ' ')               // collapse newlines
-    .replace(/\s{2,}/g, ' ')              // collapse multiple spaces
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/(^|[^:])\/\/.*$/gm, '$1')
+    .replace(/\n\s*/g, ' ')
+    .replace(/\s{2,}/g, ' ')
     .trim();
 }
 

@@ -879,3 +879,105 @@ ul, ol { padding-left: 1.5em; }
   outline-offset: 2px;
   border-radius: 4px;
 }
+
+/* --- Multi-step form --- */
+.form-steps-bar {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1.25rem;
+}
+.form-step-indicator {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  font-size: .75rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  padding: .45rem .6rem;
+  border-radius: 50px;
+  background: var(--gray-100);
+  transition: all var(--transition);
+}
+.form-step-indicator.active {
+  background: linear-gradient(135deg, var(--primary), #f59e0b);
+  color: var(--white);
+}
+.form-step-indicator.done {
+  background: var(--green-light);
+  color: #16a34a;
+}
+.step-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .7rem;
+  font-weight: 800;
+  background: rgba(255,255,255,.25);
+  flex-shrink: 0;
+}
+.form-step-indicator.active .step-dot { background: rgba(255,255,255,.3); }
+.form-step-indicator.done .step-dot { background: #22c55e; color: var(--white); }
+
+.form-step { display: none; }
+.form-step-active { display: block; }
+
+.form-nav-row {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+.form-nav-row .btn-primary { flex: 1; }
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1.5px solid var(--gray-300);
+  color: var(--gray-600);
+  padding: .75rem 1.25rem;
+  border-radius: 50px;
+  font-size: .88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: inherit;
+  white-space: nowrap;
+}
+.btn-back:hover {
+  border-color: var(--gray-500);
+  color: var(--gray-800);
+}
+
+/* --- Sticky CTA mobile --- */
+.sticky-cta-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .sticky-cta-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: .65rem 1rem;
+    background: var(--white);
+    border-top: 1px solid var(--gray-200);
+    box-shadow: 0 -4px 20px rgba(0,0,0,.1);
+    transition: transform .3s ease;
+  }
+  .sticky-cta-mobile.hidden {
+    transform: translateY(100%);
+  }
+  .sticky-cta-mobile .btn-primary {
+    width: 100%;
+    padding: .8rem;
+    font-size: .95rem;
+  }
+  body { padding-bottom: 60px; }
+}
