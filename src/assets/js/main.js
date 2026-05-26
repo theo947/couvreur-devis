@@ -61,8 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- CP → Ville autocomplete via geo.api.gouv.fr ---
   document.querySelectorAll('.cp-input').forEach(cpInput => {
     const form = cpInput.closest('form');
-    const villeInput = form && form.querySelector('.ville-input');
-    if (!villeInput) return;
+    if (!form || !form.querySelector('.ville-input')) return;
+    const villeId = form.querySelector('.ville-input').id;
+
+    function getVilleEl() {
+      return document.getElementById(villeId);
+    }
 
     let debounce;
     cpInput.addEventListener('input', () => {
@@ -70,20 +74,60 @@ document.addEventListener('DOMContentLoaded', () => {
       const cp = cpInput.value.replace(/\D/g, '');
       if (cp.length !== 5) return;
       debounce = setTimeout(() => {
-        fetch('https://geo.api.gouv.fr/communes?codePostal=' + cp + '&fields=nom&limit=5')
+        fetch('https://geo.api.gouv.fr/communes?codePostal=' + cp + '&fields=nom&limit=20')
           .then(r => r.ok ? r.json() : [])
           .then(data => {
+            if (!data.length) return;
             if (data.length === 1) {
-              villeInput.value = data[0].nom;
-            } else if (data.length > 1) {
-              villeInput.value = data[0].nom;
-              villeInput.focus();
-              villeInput.select();
+              restoreInput(data[0].nom);
+            } else {
+              swapToSelect(data);
             }
           })
           .catch(() => {});
       }, 150);
     });
+
+    function swapToSelect(communes) {
+      const current = getVilleEl();
+      if (!current) return;
+      const sel = document.createElement('select');
+      sel.name = current.name;
+      sel.id = current.id;
+      sel.className = current.className;
+      sel.required = current.required;
+      const placeholder = document.createElement('option');
+      placeholder.value = '';
+      placeholder.textContent = 'Choisissez votre commune';
+      placeholder.disabled = true;
+      placeholder.selected = true;
+      sel.appendChild(placeholder);
+      communes.sort((a, b) => a.nom.localeCompare(b.nom)).forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.nom;
+        opt.textContent = c.nom;
+        sel.appendChild(opt);
+      });
+      current.replaceWith(sel);
+      sel.focus();
+    }
+
+    function restoreInput(value) {
+      const current = getVilleEl();
+      if (!current) return;
+      if (current.tagName === 'SELECT') {
+        const inp = document.createElement('input');
+        inp.type = 'text';
+        inp.name = current.name;
+        inp.id = current.id;
+        inp.className = current.className;
+        inp.required = current.required;
+        inp.value = value;
+        current.replaceWith(inp);
+      } else {
+        current.value = value;
+      }
+    }
   });
 
   // --- Form submit via fetch (AJAX) vers la Netlify Function ViteUnDevis ---
