@@ -235,41 +235,85 @@ ${bodyContent}
 let formCounter = 0;
 function quoteFormHtml(lieu = '') {
   const uid = ++formCounter;
-  const lieuPlaceholder = lieu || 'Votre ville ou code postal';
+  const lieuPlaceholder = lieu || 'Votre ville';
   return `
 <div class="quote-form-card">
   <h2>Demandez vos devis gratuits</h2>
   <p class="subtitle">Recevez jusqu'à 3 devis de couvreurs qualifiés${lieu ? ' à ' + escHtml(lieu) : ''}</p>
-  <form class="quote-form" id="quote-form-${uid}" action="https://api.web3forms.com/submit" method="POST">
-    <input type="hidden" name="access_key" value="6b3293a5-195f-4d6b-8d4c-b3e21c37c613">
-    <input type="hidden" name="subject" value="Nouveau devis couvreur${lieu ? ' — ' + escHtml(lieu) : ''}">
-    <input type="hidden" name="from_name" value="Devis Couvreur France">
-    <input type="checkbox" name="botcheck" style="display:none">
-    <input type="hidden" name="redirect" value="${SITE_URL}/merci.html">
+  <form class="quote-form" id="quote-form-${uid}" action="/api/lead" method="POST">
     <div class="form-group">
       <label for="travaux-${uid}">Type de travaux *</label>
       <select id="travaux-${uid}" name="travaux" required>
         <option value="">Sélectionnez...</option>
-        ${services.map(s => `<option value="${s.slug}">${s.nom}</option>`).join('\n        ')}
+        ${services.map(s => `<option value="${s.slug}">${escHtml(s.nom)}</option>`).join('\n        ')}
       </select>
     </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="cp-${uid}">Code postal du chantier *</label>
+        <input type="text" id="cp-${uid}" name="cp" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Ex : 75001" required>
+      </div>
+      <div class="form-group">
+        <label for="ville-${uid}">Ville du chantier *</label>
+        <input type="text" id="ville-${uid}" name="ville" placeholder="${escHtml(lieuPlaceholder)}" required>
+      </div>
+    </div>
     <div class="form-group">
-      <label for="ville-${uid}">Ville ou code postal *</label>
-      <input type="text" id="ville-${uid}" name="ville" placeholder="${escHtml(lieuPlaceholder)}" value="${lieu ? escHtml(lieu) : ''}" required>
+      <label for="adresse-${uid}">Adresse du chantier *</label>
+      <input type="text" id="adresse-${uid}" name="adresse" placeholder="N° et nom de rue" required>
     </div>
     <div class="form-row">
+      <div class="form-group">
+        <label for="bien-${uid}">Type de bien *</label>
+        <select id="bien-${uid}" name="type_bien" required>
+          <option value="2">Maison</option>
+          <option value="1">Appartement</option>
+          <option value="3">Immeuble</option>
+          <option value="6">Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="situation-${uid}">Vous êtes *</label>
+        <select id="situation-${uid}" name="situation" required>
+          <option value="1">Propriétaire</option>
+          <option value="2">Locataire</option>
+          <option value="4">Autre</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="delais-${uid}">Délai pour les travaux *</label>
+      <select id="delais-${uid}" name="delais" required>
+        <option value="">Sélectionnez...</option>
+        <option value="1">Urgent</option>
+        <option value="2">Dans les 6 mois</option>
+        <option value="3">Dans l'année</option>
+        <option value="4">Dans plus d'un an</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="prenom-${uid}">Prénom *</label>
+        <input type="text" id="prenom-${uid}" name="prenom" placeholder="Votre prénom" required>
+      </div>
       <div class="form-group">
         <label for="nom-${uid}">Nom *</label>
         <input type="text" id="nom-${uid}" name="nom" placeholder="Votre nom" required>
       </div>
+    </div>
+    <div class="form-row">
       <div class="form-group">
         <label for="email-${uid}">Email *</label>
         <input type="email" id="email-${uid}" name="email" placeholder="votre@email.fr" required>
       </div>
+      <div class="form-group">
+        <label for="tel-${uid}">Téléphone *</label>
+        <input type="tel" id="tel-${uid}" name="tel" inputmode="tel" placeholder="06 00 00 00 00" required>
+      </div>
     </div>
     <div class="form-group">
-      <label for="description-${uid}">Description du projet (optionnel)</label>
-      <textarea id="description-${uid}" name="description" placeholder="Décrivez brièvement vos travaux..."></textarea>
+      <label for="description-${uid}">Description du projet *</label>
+      <textarea id="description-${uid}" name="description" placeholder="Décrivez vos travaux : type de toiture, surface, matériaux, nature du problème..." required></textarea>
     </div>
     <button type="submit" class="btn-primary">Recevoir mes devis gratuits</button>
     <div class="form-trust">

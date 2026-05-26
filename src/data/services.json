@@ -1,10 +1,16 @@
 [
   {
     "slug": "reparation-toiture",
+    "catId": 143,
     "nom": "Réparation de toiture",
     "titre": "Réparation de Toiture",
     "description": "Fuite, tuile cassée, infiltration ? Faites réparer votre toiture par un couvreur qualifié. Devis gratuit et intervention rapide.",
-    "motsCles": ["réparation toiture", "fuite toiture", "tuile cassée", "infiltration toit"],
+    "motsCles": [
+      "réparation toiture",
+      "fuite toiture",
+      "tuile cassée",
+      "infiltration toit"
+    ],
     "contenu": {
       "intro": "Une toiture endommagée peut rapidement entraîner des dégâts importants dans votre habitation. Qu'il s'agisse d'une tuile cassée, d'une fuite après intempérie ou d'une infiltration récurrente, la réparation de toiture nécessite l'intervention d'un couvreur professionnel. Agir rapidement permet de limiter les dégâts et de réduire les coûts de réparation.",
       "sections": [
@@ -26,18 +32,33 @@
         }
       ],
       "faq": [
-        {"question": "Combien coûte une réparation de toiture ?", "reponse": "Le prix varie de 200 à 3 000 euros selon l'étendue des dégâts. Un simple remplacement de tuiles coûte entre 200 et 500 euros, tandis qu'une réparation de fuite avec étanchéité peut atteindre 1 500 euros."},
-        {"question": "L'assurance prend-elle en charge la réparation de toiture ?", "reponse": "Oui, si les dégâts sont causés par un événement climatique (tempête, grêle), votre assurance habitation peut couvrir les frais de réparation. Déclarez le sinistre dans les 5 jours et faites établir un devis."},
-        {"question": "Peut-on réparer sa toiture soi-même ?", "reponse": "Les petites réparations sont possibles pour un bricoleur averti, mais le travail en hauteur comporte des risques importants. Pour toute intervention significative, faites appel à un couvreur professionnel équipé et assuré."}
+        {
+          "question": "Combien coûte une réparation de toiture ?",
+          "reponse": "Le prix varie de 200 à 3 000 euros selon l'étendue des dégâts. Un simple remplacement de tuiles coûte entre 200 et 500 euros, tandis qu'une réparation de fuite avec étanchéité peut atteindre 1 500 euros."
+        },
+        {
+          "question": "L'assurance prend-elle en charge la réparation de toiture ?",
+          "reponse": "Oui, si les dégâts sont causés par un événement climatique (tempête, grêle), votre assurance habitation peut couvrir les frais de réparation. Déclarez le sinistre dans les 5 jours et faites établir un devis."
+        },
+        {
+          "question": "Peut-on réparer sa toiture soi-même ?",
+          "reponse": "Les petites réparations sont possibles pour un bricoleur averti, mais le travail en hauteur comporte des risques importants. Pour toute intervention significative, faites appel à un couvreur professionnel équipé et assuré."
+        }
       ]
     }
   },
   {
     "slug": "renovation-toiture",
+    "catId": 143,
     "nom": "Rénovation de toiture",
     "titre": "Rénovation de Toiture",
     "description": "Votre toiture a plus de 20 ans ? Faites-la rénover par un couvreur professionnel. Devis gratuit pour la rénovation complète de votre toit.",
-    "motsCles": ["rénovation toiture", "refaire toiture", "toiture neuve", "réfection toiture"],
+    "motsCles": [
+      "rénovation toiture",
+      "refaire toiture",
+      "toiture neuve",
+      "réfection toiture"
+    ],
     "contenu": {
       "intro": "La rénovation de toiture est un investissement majeur qui protège votre patrimoine et améliore la performance énergétique de votre habitation. Qu'il s'agisse d'une réfection complète ou d'une rénovation partielle, un couvreur qualifié vous accompagne pour choisir les meilleurs matériaux et garantir une pose dans les règles de l'art.",
       "sections": [
@@ -59,264 +80,606 @@
         }
       ],
       "faq": [
-        {"question": "Combien coûte la rénovation complète d'une toiture ?", "reponse": "Pour une maison de 100 m² de toiture, comptez entre 8 000 et 15 000 euros en tuiles, et entre 10 000 et 20 000 euros en ardoise. Le prix exact dépend des matériaux, de l'état de la charpente et de la région."},
-        {"question": "Combien de temps dure une rénovation de toiture ?", "reponse": "Comptez entre 1 et 3 semaines pour une rénovation complète, selon la surface, la complexité du toit et les conditions météorologiques. Une rénovation partielle peut être réalisée en quelques jours."},
-        {"question": "Faut-il un permis pour rénover sa toiture ?", "reponse": "Une déclaration préalable de travaux est généralement suffisante, sauf en zone protégée (ABF) ou si vous modifiez l'aspect extérieur. Renseignez-vous auprès de votre mairie avant de commencer."}
+        {
+          "question": "Combien coûte la rénovation complète d'une toiture ?",
+          "reponse": "Pour une maison de 100 m² de toiture, comptez entre 8 000 et 15 000 euros en tuiles, et entre 10 000 et 20 000 euros en ardoise. Le prix exact dépend des matériaux, de l'état de la charpente et de la région."
+        },
+        {
+          "question": "Combien de temps dure une rénovation de toiture ?",
+          "reponse": "Comptez entre 1 et 3 semaines pour une rénovation complète, selon la surface, la complexité du toit et les conditions météorologiques. Une rénovation partielle peut être réalisée en quelques jours."
+        },
+        {
+          "question": "Faut-il un permis pour rénover sa toiture ?",
+          "reponse": "Une déclaration préalable de travaux est généralement suffisante, sauf en zone protégée (ABF) ou si vous modifiez l'aspect extérieur. Renseignez-vous auprès de votre mairie avant de commencer."
+        }
       ]
     }
   },
   {
     "slug": "nettoyage-toiture",
+    "catId": 81,
     "nom": "Nettoyage et démoussage",
     "titre": "Nettoyage et Démoussage de Toiture",
     "description": "Mousse, lichens, algues sur votre toit ? Faites nettoyer et démousser votre toiture par un professionnel. Devis gratuit.",
-    "motsCles": ["nettoyage toiture", "démoussage toiture", "mousse toit", "traitement toiture"],
+    "motsCles": [
+      "nettoyage toiture",
+      "démoussage toiture",
+      "mousse toit",
+      "traitement toiture"
+    ],
     "contenu": {
       "intro": "Le nettoyage et le démoussage de toiture sont essentiels pour préserver l'étanchéité et la longévité de votre toit. Mousse, lichens et algues retiennent l'humidité et accélèrent la dégradation des matériaux de couverture. Un entretien régulier par un couvreur professionnel prolonge la durée de vie de votre toiture de plusieurs années.",
       "sections": [
-        {"h2": "Pourquoi démousser sa toiture ?", "texte": "La mousse s'infiltre sous les tuiles et provoque des micro-fissures par effet gel/dégel. Elle retient l'eau de pluie, alourdit la couverture et favorise les infiltrations. Un démoussage régulier (tous les 3 à 5 ans) préserve l'étanchéité et l'esthétique de votre toit."},
-        {"h2": "Méthodes de nettoyage", "texte": "Trois méthodes principales existent : le nettoyage haute pression (efficace mais risqué pour les tuiles fragiles), le nettoyage basse pression avec produit anti-mousse (recommandé), et le traitement chimique préventif. Un couvreur professionnel choisit la méthode adaptée à votre type de couverture."},
-        {"h2": "Prix du démoussage de toiture", "texte": "Comptez entre 15 et 30 euros/m² pour un nettoyage complet avec traitement hydrofuge. Pour une toiture de 100 m², le budget se situe entre 1 500 et 3 000 euros. Le prix inclut le nettoyage, l'application du produit anti-mousse et le traitement hydrofuge."},
-        {"h2": "À quelle fréquence nettoyer sa toiture ?", "texte": "Un nettoyage tous les 3 à 5 ans est recommandé, davantage dans les régions humides ou si votre toit est exposé nord. L'automne et le printemps sont les meilleures saisons pour cette intervention."}
+        {
+          "h2": "Pourquoi démousser sa toiture ?",
+          "texte": "La mousse s'infiltre sous les tuiles et provoque des micro-fissures par effet gel/dégel. Elle retient l'eau de pluie, alourdit la couverture et favorise les infiltrations. Un démoussage régulier (tous les 3 à 5 ans) préserve l'étanchéité et l'esthétique de votre toit."
+        },
+        {
+          "h2": "Méthodes de nettoyage",
+          "texte": "Trois méthodes principales existent : le nettoyage haute pression (efficace mais risqué pour les tuiles fragiles), le nettoyage basse pression avec produit anti-mousse (recommandé), et le traitement chimique préventif. Un couvreur professionnel choisit la méthode adaptée à votre type de couverture."
+        },
+        {
+          "h2": "Prix du démoussage de toiture",
+          "texte": "Comptez entre 15 et 30 euros/m² pour un nettoyage complet avec traitement hydrofuge. Pour une toiture de 100 m², le budget se situe entre 1 500 et 3 000 euros. Le prix inclut le nettoyage, l'application du produit anti-mousse et le traitement hydrofuge."
+        },
+        {
+          "h2": "À quelle fréquence nettoyer sa toiture ?",
+          "texte": "Un nettoyage tous les 3 à 5 ans est recommandé, davantage dans les régions humides ou si votre toit est exposé nord. L'automne et le printemps sont les meilleures saisons pour cette intervention."
+        }
       ],
       "faq": [
-        {"question": "Quel est le prix d'un démoussage de toiture ?", "reponse": "Le démoussage de toiture coûte entre 15 et 30 euros/m², soit 1 500 à 3 000 euros pour une toiture standard de 100 m². Ce prix comprend le nettoyage, le traitement anti-mousse et l'application d'un hydrofuge."},
-        {"question": "Peut-on démousser sa toiture soi-même ?", "reponse": "C'est possible mais déconseillé en raison des risques de chute et d'endommagement des tuiles. Un couvreur dispose de l'équipement de sécurité et des produits professionnels adaptés."},
-        {"question": "Le démoussage abîme-t-il les tuiles ?", "reponse": "Un nettoyage haute pression mal réalisé peut effectivement endommager les tuiles. C'est pourquoi il est préférable de confier cette opération à un professionnel qui utilisera la méthode adaptée à votre type de couverture."}
+        {
+          "question": "Quel est le prix d'un démoussage de toiture ?",
+          "reponse": "Le démoussage de toiture coûte entre 15 et 30 euros/m², soit 1 500 à 3 000 euros pour une toiture standard de 100 m². Ce prix comprend le nettoyage, le traitement anti-mousse et l'application d'un hydrofuge."
+        },
+        {
+          "question": "Peut-on démousser sa toiture soi-même ?",
+          "reponse": "C'est possible mais déconseillé en raison des risques de chute et d'endommagement des tuiles. Un couvreur dispose de l'équipement de sécurité et des produits professionnels adaptés."
+        },
+        {
+          "question": "Le démoussage abîme-t-il les tuiles ?",
+          "reponse": "Un nettoyage haute pression mal réalisé peut effectivement endommager les tuiles. C'est pourquoi il est préférable de confier cette opération à un professionnel qui utilisera la méthode adaptée à votre type de couverture."
+        }
       ]
     }
   },
   {
     "slug": "isolation-toiture",
+    "catId": 103,
     "nom": "Isolation de toiture",
     "titre": "Isolation de Toiture",
     "description": "Améliorez la performance énergétique de votre maison avec une isolation de toiture performante. Devis gratuit, artisan RGE.",
-    "motsCles": ["isolation toiture", "isolation combles", "isolation thermique toit", "isolation par l'extérieur"],
+    "motsCles": [
+      "isolation toiture",
+      "isolation combles",
+      "isolation thermique toit",
+      "isolation par l'extérieur"
+    ],
     "contenu": {
       "intro": "L'isolation de la toiture est le premier levier pour réduire votre consommation énergétique : jusqu'à 30 % des déperditions thermiques d'une maison passent par le toit. Que vous optiez pour une isolation par l'intérieur ou par l'extérieur (sarking), un couvreur certifié RGE vous garantit une mise en œuvre conforme et l'accès aux aides financières.",
       "sections": [
-        {"h2": "Pourquoi isoler sa toiture ?", "texte": "Le toit est la première source de perte de chaleur dans une maison mal isolée. Une bonne isolation réduit votre facture de chauffage de 25 à 30 %, améliore le confort thermique été comme hiver, et valorise votre bien immobilier grâce à un meilleur DPE."},
-        {"h2": "Techniques d'isolation", "texte": "L'isolation par l'intérieur (sous rampants) est la plus courante et la moins coûteuse. L'isolation par l'extérieur (sarking) offre de meilleures performances sans réduire le volume habitable. Le soufflage de laine dans les combles perdus est la solution la plus économique."},
-        {"h2": "Prix de l'isolation de toiture", "texte": "L'isolation des combles perdus par soufflage coûte 20 à 50 euros/m². L'isolation sous rampants revient à 40 à 80 euros/m². L'isolation par l'extérieur (sarking) coûte 100 à 250 euros/m². Ces prix incluent les matériaux et la pose."},
-        {"h2": "Aides et subventions", "texte": "MaPrimeRénov' peut couvrir jusqu'à 75 euros/m² pour l'isolation des rampants. L'éco-prêt à taux zéro finance jusqu'à 30 000 euros de travaux. Les certificats d'économie d'énergie (CEE) offrent des primes complémentaires. La TVA est réduite à 5,5 %."}
+        {
+          "h2": "Pourquoi isoler sa toiture ?",
+          "texte": "Le toit est la première source de perte de chaleur dans une maison mal isolée. Une bonne isolation réduit votre facture de chauffage de 25 à 30 %, améliore le confort thermique été comme hiver, et valorise votre bien immobilier grâce à un meilleur DPE."
+        },
+        {
+          "h2": "Techniques d'isolation",
+          "texte": "L'isolation par l'intérieur (sous rampants) est la plus courante et la moins coûteuse. L'isolation par l'extérieur (sarking) offre de meilleures performances sans réduire le volume habitable. Le soufflage de laine dans les combles perdus est la solution la plus économique."
+        },
+        {
+          "h2": "Prix de l'isolation de toiture",
+          "texte": "L'isolation des combles perdus par soufflage coûte 20 à 50 euros/m². L'isolation sous rampants revient à 40 à 80 euros/m². L'isolation par l'extérieur (sarking) coûte 100 à 250 euros/m². Ces prix incluent les matériaux et la pose."
+        },
+        {
+          "h2": "Aides et subventions",
+          "texte": "MaPrimeRénov' peut couvrir jusqu'à 75 euros/m² pour l'isolation des rampants. L'éco-prêt à taux zéro finance jusqu'à 30 000 euros de travaux. Les certificats d'économie d'énergie (CEE) offrent des primes complémentaires. La TVA est réduite à 5,5 %."
+        }
       ],
       "faq": [
-        {"question": "Combien coûte l'isolation d'une toiture ?", "reponse": "L'isolation des combles perdus par soufflage coûte 20 à 50 euros/m². L'isolation sous rampants coûte 40 à 80 euros/m². L'isolation par l'extérieur (sarking) coûte 100 à 250 euros/m², matériaux et pose inclus."},
-        {"question": "Quelle est la meilleure isolation pour une toiture ?", "reponse": "La laine de roche et la laine de verre offrent le meilleur rapport performance/prix. Pour une approche écologique, la ouate de cellulose et la fibre de bois sont d'excellentes alternatives. Le choix dépend de votre budget et de la configuration de votre toiture."},
-        {"question": "Quelles aides pour l'isolation de toiture en 2026 ?", "reponse": "Les principales aides sont MaPrimeRénov' (jusqu'à 75 €/m²), l'éco-PTZ (jusqu'à 30 000 €), les CEE, et la TVA à 5,5 %. Un artisan certifié RGE est obligatoire pour en bénéficier."}
+        {
+          "question": "Combien coûte l'isolation d'une toiture ?",
+          "reponse": "L'isolation des combles perdus par soufflage coûte 20 à 50 euros/m². L'isolation sous rampants coûte 40 à 80 euros/m². L'isolation par l'extérieur (sarking) coûte 100 à 250 euros/m², matériaux et pose inclus."
+        },
+        {
+          "question": "Quelle est la meilleure isolation pour une toiture ?",
+          "reponse": "La laine de roche et la laine de verre offrent le meilleur rapport performance/prix. Pour une approche écologique, la ouate de cellulose et la fibre de bois sont d'excellentes alternatives. Le choix dépend de votre budget et de la configuration de votre toiture."
+        },
+        {
+          "question": "Quelles aides pour l'isolation de toiture en 2026 ?",
+          "reponse": "Les principales aides sont MaPrimeRénov' (jusqu'à 75 €/m²), l'éco-PTZ (jusqu'à 30 000 €), les CEE, et la TVA à 5,5 %. Un artisan certifié RGE est obligatoire pour en bénéficier."
+        }
       ]
     }
   },
   {
     "slug": "charpente",
+    "catId": 8,
     "nom": "Travaux de charpente",
     "titre": "Travaux de Charpente",
     "description": "Charpente endommagée, insectes, champignons ? Faites intervenir un charpentier-couvreur qualifié. Devis gratuit.",
-    "motsCles": ["charpente", "traitement charpente", "réparation charpente", "charpentier"],
+    "motsCles": [
+      "charpente",
+      "traitement charpente",
+      "réparation charpente",
+      "charpentier"
+    ],
     "contenu": {
       "intro": "La charpente est l'ossature de votre toiture. Son bon état conditionne la solidité de l'ensemble de votre couverture. Attaques d'insectes xylophages, champignons, ou déformations liées au vieillissement : un charpentier-couvreur qualifié diagnostique et traite les pathologies pour garantir la pérennité de votre toit.",
       "sections": [
-        {"h2": "Quand faire vérifier sa charpente ?", "texte": "Un contrôle est recommandé tous les 10 ans, ou immédiatement si vous constatez des craquements inhabituels, une déformation visible du toit, de la sciure au sol (signe de vrillettes ou capricornes), ou une odeur de champignon dans les combles."},
-        {"h2": "Traitement préventif et curatif", "texte": "Le traitement préventif par injection ou pulvérisation protège le bois contre les insectes et les champignons pour 10 à 20 ans. Le traitement curatif nécessite parfois le remplacement de pièces de bois endommagées. Un diagnostic professionnel détermine le traitement adapté."},
-        {"h2": "Prix des travaux de charpente", "texte": "Un traitement de charpente coûte entre 20 et 50 euros/m² traité. Le remplacement d'une panne ou d'un chevron coûte entre 500 et 2 000 euros. Une reprise complète de charpente peut atteindre 10 000 à 30 000 euros selon la surface et l'état."},
-        {"h2": "Charpente traditionnelle ou fermette ?", "texte": "La charpente traditionnelle en bois massif offre un espace habitable sous combles. La fermette (charpente industrielle) est plus économique mais ne permet pas l'aménagement des combles. Le choix dépend de votre projet et de votre budget."}
+        {
+          "h2": "Quand faire vérifier sa charpente ?",
+          "texte": "Un contrôle est recommandé tous les 10 ans, ou immédiatement si vous constatez des craquements inhabituels, une déformation visible du toit, de la sciure au sol (signe de vrillettes ou capricornes), ou une odeur de champignon dans les combles."
+        },
+        {
+          "h2": "Traitement préventif et curatif",
+          "texte": "Le traitement préventif par injection ou pulvérisation protège le bois contre les insectes et les champignons pour 10 à 20 ans. Le traitement curatif nécessite parfois le remplacement de pièces de bois endommagées. Un diagnostic professionnel détermine le traitement adapté."
+        },
+        {
+          "h2": "Prix des travaux de charpente",
+          "texte": "Un traitement de charpente coûte entre 20 et 50 euros/m² traité. Le remplacement d'une panne ou d'un chevron coûte entre 500 et 2 000 euros. Une reprise complète de charpente peut atteindre 10 000 à 30 000 euros selon la surface et l'état."
+        },
+        {
+          "h2": "Charpente traditionnelle ou fermette ?",
+          "texte": "La charpente traditionnelle en bois massif offre un espace habitable sous combles. La fermette (charpente industrielle) est plus économique mais ne permet pas l'aménagement des combles. Le choix dépend de votre projet et de votre budget."
+        }
       ],
       "faq": [
-        {"question": "Combien coûte un traitement de charpente ?", "reponse": "Le traitement de charpente coûte entre 20 et 50 euros/m² pour un traitement préventif ou curatif par injection. Pour une maison de 100 m², comptez entre 2 000 et 5 000 euros, diagnostic inclus."},
-        {"question": "Comment savoir si ma charpente est attaquée ?", "reponse": "Les signes d'alerte sont : sciure fine au sol, petits trous dans le bois, bois qui sonne creux, déformation des poutres, et présence d'insectes ailés au printemps. Un diagnostic professionnel est recommandé."},
-        {"question": "La garantie décennale couvre-t-elle la charpente ?", "reponse": "Oui, la charpente est un élément structurel couvert par la garantie décennale. Si des désordres apparaissent dans les 10 ans suivant les travaux, l'artisan est tenu de les réparer à ses frais."}
+        {
+          "question": "Combien coûte un traitement de charpente ?",
+          "reponse": "Le traitement de charpente coûte entre 20 et 50 euros/m² pour un traitement préventif ou curatif par injection. Pour une maison de 100 m², comptez entre 2 000 et 5 000 euros, diagnostic inclus."
+        },
+        {
+          "question": "Comment savoir si ma charpente est attaquée ?",
+          "reponse": "Les signes d'alerte sont : sciure fine au sol, petits trous dans le bois, bois qui sonne creux, déformation des poutres, et présence d'insectes ailés au printemps. Un diagnostic professionnel est recommandé."
+        },
+        {
+          "question": "La garantie décennale couvre-t-elle la charpente ?",
+          "reponse": "Oui, la charpente est un élément structurel couvert par la garantie décennale. Si des désordres apparaissent dans les 10 ans suivant les travaux, l'artisan est tenu de les réparer à ses frais."
+        }
       ]
     }
   },
   {
     "slug": "zinguerie",
+    "catId": 84,
     "nom": "Zinguerie et gouttières",
     "titre": "Zinguerie et Gouttières",
     "description": "Installation, réparation et entretien de gouttières, chéneaux et éléments de zinguerie. Devis gratuit.",
-    "motsCles": ["zinguerie", "gouttière", "chéneau", "descente eau pluviale"],
+    "motsCles": [
+      "zinguerie",
+      "gouttière",
+      "chéneau",
+      "descente eau pluviale"
+    ],
     "contenu": {
       "intro": "La zinguerie regroupe tous les éléments métalliques de votre toiture : gouttières, chéneaux, descentes d'eau pluviale, solins, noues et bavettes. Ces éléments assurent l'évacuation des eaux de pluie et l'étanchéité des points singuliers. Un zingueur-couvreur qualifié garantit une installation durable et efficace.",
       "sections": [
-        {"h2": "Les éléments de zinguerie", "texte": "La zinguerie comprend les gouttières (pendantes ou rampantes), les chéneaux (encaissés ou en saillie), les descentes d'eau pluviale, les solins (raccords entre toiture et murs), les noues (jonctions entre deux pans de toit) et les bavettes de protection."},
-        {"h2": "Matériaux de zinguerie", "texte": "Le zinc est le matériau historique, apprécié pour sa durabilité (50 à 100 ans). L'aluminium laqué offre un bon rapport qualité/prix. Le cuivre est le plus esthétique et le plus durable mais aussi le plus coûteux. Le PVC est économique mais moins résistant dans le temps."},
-        {"h2": "Prix des travaux de zinguerie", "texte": "La pose de gouttières coûte entre 30 et 80 euros/mètre linéaire selon le matériau. Le remplacement d'une descente d'eau revient à 200 à 600 euros. La réparation d'un solin coûte entre 300 et 800 euros. Un entretien annuel (nettoyage des gouttières) coûte 150 à 300 euros."},
-        {"h2": "Entretien de la zinguerie", "texte": "Nettoyez vos gouttières au moins deux fois par an (automne et printemps) pour éviter les obstructions. Vérifiez l'état des joints et des fixations. Remplacez les éléments corrodés avant qu'ils ne provoquent des infiltrations."}
+        {
+          "h2": "Les éléments de zinguerie",
+          "texte": "La zinguerie comprend les gouttières (pendantes ou rampantes), les chéneaux (encaissés ou en saillie), les descentes d'eau pluviale, les solins (raccords entre toiture et murs), les noues (jonctions entre deux pans de toit) et les bavettes de protection."
+        },
+        {
+          "h2": "Matériaux de zinguerie",
+          "texte": "Le zinc est le matériau historique, apprécié pour sa durabilité (50 à 100 ans). L'aluminium laqué offre un bon rapport qualité/prix. Le cuivre est le plus esthétique et le plus durable mais aussi le plus coûteux. Le PVC est économique mais moins résistant dans le temps."
+        },
+        {
+          "h2": "Prix des travaux de zinguerie",
+          "texte": "La pose de gouttières coûte entre 30 et 80 euros/mètre linéaire selon le matériau. Le remplacement d'une descente d'eau revient à 200 à 600 euros. La réparation d'un solin coûte entre 300 et 800 euros. Un entretien annuel (nettoyage des gouttières) coûte 150 à 300 euros."
+        },
+        {
+          "h2": "Entretien de la zinguerie",
+          "texte": "Nettoyez vos gouttières au moins deux fois par an (automne et printemps) pour éviter les obstructions. Vérifiez l'état des joints et des fixations. Remplacez les éléments corrodés avant qu'ils ne provoquent des infiltrations."
+        }
       ],
       "faq": [
-        {"question": "Combien coûte le remplacement de gouttières ?", "reponse": "Le remplacement de gouttières coûte entre 30 et 80 euros par mètre linéaire, pose comprise. En zinc, comptez 50 à 80 euros/ml. En aluminium, 35 à 60 euros/ml. En PVC, 30 à 45 euros/ml."},
-        {"question": "Quelle est la durée de vie d'une gouttière ?", "reponse": "Une gouttière en zinc dure 50 à 100 ans, en aluminium 30 à 50 ans, en cuivre plus de 100 ans, et en PVC 15 à 25 ans. Un entretien régulier prolonge significativement la durée de vie."},
-        {"question": "Qui doit entretenir les gouttières en copropriété ?", "reponse": "L'entretien des gouttières est à la charge de la copropriété si elles font partie des éléments communs. Le syndic doit organiser un nettoyage régulier, financé par les charges de copropriété."}
+        {
+          "question": "Combien coûte le remplacement de gouttières ?",
+          "reponse": "Le remplacement de gouttières coûte entre 30 et 80 euros par mètre linéaire, pose comprise. En zinc, comptez 50 à 80 euros/ml. En aluminium, 35 à 60 euros/ml. En PVC, 30 à 45 euros/ml."
+        },
+        {
+          "question": "Quelle est la durée de vie d'une gouttière ?",
+          "reponse": "Une gouttière en zinc dure 50 à 100 ans, en aluminium 30 à 50 ans, en cuivre plus de 100 ans, et en PVC 15 à 25 ans. Un entretien régulier prolonge significativement la durée de vie."
+        },
+        {
+          "question": "Qui doit entretenir les gouttières en copropriété ?",
+          "reponse": "L'entretien des gouttières est à la charge de la copropriété si elles font partie des éléments communs. Le syndic doit organiser un nettoyage régulier, financé par les charges de copropriété."
+        }
       ]
     }
   },
   {
     "slug": "toiture-ardoise",
+    "catId": 80,
     "nom": "Toiture en ardoise",
     "titre": "Toiture en Ardoise",
     "description": "Pose, réparation ou rénovation de toiture en ardoise naturelle ou synthétique. Devis gratuit, couvreur spécialisé.",
-    "motsCles": ["toiture ardoise", "ardoise naturelle", "couvreur ardoisier", "pose ardoise"],
+    "motsCles": [
+      "toiture ardoise",
+      "ardoise naturelle",
+      "couvreur ardoisier",
+      "pose ardoise"
+    ],
     "contenu": {
       "intro": "L'ardoise est un matériau noble et durable, prisé pour son élégance et sa longévité exceptionnelle (jusqu'à 100 ans pour l'ardoise naturelle). Très répandue dans l'ouest et le nord de la France, la couverture en ardoise nécessite un savoir-faire spécifique. Un couvreur-ardoisier qualifié maîtrise les techniques de pose au crochet ou au clou.",
       "sections": [
-        {"h2": "Ardoise naturelle ou synthétique ?", "texte": "L'ardoise naturelle (extraite en carrière) offre une durée de vie de 75 à 100 ans et un aspect authentique. L'ardoise synthétique (fibrociment) est plus économique avec une durée de vie de 30 à 50 ans. Le choix dépend de votre budget et des contraintes architecturales locales."},
-        {"h2": "Prix d'une toiture en ardoise", "texte": "L'ardoise naturelle coûte entre 100 et 150 euros/m² posée. L'ardoise synthétique revient à 50 à 80 euros/m² posée. Pour une toiture de 100 m², le budget se situe entre 5 000 et 15 000 euros selon le type d'ardoise et la complexité du toit."},
-        {"h2": "Entretien d'une toiture en ardoise", "texte": "L'ardoise naturelle nécessite peu d'entretien. Un contrôle visuel annuel permet de repérer les ardoises cassées ou déplacées. Le remplacement ponctuel d'ardoises endommagées est simple et économique. Évitez le nettoyage haute pression qui peut fissurer les ardoises."},
-        {"h2": "Réglementation et zones protégées", "texte": "Dans certaines régions (Bretagne, Anjou, Normandie), l'ardoise est imposée par le PLU. En zone protégée (ABF), seule l'ardoise naturelle peut être autorisée. Renseignez-vous auprès de votre mairie avant tout projet."}
+        {
+          "h2": "Ardoise naturelle ou synthétique ?",
+          "texte": "L'ardoise naturelle (extraite en carrière) offre une durée de vie de 75 à 100 ans et un aspect authentique. L'ardoise synthétique (fibrociment) est plus économique avec une durée de vie de 30 à 50 ans. Le choix dépend de votre budget et des contraintes architecturales locales."
+        },
+        {
+          "h2": "Prix d'une toiture en ardoise",
+          "texte": "L'ardoise naturelle coûte entre 100 et 150 euros/m² posée. L'ardoise synthétique revient à 50 à 80 euros/m² posée. Pour une toiture de 100 m², le budget se situe entre 5 000 et 15 000 euros selon le type d'ardoise et la complexité du toit."
+        },
+        {
+          "h2": "Entretien d'une toiture en ardoise",
+          "texte": "L'ardoise naturelle nécessite peu d'entretien. Un contrôle visuel annuel permet de repérer les ardoises cassées ou déplacées. Le remplacement ponctuel d'ardoises endommagées est simple et économique. Évitez le nettoyage haute pression qui peut fissurer les ardoises."
+        },
+        {
+          "h2": "Réglementation et zones protégées",
+          "texte": "Dans certaines régions (Bretagne, Anjou, Normandie), l'ardoise est imposée par le PLU. En zone protégée (ABF), seule l'ardoise naturelle peut être autorisée. Renseignez-vous auprès de votre mairie avant tout projet."
+        }
       ],
       "faq": [
-        {"question": "Combien coûte une toiture en ardoise au m² ?", "reponse": "L'ardoise naturelle coûte 100 à 150 euros/m² posée, l'ardoise synthétique 50 à 80 euros/m². Le prix inclut la fourniture et la pose par un couvreur-ardoisier qualifié."},
-        {"question": "Quelle est la durée de vie d'une toiture en ardoise ?", "reponse": "L'ardoise naturelle de qualité dure 75 à 100 ans. L'ardoise synthétique a une durée de vie de 30 à 50 ans. C'est le matériau de couverture le plus durable."},
-        {"question": "Comment savoir s'il faut changer l'ardoise ?", "reponse": "Les signes d'usure sont : ardoises qui s'effritent, décoloration importante, sonnerie sourde au tapotement, et présence de rouille autour des crochets. Un couvreur peut estimer la durée de vie résiduelle de votre couverture."}
+        {
+          "question": "Combien coûte une toiture en ardoise au m² ?",
+          "reponse": "L'ardoise naturelle coûte 100 à 150 euros/m² posée, l'ardoise synthétique 50 à 80 euros/m². Le prix inclut la fourniture et la pose par un couvreur-ardoisier qualifié."
+        },
+        {
+          "question": "Quelle est la durée de vie d'une toiture en ardoise ?",
+          "reponse": "L'ardoise naturelle de qualité dure 75 à 100 ans. L'ardoise synthétique a une durée de vie de 30 à 50 ans. C'est le matériau de couverture le plus durable."
+        },
+        {
+          "question": "Comment savoir s'il faut changer l'ardoise ?",
+          "reponse": "Les signes d'usure sont : ardoises qui s'effritent, décoloration importante, sonnerie sourde au tapotement, et présence de rouille autour des crochets. Un couvreur peut estimer la durée de vie résiduelle de votre couverture."
+        }
       ]
     }
   },
   {
     "slug": "toiture-tuile",
+    "catId": 80,
     "nom": "Toiture en tuile",
     "titre": "Toiture en Tuile",
     "description": "Pose, remplacement ou rénovation de toiture en tuile terre cuite ou béton. Devis gratuit et sans engagement.",
-    "motsCles": ["toiture tuile", "tuile terre cuite", "tuile béton", "couvreur tuile"],
+    "motsCles": [
+      "toiture tuile",
+      "tuile terre cuite",
+      "tuile béton",
+      "couvreur tuile"
+    ],
     "contenu": {
       "intro": "La tuile est le matériau de couverture le plus répandu en France, couvrant plus de 60 % des toitures. Disponible en terre cuite ou en béton, plate ou canal, elle offre un excellent rapport durabilité-prix. Un couvreur professionnel assure une pose conforme aux DTU pour une étanchéité optimale.",
       "sections": [
-        {"h2": "Les différents types de tuiles", "texte": "La tuile canal (ou romaine) est typique du sud de la France. La tuile plate est traditionnelle en Île-de-France et en Bourgogne. La tuile mécanique à emboîtement est la plus courante. La tuile béton est l'alternative économique à la terre cuite."},
-        {"h2": "Prix d'une toiture en tuile", "texte": "La tuile terre cuite mécanique coûte 40 à 80 euros/m² posée. La tuile plate revient à 60 à 120 euros/m². La tuile canal coûte 50 à 100 euros/m². La tuile béton est la plus économique à 30 à 60 euros/m²."},
-        {"h2": "Durée de vie et entretien", "texte": "Une tuile terre cuite de qualité dure 50 à 80 ans. La tuile béton a une durée de vie de 30 à 50 ans. Un démoussage tous les 5 ans et un contrôle annuel suffisent à maintenir votre toiture en bon état."},
-        {"h2": "Choisir la bonne tuile pour sa région", "texte": "Le PLU de votre commune impose souvent un type et une couleur de tuile. En zone méditerranéenne, la tuile canal est généralement obligatoire. En Île-de-France, les tuiles plates sont courantes. Consultez les règles d'urbanisme avant de choisir."}
+        {
+          "h2": "Les différents types de tuiles",
+          "texte": "La tuile canal (ou romaine) est typique du sud de la France. La tuile plate est traditionnelle en Île-de-France et en Bourgogne. La tuile mécanique à emboîtement est la plus courante. La tuile béton est l'alternative économique à la terre cuite."
+        },
+        {
+          "h2": "Prix d'une toiture en tuile",
+          "texte": "La tuile terre cuite mécanique coûte 40 à 80 euros/m² posée. La tuile plate revient à 60 à 120 euros/m². La tuile canal coûte 50 à 100 euros/m². La tuile béton est la plus économique à 30 à 60 euros/m²."
+        },
+        {
+          "h2": "Durée de vie et entretien",
+          "texte": "Une tuile terre cuite de qualité dure 50 à 80 ans. La tuile béton a une durée de vie de 30 à 50 ans. Un démoussage tous les 5 ans et un contrôle annuel suffisent à maintenir votre toiture en bon état."
+        },
+        {
+          "h2": "Choisir la bonne tuile pour sa région",
+          "texte": "Le PLU de votre commune impose souvent un type et une couleur de tuile. En zone méditerranéenne, la tuile canal est généralement obligatoire. En Île-de-France, les tuiles plates sont courantes. Consultez les règles d'urbanisme avant de choisir."
+        }
       ],
       "faq": [
-        {"question": "Quel est le prix d'une toiture en tuile au m² ?", "reponse": "Comptez 40 à 80 euros/m² pour de la tuile mécanique terre cuite, 30 à 60 euros/m² pour de la tuile béton, et 60 à 120 euros/m² pour de la tuile plate, pose comprise."},
-        {"question": "Tuile terre cuite ou béton ?", "reponse": "La tuile terre cuite est plus durable (50-80 ans vs 30-50 ans) et plus esthétique, mais aussi plus coûteuse. La tuile béton offre un bon rapport qualité-prix pour les budgets serrés."},
-        {"question": "Combien de tuiles faut-il au m² ?", "reponse": "Cela dépend du format : 10 à 15 tuiles mécaniques/m², 40 à 70 tuiles plates/m², et 20 à 40 tuiles canal/m². Votre couvreur calcule le nombre exact en fonction du modèle choisi."}
+        {
+          "question": "Quel est le prix d'une toiture en tuile au m² ?",
+          "reponse": "Comptez 40 à 80 euros/m² pour de la tuile mécanique terre cuite, 30 à 60 euros/m² pour de la tuile béton, et 60 à 120 euros/m² pour de la tuile plate, pose comprise."
+        },
+        {
+          "question": "Tuile terre cuite ou béton ?",
+          "reponse": "La tuile terre cuite est plus durable (50-80 ans vs 30-50 ans) et plus esthétique, mais aussi plus coûteuse. La tuile béton offre un bon rapport qualité-prix pour les budgets serrés."
+        },
+        {
+          "question": "Combien de tuiles faut-il au m² ?",
+          "reponse": "Cela dépend du format : 10 à 15 tuiles mécaniques/m², 40 à 70 tuiles plates/m², et 20 à 40 tuiles canal/m². Votre couvreur calcule le nombre exact en fonction du modèle choisi."
+        }
       ]
     }
   },
   {
     "slug": "toiture-zinc",
+    "catId": 80,
     "nom": "Toiture en zinc",
     "titre": "Toiture en Zinc",
     "description": "Couverture en zinc à joints debout : pose neuve, rénovation et réparation. Devis gratuit par un zingueur qualifié.",
-    "motsCles": ["toiture zinc", "zinc joint debout", "couvreur zingueur", "toit zinc"],
+    "motsCles": [
+      "toiture zinc",
+      "zinc joint debout",
+      "couvreur zingueur",
+      "toit zinc"
+    ],
     "contenu": {
       "intro": "Le zinc est un matériau de couverture élégant et extrêmement durable, emblématique des toits parisiens. Sa technique de pose à joints debout requiert un savoir-faire spécialisé de couvreur-zingueur. Résistant à la corrosion et recyclable à 100 %, le zinc est un choix premium pour une toiture moderne et pérenne.",
       "sections": [
-        {"h2": "Avantages du zinc en couverture", "texte": "Le zinc offre une durée de vie de 50 à 100 ans, une résistance exceptionnelle à la corrosion, un poids léger (5 à 7 kg/m²), une recyclabilité totale, et une esthétique contemporaine qui se patine naturellement avec le temps."},
-        {"h2": "Techniques de pose", "texte": "La pose à joints debout est la technique de référence : les feuilles de zinc sont reliées par des agrafures verticales qui assurent l'étanchéité. La pose à tasseaux est une alternative pour les faibles pentes. Ces techniques requièrent un zingueur qualifié."},
-        {"h2": "Prix d'une toiture en zinc", "texte": "Comptez 60 à 120 euros/m² pour une couverture en zinc à joints debout, fourniture et pose comprises. Le zinc pré-patiné (gris, anthracite) est légèrement plus cher. Pour une toiture de 100 m², le budget se situe entre 6 000 et 12 000 euros."},
-        {"h2": "Zinc et performance thermique", "texte": "Le zinc étant un excellent conducteur thermique, une isolation performante est indispensable sous une toiture zinc. La technique du sarking (isolation par l'extérieur) est particulièrement adaptée pour combiner zinc et haute performance énergétique."}
+        {
+          "h2": "Avantages du zinc en couverture",
+          "texte": "Le zinc offre une durée de vie de 50 à 100 ans, une résistance exceptionnelle à la corrosion, un poids léger (5 à 7 kg/m²), une recyclabilité totale, et une esthétique contemporaine qui se patine naturellement avec le temps."
+        },
+        {
+          "h2": "Techniques de pose",
+          "texte": "La pose à joints debout est la technique de référence : les feuilles de zinc sont reliées par des agrafures verticales qui assurent l'étanchéité. La pose à tasseaux est une alternative pour les faibles pentes. Ces techniques requièrent un zingueur qualifié."
+        },
+        {
+          "h2": "Prix d'une toiture en zinc",
+          "texte": "Comptez 60 à 120 euros/m² pour une couverture en zinc à joints debout, fourniture et pose comprises. Le zinc pré-patiné (gris, anthracite) est légèrement plus cher. Pour une toiture de 100 m², le budget se situe entre 6 000 et 12 000 euros."
+        },
+        {
+          "h2": "Zinc et performance thermique",
+          "texte": "Le zinc étant un excellent conducteur thermique, une isolation performante est indispensable sous une toiture zinc. La technique du sarking (isolation par l'extérieur) est particulièrement adaptée pour combiner zinc et haute performance énergétique."
+        }
       ],
       "faq": [
-        {"question": "Combien coûte une toiture en zinc au m² ?", "reponse": "Une toiture en zinc à joints debout coûte entre 60 et 120 euros/m² posée. Le prix varie selon l'épaisseur du zinc (0,65 ou 0,80 mm) et la complexité de la toiture."},
-        {"question": "Le zinc rouille-t-il ?", "reponse": "Non, le zinc ne rouille pas. Il se couvre d'une patine protectrice naturelle (carbonate de zinc) qui le protège de la corrosion. Cette patine lui donne sa teinte gris mat caractéristique."},
-        {"question": "Le zinc convient-il à toutes les pentes ?", "reponse": "Le zinc à joints debout convient à partir de 5 % de pente (3°). Pour les pentes inférieures, des techniques spécifiques d'étanchéité sont nécessaires. Consultez un zingueur pour déterminer la solution adaptée à votre projet."}
+        {
+          "question": "Combien coûte une toiture en zinc au m² ?",
+          "reponse": "Une toiture en zinc à joints debout coûte entre 60 et 120 euros/m² posée. Le prix varie selon l'épaisseur du zinc (0,65 ou 0,80 mm) et la complexité de la toiture."
+        },
+        {
+          "question": "Le zinc rouille-t-il ?",
+          "reponse": "Non, le zinc ne rouille pas. Il se couvre d'une patine protectrice naturelle (carbonate de zinc) qui le protège de la corrosion. Cette patine lui donne sa teinte gris mat caractéristique."
+        },
+        {
+          "question": "Le zinc convient-il à toutes les pentes ?",
+          "reponse": "Le zinc à joints debout convient à partir de 5 % de pente (3°). Pour les pentes inférieures, des techniques spécifiques d'étanchéité sont nécessaires. Consultez un zingueur pour déterminer la solution adaptée à votre projet."
+        }
       ]
     }
   },
   {
     "slug": "toiture-plate",
+    "catId": 83,
     "nom": "Toiture plate",
     "titre": "Toiture Plate (Toit Terrasse)",
     "description": "Construction, étanchéité et entretien de toiture plate et toit terrasse. Devis gratuit par un étancheur qualifié.",
-    "motsCles": ["toiture plate", "toit terrasse", "étanchéité toit plat", "membrane EPDM"],
+    "motsCles": [
+      "toiture plate",
+      "toit terrasse",
+      "étanchéité toit plat",
+      "membrane EPDM"
+    ],
     "contenu": {
       "intro": "La toiture plate, aussi appelée toit terrasse, est de plus en plus prisée en construction contemporaine. Son étanchéité est un enjeu crucial qui nécessite des matériaux et un savoir-faire spécialisés. Membrane EPDM, bitume, PVC ou végétalisation : un étancheur-couvreur qualifié vous guide dans le choix de la solution adaptée.",
       "sections": [
-        {"h2": "Types de toitures plates", "texte": "On distingue le toit terrasse non accessible (étanchéité classique), le toit terrasse accessible (avec revêtement carrelé ou dalles sur plots), le toit terrasse végétalisé, et le toit terrasse technique (panneaux solaires, climatisation)."},
-        {"h2": "Systèmes d'étanchéité", "texte": "La membrane EPDM (caoutchouc synthétique) offre une durée de vie de 40 à 50 ans. Le bitume modifié (en rouleaux soudés) est le système le plus courant. La membrane PVC est légère et soudable. La résine polyuréthane crée une étanchéité sans joint."},
-        {"h2": "Prix d'une toiture plate", "texte": "L'étanchéité bitumineuse coûte 40 à 80 euros/m². La membrane EPDM revient à 50 à 100 euros/m². La végétalisation ajoute 30 à 80 euros/m² supplémentaires. L'isolation intégrée coûte 20 à 60 euros/m² en plus."},
-        {"h2": "Entretien et problèmes courants", "texte": "Un toit plat nécessite un entretien semestriel : nettoyage des évacuations, vérification de l'étanchéité, retrait des végétaux indésirables. Les problèmes les plus courants sont les stagnations d'eau et les perforations accidentelles de la membrane."}
+        {
+          "h2": "Types de toitures plates",
+          "texte": "On distingue le toit terrasse non accessible (étanchéité classique), le toit terrasse accessible (avec revêtement carrelé ou dalles sur plots), le toit terrasse végétalisé, et le toit terrasse technique (panneaux solaires, climatisation)."
+        },
+        {
+          "h2": "Systèmes d'étanchéité",
+          "texte": "La membrane EPDM (caoutchouc synthétique) offre une durée de vie de 40 à 50 ans. Le bitume modifié (en rouleaux soudés) est le système le plus courant. La membrane PVC est légère et soudable. La résine polyuréthane crée une étanchéité sans joint."
+        },
+        {
+          "h2": "Prix d'une toiture plate",
+          "texte": "L'étanchéité bitumineuse coûte 40 à 80 euros/m². La membrane EPDM revient à 50 à 100 euros/m². La végétalisation ajoute 30 à 80 euros/m² supplémentaires. L'isolation intégrée coûte 20 à 60 euros/m² en plus."
+        },
+        {
+          "h2": "Entretien et problèmes courants",
+          "texte": "Un toit plat nécessite un entretien semestriel : nettoyage des évacuations, vérification de l'étanchéité, retrait des végétaux indésirables. Les problèmes les plus courants sont les stagnations d'eau et les perforations accidentelles de la membrane."
+        }
       ],
       "faq": [
-        {"question": "Un toit plat est-il vraiment plat ?", "reponse": "Non, un toit plat a toujours une légère pente (1 à 5 %) pour assurer l'évacuation des eaux de pluie. Une pente insuffisante est la première cause de problèmes d'étanchéité."},
-        {"question": "Quelle est la durée de vie d'un toit plat ?", "reponse": "Selon le système d'étanchéité : 20 à 30 ans pour le bitume, 40 à 50 ans pour l'EPDM, et 25 à 35 ans pour le PVC. Un entretien régulier peut prolonger significativement ces durées."},
-        {"question": "Peut-on marcher sur un toit plat ?", "reponse": "Cela dépend de sa conception. Un toit terrasse accessible est conçu pour supporter la circulation piétonne. Un toit terrasse non accessible ne doit être utilisé que pour la maintenance, avec précaution pour ne pas endommager l'étanchéité."}
+        {
+          "question": "Un toit plat est-il vraiment plat ?",
+          "reponse": "Non, un toit plat a toujours une légère pente (1 à 5 %) pour assurer l'évacuation des eaux de pluie. Une pente insuffisante est la première cause de problèmes d'étanchéité."
+        },
+        {
+          "question": "Quelle est la durée de vie d'un toit plat ?",
+          "reponse": "Selon le système d'étanchéité : 20 à 30 ans pour le bitume, 40 à 50 ans pour l'EPDM, et 25 à 35 ans pour le PVC. Un entretien régulier peut prolonger significativement ces durées."
+        },
+        {
+          "question": "Peut-on marcher sur un toit plat ?",
+          "reponse": "Cela dépend de sa conception. Un toit terrasse accessible est conçu pour supporter la circulation piétonne. Un toit terrasse non accessible ne doit être utilisé que pour la maintenance, avec précaution pour ne pas endommager l'étanchéité."
+        }
       ]
     }
   },
   {
     "slug": "etancheite-toiture",
+    "catId": 83,
     "nom": "Étanchéité de toiture",
     "titre": "Étanchéité de Toiture",
     "description": "Problème d'étanchéité, infiltration, fuite ? Faites diagnostiquer et traiter votre toiture. Devis gratuit.",
-    "motsCles": ["étanchéité toiture", "infiltration toit", "fuite toiture", "membrane étanchéité"],
+    "motsCles": [
+      "étanchéité toiture",
+      "infiltration toit",
+      "fuite toiture",
+      "membrane étanchéité"
+    ],
     "contenu": {
       "intro": "L'étanchéité est la fonction première de votre toiture. Une infiltration non traitée peut causer des dégâts considérables : moisissures, dégradation de l'isolation, atteinte à la structure. Un couvreur-étancheur professionnel identifie l'origine des fuites et met en œuvre les solutions durables.",
       "sections": [
-        {"h2": "Diagnostiquer un problème d'étanchéité", "texte": "Les signes d'alerte sont : taches d'humidité au plafond ou sur les murs, peinture qui cloque, odeur de moisi, gouttes d'eau visibles. La difficulté est souvent de localiser l'origine exacte de la fuite, qui peut être éloignée de la zone humide visible."},
-        {"h2": "Solutions d'étanchéité", "texte": "Selon le diagnostic : réparation ponctuelle (remplacement de tuiles, reprise de solin), application d'un produit d'étanchéité, pose d'un écran sous-toiture, ou réfection complète de l'étanchéité. Le couvreur adapte la solution à la cause et à l'ampleur du problème."},
-        {"h2": "Prix des travaux d'étanchéité", "texte": "Une réparation ponctuelle coûte 200 à 800 euros. La pose d'un écran sous-toiture revient à 10 à 25 euros/m². Une réfection complète d'étanchéité coûte 40 à 100 euros/m². Un diagnostic d'étanchéité professionnel coûte 150 à 400 euros."},
-        {"h2": "Prévention des problèmes d'étanchéité", "texte": "Un entretien régulier est la meilleure prévention : inspection annuelle, nettoyage des gouttières, vérification des points singuliers (solins, faîtage, noues). Un traitement hydrofuge tous les 10 ans renforce l'étanchéité de surface."}
+        {
+          "h2": "Diagnostiquer un problème d'étanchéité",
+          "texte": "Les signes d'alerte sont : taches d'humidité au plafond ou sur les murs, peinture qui cloque, odeur de moisi, gouttes d'eau visibles. La difficulté est souvent de localiser l'origine exacte de la fuite, qui peut être éloignée de la zone humide visible."
+        },
+        {
+          "h2": "Solutions d'étanchéité",
+          "texte": "Selon le diagnostic : réparation ponctuelle (remplacement de tuiles, reprise de solin), application d'un produit d'étanchéité, pose d'un écran sous-toiture, ou réfection complète de l'étanchéité. Le couvreur adapte la solution à la cause et à l'ampleur du problème."
+        },
+        {
+          "h2": "Prix des travaux d'étanchéité",
+          "texte": "Une réparation ponctuelle coûte 200 à 800 euros. La pose d'un écran sous-toiture revient à 10 à 25 euros/m². Une réfection complète d'étanchéité coûte 40 à 100 euros/m². Un diagnostic d'étanchéité professionnel coûte 150 à 400 euros."
+        },
+        {
+          "h2": "Prévention des problèmes d'étanchéité",
+          "texte": "Un entretien régulier est la meilleure prévention : inspection annuelle, nettoyage des gouttières, vérification des points singuliers (solins, faîtage, noues). Un traitement hydrofuge tous les 10 ans renforce l'étanchéité de surface."
+        }
       ],
       "faq": [
-        {"question": "Comment trouver l'origine d'une fuite de toiture ?", "reponse": "La localisation d'une fuite nécessite souvent un professionnel. L'eau peut cheminer le long des éléments de charpente avant de se manifester loin du point d'entrée. Un couvreur utilise des tests d'arrosage ou une caméra thermique pour identifier l'origine."},
-        {"question": "L'étanchéité est-elle couverte par la garantie décennale ?", "reponse": "Oui, l'étanchéité de toiture est un élément couvert par la garantie décennale. Si des infiltrations apparaissent dans les 10 ans suivant la construction ou la rénovation, l'entreprise est tenue de réparer à ses frais."},
-        {"question": "Peut-on rendre étanche une toiture sans la refaire ?", "reponse": "Oui, dans certains cas. L'application d'un revêtement d'étanchéité liquide ou d'une membrane auto-adhésive peut résoudre les problèmes sans dépose complète. Cette solution est adaptée aux toitures en bon état général avec des défauts localisés."}
+        {
+          "question": "Comment trouver l'origine d'une fuite de toiture ?",
+          "reponse": "La localisation d'une fuite nécessite souvent un professionnel. L'eau peut cheminer le long des éléments de charpente avant de se manifester loin du point d'entrée. Un couvreur utilise des tests d'arrosage ou une caméra thermique pour identifier l'origine."
+        },
+        {
+          "question": "L'étanchéité est-elle couverte par la garantie décennale ?",
+          "reponse": "Oui, l'étanchéité de toiture est un élément couvert par la garantie décennale. Si des infiltrations apparaissent dans les 10 ans suivant la construction ou la rénovation, l'entreprise est tenue de réparer à ses frais."
+        },
+        {
+          "question": "Peut-on rendre étanche une toiture sans la refaire ?",
+          "reponse": "Oui, dans certains cas. L'application d'un revêtement d'étanchéité liquide ou d'une membrane auto-adhésive peut résoudre les problèmes sans dépose complète. Cette solution est adaptée aux toitures en bon état général avec des défauts localisés."
+        }
       ]
     }
   },
   {
     "slug": "velux-fenetre-toit",
+    "catId": 166,
     "nom": "Pose de Velux et fenêtres de toit",
     "titre": "Pose de Velux et Fenêtres de Toit",
     "description": "Installation, remplacement ou agrandissement de Velux et fenêtres de toit. Devis gratuit, couvreur spécialisé.",
-    "motsCles": ["velux", "fenêtre de toit", "pose velux", "remplacement velux"],
+    "motsCles": [
+      "velux",
+      "fenêtre de toit",
+      "pose velux",
+      "remplacement velux"
+    ],
     "contenu": {
       "intro": "L'installation d'une fenêtre de toit (Velux, Roto, Fakro) transforme des combles sombres en espace lumineux et ventilé. Que ce soit pour une création, un remplacement ou un agrandissement, cette intervention nécessite un couvreur spécialisé pour garantir une pose étanche et conforme.",
       "sections": [
-        {"h2": "Types de fenêtres de toit", "texte": "La fenêtre à rotation (axe central) est la plus courante. La fenêtre à projection (ouverture par le bas) offre une vue dégagée. La verrière plane combine plusieurs éléments pour un maximum de lumière. Le conduit de lumière est idéal pour les pièces sans possibilité de fenêtre classique."},
-        {"h2": "Prix d'une fenêtre de toit", "texte": "Un Velux standard (78x98 cm) coûte 300 à 600 euros à l'achat. La pose par un couvreur revient à 400 à 800 euros. Le remplacement d'un Velux existant coûte 600 à 1 200 euros tout compris. Un Velux motorisé coûte 500 à 1 000 euros de plus."},
-        {"h2": "Réglementation et autorisations", "texte": "La création d'une fenêtre de toit nécessite une déclaration préalable de travaux. En zone ABF, l'accord de l'architecte des Bâtiments de France est obligatoire. Des distances minimales par rapport aux limites séparatives doivent être respectées (1,90 m en vue droite)."},
-        {"h2": "Isolation et étanchéité", "texte": "Un Velux bien posé ne doit générer ni fuite ni pont thermique. Le couvreur utilise un kit d'étanchéité (collerette, bavette) adapté au type de couverture. Le double vitrage à isolation renforcée (4/16/4 avec argon) est le standard pour une bonne performance thermique."}
+        {
+          "h2": "Types de fenêtres de toit",
+          "texte": "La fenêtre à rotation (axe central) est la plus courante. La fenêtre à projection (ouverture par le bas) offre une vue dégagée. La verrière plane combine plusieurs éléments pour un maximum de lumière. Le conduit de lumière est idéal pour les pièces sans possibilité de fenêtre classique."
+        },
+        {
+          "h2": "Prix d'une fenêtre de toit",
+          "texte": "Un Velux standard (78x98 cm) coûte 300 à 600 euros à l'achat. La pose par un couvreur revient à 400 à 800 euros. Le remplacement d'un Velux existant coûte 600 à 1 200 euros tout compris. Un Velux motorisé coûte 500 à 1 000 euros de plus."
+        },
+        {
+          "h2": "Réglementation et autorisations",
+          "texte": "La création d'une fenêtre de toit nécessite une déclaration préalable de travaux. En zone ABF, l'accord de l'architecte des Bâtiments de France est obligatoire. Des distances minimales par rapport aux limites séparatives doivent être respectées (1,90 m en vue droite)."
+        },
+        {
+          "h2": "Isolation et étanchéité",
+          "texte": "Un Velux bien posé ne doit générer ni fuite ni pont thermique. Le couvreur utilise un kit d'étanchéité (collerette, bavette) adapté au type de couverture. Le double vitrage à isolation renforcée (4/16/4 avec argon) est le standard pour une bonne performance thermique."
+        }
       ],
       "faq": [
-        {"question": "Combien coûte la pose d'un Velux ?", "reponse": "Comptez 700 à 1 400 euros pour la fourniture et pose d'un Velux standard, et 1 200 à 2 500 euros pour un modèle motorisé. Le prix varie selon la taille, le vitrage et la complexité de la pose."},
-        {"question": "Faut-il un permis pour installer un Velux ?", "reponse": "Une déclaration préalable de travaux suffit dans la plupart des cas. En zone protégée (ABF), l'accord de l'architecte des Bâtiments de France est nécessaire. Renseignez-vous auprès de votre mairie."},
-        {"question": "Quelle taille de Velux choisir ?", "reponse": "La règle est que la surface vitrée doit représenter au moins 1/6 de la surface au sol de la pièce. Pour une chambre de 12 m², un Velux de 78x118 cm minimum est recommandé. Votre couvreur vous conseille en fonction de la pente et de la charpente."}
+        {
+          "question": "Combien coûte la pose d'un Velux ?",
+          "reponse": "Comptez 700 à 1 400 euros pour la fourniture et pose d'un Velux standard, et 1 200 à 2 500 euros pour un modèle motorisé. Le prix varie selon la taille, le vitrage et la complexité de la pose."
+        },
+        {
+          "question": "Faut-il un permis pour installer un Velux ?",
+          "reponse": "Une déclaration préalable de travaux suffit dans la plupart des cas. En zone protégée (ABF), l'accord de l'architecte des Bâtiments de France est nécessaire. Renseignez-vous auprès de votre mairie."
+        },
+        {
+          "question": "Quelle taille de Velux choisir ?",
+          "reponse": "La règle est que la surface vitrée doit représenter au moins 1/6 de la surface au sol de la pièce. Pour une chambre de 12 m², un Velux de 78x118 cm minimum est recommandé. Votre couvreur vous conseille en fonction de la pente et de la charpente."
+        }
       ]
     }
   },
   {
     "slug": "urgence-toiture",
+    "catId": 143,
     "nom": "Intervention urgente toiture",
     "titre": "Urgence Toiture — Intervention Rapide",
     "description": "Toiture arrachée, fuite importante après tempête ? Intervention d'urgence 24h/24 par un couvreur. Appelez maintenant.",
-    "motsCles": ["urgence toiture", "couvreur urgence", "toiture tempête", "bâchage urgence"],
+    "motsCles": [
+      "urgence toiture",
+      "couvreur urgence",
+      "toiture tempête",
+      "bâchage urgence"
+    ],
     "contenu": {
       "intro": "Tempête, grêle, chute d'arbre : votre toiture peut être gravement endommagée en quelques minutes. Une intervention d'urgence par un couvreur qualifié permet de sécuriser votre habitation et de limiter les dégâts. Bâchage, mise hors d'eau, déblaiement : agissez rapidement pour protéger votre bien.",
       "sections": [
-        {"h2": "Quand appeler un couvreur en urgence ?", "texte": "Appelez immédiatement si : des tuiles ou ardoises ont été arrachées par le vent, une fuite importante se déclare pendant un épisode pluvieux, un arbre est tombé sur votre toit, la charpente montre des signes de rupture, ou de l'eau s'infiltre massivement dans votre habitation."},
-        {"h2": "Les interventions d'urgence", "texte": "Le couvreur procède d'abord à la mise en sécurité : bâchage étanche des zones endommagées, étaiement de la charpente si nécessaire, évacuation de l'eau stagnante. Ces mesures conservatoires protègent votre habitation en attendant la réparation définitive."},
-        {"h2": "Prix d'une intervention d'urgence", "texte": "Un bâchage d'urgence coûte entre 500 et 1 500 euros selon la surface à couvrir. Le tarif de nuit, week-end ou jour férié inclut un supplément de 50 à 100 %. Ces frais sont généralement pris en charge par votre assurance habitation en cas de sinistre climatique."},
-        {"h2": "Démarches auprès de l'assurance", "texte": "Déclarez le sinistre à votre assureur dans les 5 jours (10 jours si catastrophe naturelle). Prenez des photos des dégâts avant toute intervention. Conservez les factures du couvreur. Demandez un devis détaillé pour la réparation définitive, que vous transmettrez à votre expert."}
+        {
+          "h2": "Quand appeler un couvreur en urgence ?",
+          "texte": "Appelez immédiatement si : des tuiles ou ardoises ont été arrachées par le vent, une fuite importante se déclare pendant un épisode pluvieux, un arbre est tombé sur votre toit, la charpente montre des signes de rupture, ou de l'eau s'infiltre massivement dans votre habitation."
+        },
+        {
+          "h2": "Les interventions d'urgence",
+          "texte": "Le couvreur procède d'abord à la mise en sécurité : bâchage étanche des zones endommagées, étaiement de la charpente si nécessaire, évacuation de l'eau stagnante. Ces mesures conservatoires protègent votre habitation en attendant la réparation définitive."
+        },
+        {
+          "h2": "Prix d'une intervention d'urgence",
+          "texte": "Un bâchage d'urgence coûte entre 500 et 1 500 euros selon la surface à couvrir. Le tarif de nuit, week-end ou jour férié inclut un supplément de 50 à 100 %. Ces frais sont généralement pris en charge par votre assurance habitation en cas de sinistre climatique."
+        },
+        {
+          "h2": "Démarches auprès de l'assurance",
+          "texte": "Déclarez le sinistre à votre assureur dans les 5 jours (10 jours si catastrophe naturelle). Prenez des photos des dégâts avant toute intervention. Conservez les factures du couvreur. Demandez un devis détaillé pour la réparation définitive, que vous transmettrez à votre expert."
+        }
       ],
       "faq": [
-        {"question": "Qui appeler en cas d'urgence toiture ?", "reponse": "Appelez un couvreur local disposant d'un service d'urgence. Évitez les numéros surtaxés et les entreprises qui démarchent après les tempêtes. Privilégiez les artisans recommandés par votre assurance ou votre mairie."},
-        {"question": "L'assurance couvre-t-elle les frais d'urgence ?", "reponse": "Oui, si les dégâts sont causés par un événement climatique (tempête, grêle, catastrophe naturelle). Les frais de bâchage et de mise hors d'eau sont couverts par la garantie tempête de votre contrat habitation."},
-        {"question": "Peut-on bâcher sa toiture soi-même ?", "reponse": "C'est fortement déconseillé en raison des risques de chute, surtout pendant une tempête. De plus, un bâchage mal réalisé peut aggraver les dégâts. Attendez l'intervention d'un professionnel équipé."}
+        {
+          "question": "Qui appeler en cas d'urgence toiture ?",
+          "reponse": "Appelez un couvreur local disposant d'un service d'urgence. Évitez les numéros surtaxés et les entreprises qui démarchent après les tempêtes. Privilégiez les artisans recommandés par votre assurance ou votre mairie."
+        },
+        {
+          "question": "L'assurance couvre-t-elle les frais d'urgence ?",
+          "reponse": "Oui, si les dégâts sont causés par un événement climatique (tempête, grêle, catastrophe naturelle). Les frais de bâchage et de mise hors d'eau sont couverts par la garantie tempête de votre contrat habitation."
+        },
+        {
+          "question": "Peut-on bâcher sa toiture soi-même ?",
+          "reponse": "C'est fortement déconseillé en raison des risques de chute, surtout pendant une tempête. De plus, un bâchage mal réalisé peut aggraver les dégâts. Attendez l'intervention d'un professionnel équipé."
+        }
       ]
     }
   },
   {
     "slug": "toiture-bac-acier",
+    "catId": 80,
     "nom": "Toiture en bac acier",
     "titre": "Toiture Bac Acier — Pose et Rénovation",
     "description": "Pose, rénovation ou remplacement de toiture en bac acier. Matériau économique et durable pour maisons, garages et bâtiments. Devis gratuit.",
-    "motsCles": ["toiture bac acier", "bac acier toiture", "couverture bac acier", "toit bac acier prix"],
+    "motsCles": [
+      "toiture bac acier",
+      "bac acier toiture",
+      "couverture bac acier",
+      "toit bac acier prix"
+    ],
     "contenu": {
       "intro": "Le bac acier est une solution de couverture économique, légère et durable qui séduit de plus en plus de propriétaires. Longtemps cantonné aux bâtiments agricoles et industriels, il s'impose désormais pour les maisons individuelles, les extensions, les garages et les toits plats. Avec un prix de 20 à 60 euros/m² posé, c'est le matériau le plus abordable du marché, sans sacrifier la longévité (30 à 50 ans).",
       "sections": [
-        {"h2": "Qu'est-ce qu'une toiture en bac acier ?", "texte": "Le bac acier est une tôle d'acier galvanisé, profilée en forme de U ou de trapèze, qui assure à la fois la couverture et la rigidité structurelle du toit. Il existe en version simple peau (une couche), double peau (deux couches avec isolant entre les deux) ou sandwich (isolant intégré). Les finitions laquées permettent de choisir parmi de nombreuses couleurs : gris anthracite, rouge brique, vert mousse, bleu ardoise. Le bac acier se pose sur des pentes faibles (dès 5 %) et convient aux toitures de toutes tailles."},
-        {"h2": "Avantages et inconvénients du bac acier", "texte": "Les avantages sont nombreux : prix très compétitif (20-60 euros/m²), légèreté (5-7 kg/m² contre 40-60 kg/m² pour la tuile), pose rapide grâce aux grandes plaques, étanchéité excellente, résistance au feu et recyclabilité à 100 %. Les inconvénients à connaître : isolation acoustique faible (bruit de pluie), condensation possible sans écran adapté, dilatation thermique nécessitant des fixations spéciales, et esthétique parfois jugée moins noble que la tuile ou l'ardoise. Le bac acier sandwich avec isolant intégré (polyuréthane ou laine de roche) résout la plupart de ces inconvénients."},
-        {"h2": "Prix d'une toiture bac acier en 2026", "texte": "Le bac acier simple peau coûte 20 à 35 euros/m² posé, le bac acier double peau avec isolation entre 40 et 70 euros/m², et le bac acier sandwich (isolant intégré) entre 50 et 90 euros/m². Pour une toiture de 100 m², le budget total se situe entre 2 000 et 9 000 euros selon le type choisi. Les facteurs de variation sont : l'épaisseur de la tôle (0,50 à 0,75 mm), la finition (galvanisé brut ou laqué), le type d'isolant et la complexité de la pose (pente, accessibilité, nombre de découpes)."},
-        {"h2": "Pose et entretien du bac acier", "texte": "La pose du bac acier se fait sur une ossature de pannes métalliques ou en bois, espacées de 1,50 à 2,50 m selon la charge. Les plaques se fixent par vis autoperceuses avec rondelles d'étanchéité. Un recouvrement de 15 à 20 cm entre plaques garantit l'étanchéité. L'entretien est minimal : un nettoyage annuel au jet d'eau basse pression et une vérification des fixations et des joints suffisent. Le bac acier ne nécessite ni démoussage ni traitement anti-mousse, contrairement à la tuile."},
-        {"h2": "Bac acier et réglementation", "texte": "Avant de choisir le bac acier, consultez le Plan Local d'Urbanisme (PLU) de votre commune. Certaines zones protégées ou centres-villes historiques interdisent ce matériau pour des raisons esthétiques. En zone pavillonnaire et périurbaine, le bac acier laqué de couleur sombre est généralement autorisé. Pour les bâtiments agricoles et industriels, aucune restriction ne s'applique. La pose doit respecter le DTU 40.35 (couverture en plaques nervurées d'acier)."}
+        {
+          "h2": "Qu'est-ce qu'une toiture en bac acier ?",
+          "texte": "Le bac acier est une tôle d'acier galvanisé, profilée en forme de U ou de trapèze, qui assure à la fois la couverture et la rigidité structurelle du toit. Il existe en version simple peau (une couche), double peau (deux couches avec isolant entre les deux) ou sandwich (isolant intégré). Les finitions laquées permettent de choisir parmi de nombreuses couleurs : gris anthracite, rouge brique, vert mousse, bleu ardoise. Le bac acier se pose sur des pentes faibles (dès 5 %) et convient aux toitures de toutes tailles."
+        },
+        {
+          "h2": "Avantages et inconvénients du bac acier",
+          "texte": "Les avantages sont nombreux : prix très compétitif (20-60 euros/m²), légèreté (5-7 kg/m² contre 40-60 kg/m² pour la tuile), pose rapide grâce aux grandes plaques, étanchéité excellente, résistance au feu et recyclabilité à 100 %. Les inconvénients à connaître : isolation acoustique faible (bruit de pluie), condensation possible sans écran adapté, dilatation thermique nécessitant des fixations spéciales, et esthétique parfois jugée moins noble que la tuile ou l'ardoise. Le bac acier sandwich avec isolant intégré (polyuréthane ou laine de roche) résout la plupart de ces inconvénients."
+        },
+        {
+          "h2": "Prix d'une toiture bac acier en 2026",
+          "texte": "Le bac acier simple peau coûte 20 à 35 euros/m² posé, le bac acier double peau avec isolation entre 40 et 70 euros/m², et le bac acier sandwich (isolant intégré) entre 50 et 90 euros/m². Pour une toiture de 100 m², le budget total se situe entre 2 000 et 9 000 euros selon le type choisi. Les facteurs de variation sont : l'épaisseur de la tôle (0,50 à 0,75 mm), la finition (galvanisé brut ou laqué), le type d'isolant et la complexité de la pose (pente, accessibilité, nombre de découpes)."
+        },
+        {
+          "h2": "Pose et entretien du bac acier",
+          "texte": "La pose du bac acier se fait sur une ossature de pannes métalliques ou en bois, espacées de 1,50 à 2,50 m selon la charge. Les plaques se fixent par vis autoperceuses avec rondelles d'étanchéité. Un recouvrement de 15 à 20 cm entre plaques garantit l'étanchéité. L'entretien est minimal : un nettoyage annuel au jet d'eau basse pression et une vérification des fixations et des joints suffisent. Le bac acier ne nécessite ni démoussage ni traitement anti-mousse, contrairement à la tuile."
+        },
+        {
+          "h2": "Bac acier et réglementation",
+          "texte": "Avant de choisir le bac acier, consultez le Plan Local d'Urbanisme (PLU) de votre commune. Certaines zones protégées ou centres-villes historiques interdisent ce matériau pour des raisons esthétiques. En zone pavillonnaire et périurbaine, le bac acier laqué de couleur sombre est généralement autorisé. Pour les bâtiments agricoles et industriels, aucune restriction ne s'applique. La pose doit respecter le DTU 40.35 (couverture en plaques nervurées d'acier)."
+        }
       ],
       "faq": [
-        {"question": "Quelle est la durée de vie d'une toiture bac acier ?", "reponse": "Un bac acier de qualité dure 30 à 50 ans. Le bac acier galvanisé offre une durée de vie de 30 ans minimum. Avec une finition laquée ou une protection supplémentaire (aluminium-zinc), la longévité atteint 40 à 50 ans sans entretien majeur."},
-        {"question": "Le bac acier est-il bruyant quand il pleut ?", "reponse": "Un bac acier simple peau peut effectivement amplifier le bruit de la pluie. La solution : opter pour un bac acier sandwich avec isolant intégré (polyuréthane ou laine de roche) qui atténue considérablement le bruit. L'ajout d'un faux-plafond avec isolant améliore encore le confort acoustique."},
-        {"question": "Peut-on poser du bac acier sur une charpente bois ?", "reponse": "Oui, le bac acier se pose très bien sur une charpente bois traditionnelle. Sa légèreté (5-7 kg/m²) convient particulièrement aux charpentes anciennes ou légères. Assurez-vous que l'entraxe des pannes correspond aux recommandations du fabricant."},
-        {"question": "Faut-il un permis de construire pour une toiture bac acier ?", "reponse": "Un changement de matériau de couverture nécessite une déclaration préalable de travaux en mairie. Si la surface ou la hauteur du bâtiment change, un permis de construire peut être requis. Vérifiez le PLU de votre commune pour les restrictions éventuelles sur les matériaux."},
-        {"question": "Le bac acier est-il adapté aux toits plats ?", "reponse": "Oui, le bac acier convient aux toitures à faible pente (dès 5 %). Pour les toits plats (pente inférieure à 5 %), une membrane d'étanchéité complémentaire (EPDM ou bitume) est nécessaire. Le bac acier sert alors de support structurel à l'étanchéité."}
+        {
+          "question": "Quelle est la durée de vie d'une toiture bac acier ?",
+          "reponse": "Un bac acier de qualité dure 30 à 50 ans. Le bac acier galvanisé offre une durée de vie de 30 ans minimum. Avec une finition laquée ou une protection supplémentaire (aluminium-zinc), la longévité atteint 40 à 50 ans sans entretien majeur."
+        },
+        {
+          "question": "Le bac acier est-il bruyant quand il pleut ?",
+          "reponse": "Un bac acier simple peau peut effectivement amplifier le bruit de la pluie. La solution : opter pour un bac acier sandwich avec isolant intégré (polyuréthane ou laine de roche) qui atténue considérablement le bruit. L'ajout d'un faux-plafond avec isolant améliore encore le confort acoustique."
+        },
+        {
+          "question": "Peut-on poser du bac acier sur une charpente bois ?",
+          "reponse": "Oui, le bac acier se pose très bien sur une charpente bois traditionnelle. Sa légèreté (5-7 kg/m²) convient particulièrement aux charpentes anciennes ou légères. Assurez-vous que l'entraxe des pannes correspond aux recommandations du fabricant."
+        },
+        {
+          "question": "Faut-il un permis de construire pour une toiture bac acier ?",
+          "reponse": "Un changement de matériau de couverture nécessite une déclaration préalable de travaux en mairie. Si la surface ou la hauteur du bâtiment change, un permis de construire peut être requis. Vérifiez le PLU de votre commune pour les restrictions éventuelles sur les matériaux."
+        },
+        {
+          "question": "Le bac acier est-il adapté aux toits plats ?",
+          "reponse": "Oui, le bac acier convient aux toitures à faible pente (dès 5 %). Pour les toits plats (pente inférieure à 5 %), une membrane d'étanchéité complémentaire (EPDM ou bitume) est nécessaire. Le bac acier sert alors de support structurel à l'étanchéité."
+        }
       ]
     }
   }
