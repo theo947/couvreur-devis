@@ -114,6 +114,8 @@ export const handler = async (event) => {
 
   const url = process.env.VUD_API_TEST === '1' ? `${VUD_ENDPOINT}?test=1` : VUD_ENDPOINT;
 
+  console.log('[lead] Envoi VUD →', url, '| cat_id:', params.get('cat_id'), '| cp:', cp, '| ville:', ville);
+
   let apiJson;
   try {
     const res = await fetch(url, {
@@ -125,21 +127,24 @@ export const handler = async (event) => {
       body: params.toString(),
     });
     const text = await res.text();
+    console.log('[lead] Réponse VUD brute:', text.slice(0, 800));
     try {
       apiJson = JSON.parse(text);
     } catch {
+      console.error('[lead] Réponse VUD non-JSON:', text.slice(0, 500));
       return jsonResponse(502, { ok: false, message: 'Réponse API illisible.', raw: text.slice(0, 500) });
     }
-  } catch {
+  } catch (err) {
+    console.error('[lead] Erreur réseau VUD:', err.message);
     return jsonResponse(502, { ok: false, message: 'Service de devis injoignable.' });
   }
 
-  // Analyse du retour : code_retour[0].code == 200 => OK
   const codes = Array.isArray(apiJson?.code_retour) ? apiJson.code_retour : [];
   const ok = codes.some((c) => String(c.code) === '200');
 
   if (ok) {
     const dd = apiJson.devis_data || {};
+    console.log('[lead] OK — devis_id:', dd.devis_id, '| reversement:', dd.devis_reversement, '| hash:', dd.devis_hash);
     return jsonResponse(200, {
       ok: true,
       devis_id: dd.devis_id ?? null,
@@ -147,6 +152,7 @@ export const handler = async (event) => {
     });
   }
 
+  console.warn('[lead] REJET VUD —', codes.map((c) => `${c.code}: ${c.code_texte}`).join(' | '));
   return jsonResponse(422, {
     ok: false,
     message: 'Votre demande n\'a pas pu être enregistrée.',
