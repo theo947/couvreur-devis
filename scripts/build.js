@@ -180,8 +180,6 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
 <header class="site-header">
 <div class="header-inner">
   <a href="/" class="site-logo">Devis<span>Couvreur</span></a>
-  <button class="mobile-toggle" aria-label="Menu"><span class="hamburger"></span></button>
-  <div class="mobile-overlay"></div>
   <nav class="main-nav">
     <button class="mobile-close" aria-label="Fermer">&times;</button>
     <a href="/">Accueil</a>
@@ -190,8 +188,10 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
     <a href="/a-propos/">A propos</a>
     <a href="/#quote-form-1" class="nav-cta">Devis gratuit</a>
   </nav>
+  <button class="mobile-toggle" aria-label="Menu"><span class="hamburger"></span></button>
 </div>
 </header>
+<div class="mobile-overlay"></div>
 
 ${breadcrumbs.length > 1 ? `<div class="breadcrumb"><div class="container">${breadcrumbHtml}</div></div>` : ''}
 
