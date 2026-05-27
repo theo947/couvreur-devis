@@ -183,6 +183,22 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
   <nav class="main-nav">
     <button class="mobile-close" aria-label="Fermer">&times;</button>
     <a href="/">Accueil</a>
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-toggle" aria-expanded="false">Régions <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <div class="mega-menu">
+        <div class="mega-menu-inner">
+          <div class="mega-menu-title">Trouvez un couvreur par région</div>
+          <div class="mega-menu-grid">
+            ${regions.filter(r => !['guadeloupe','martinique','guyane','la-reunion','mayotte'].includes(r.slug)).map(r =>
+              `<a href="/couvreur/${r.slug}/">${r.nom}</a>`
+            ).join('\n            ')}
+          </div>
+          <div class="mega-menu-footer">
+            <a href="/plan-du-site/">Voir toutes les régions et départements →</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <a href="/services/">Services</a>
     <a href="/guide/">Guides</a>
     <a href="/a-propos/">A propos</a>

@@ -23,6 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closeBtn) closeBtn.addEventListener('click', closeMenu);
   if (nav) nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
+  // Mega menu: toggle on click (mobile accordion + desktop fallback)
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const mega = btn.nextElementSibling;
+      if (!mega) return;
+      const isOpen = mega.classList.contains('active');
+      mega.classList.toggle('active', !isOpen);
+      btn.setAttribute('aria-expanded', !isOpen);
+    });
+  });
+  // Close mega menu when clicking outside (desktop)
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.mega-menu.active').forEach(m => {
+        m.classList.remove('active');
+        const btn = m.previousElementSibling;
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+  });
+
   // FAQ : <details>/<summary> natif — ferme les autres à l'ouverture d'un item
   document.querySelectorAll('.faq-section').forEach(section => {
     section.addEventListener('toggle', e => {
