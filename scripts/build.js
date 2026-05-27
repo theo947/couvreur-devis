@@ -122,7 +122,7 @@ function getServiceIcon(slug) {
   return serviceIcons[slug] || serviceIcons['renovation-toiture'];
 }
 
-function layout(title, metaDesc, canonical, breadcrumbs, bodyContent, schemaJsonLd = '') {
+function layout(title, metaDesc, canonical, breadcrumbs, bodyContent, schemaJsonLd = '', opts = {}) {
   const breadcrumbHtml = breadcrumbs.map((b, i) =>
     i < breadcrumbs.length - 1
       ? `<a href="${b.url}">${escHtml(b.label)}</a><span>›</span>`
@@ -171,6 +171,7 @@ function layout(title, metaDesc, canonical, breadcrumbs, bodyContent, schemaJson
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" onload="this.rel='stylesheet'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/assets/css/style.css">
+${opts.preloadImg ? `<link rel="preload" as="image" type="image/webp" href="${opts.preloadImg}">` : ''}
 <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
 ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` : ''}
 </head>
@@ -179,11 +180,14 @@ ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` :
 <header class="site-header">
 <div class="header-inner">
   <a href="/" class="site-logo">Devis<span>Couvreur</span></a>
-  <button class="mobile-toggle" aria-label="Menu">☰</button>
+  <button class="mobile-toggle" aria-label="Menu"><span class="hamburger"></span></button>
+  <div class="mobile-overlay"></div>
   <nav class="main-nav">
+    <button class="mobile-close" aria-label="Fermer">&times;</button>
     <a href="/">Accueil</a>
     <a href="/services/">Services</a>
     <a href="/guide/">Guides</a>
+    <a href="/a-propos/">A propos</a>
     <a href="/#quote-form-1" class="nav-cta">Devis gratuit</a>
   </nav>
 </div>
@@ -221,6 +225,7 @@ ${bodyContent}
 </div>
 <div class="footer-bottom">
   © 2026 ${SITE_NAME} — Tous droits réservés |
+  <a href="/a-propos/">A propos</a> |
   <a href="/mentions-legales/">Mentions légales</a> |
   <a href="/politique-confidentialite/">Politique de confidentialité</a>
 </div>
@@ -236,9 +241,11 @@ ${bodyContent}
 }
 
 let formCounter = 0;
-function quoteFormHtml(lieu = '') {
+function quoteFormHtml(lieu = '', prefill = {}) {
   const uid = ++formCounter;
   const lieuPlaceholder = lieu || 'Votre ville';
+  const pCp = prefill.cp || '';
+  const pVille = prefill.ville || '';
   return `
 <div class="quote-form-card">
   <h2>Demandez vos devis gratuits</h2>
@@ -277,11 +284,11 @@ function quoteFormHtml(lieu = '') {
       <div class="form-row">
         <div class="form-group">
           <label for="cp-${uid}">Code postal *</label>
-          <input type="text" id="cp-${uid}" name="cp" class="cp-input" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Ex : 75001" required>
+          <input type="text" id="cp-${uid}" name="cp" class="cp-input" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Ex : 75001"${pCp ? ` value="${escHtml(pCp)}"` : ''} required>
         </div>
         <div class="form-group">
           <label for="ville-${uid}">Ville *</label>
-          <input type="text" id="ville-${uid}" name="ville" class="ville-input" placeholder="${escHtml(lieuPlaceholder)}" required>
+          <input type="text" id="ville-${uid}" name="ville" class="ville-input" placeholder="${escHtml(lieuPlaceholder)}"${pVille ? ` value="${escHtml(pVille)}"` : ''} required>
         </div>
       </div>
       <div class="form-group">
@@ -632,7 +639,7 @@ ${ctaBannerHtml()}
     JSON.stringify(faqSchemaObj(homepageFaqs))
   ].join('</script>\n<script type="application/ld+json">');
 
-  writePage('/', layout(title, desc, '/', [{ label: 'Accueil', url: '/' }], body, schemas));
+  writePage('/', layout(title, desc, '/', [{ label: 'Accueil', url: '/' }], body, schemas, { preloadImg: '/assets/img/hero-roof.webp' }));
 }
 
 // ---------------------
@@ -661,7 +668,7 @@ function buildRegionPages() {
 
     const body = `
 <section class="hero">
-<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="lazy"></div>
 <div class="container hero-inner">
   <div>
     <h1>Couvreur en <span>${escHtml(region.nom)}</span> — Devis Gratuit et Sans Engagement</h1>
@@ -775,7 +782,7 @@ function buildDepartmentPages() {
 
     const body = `
 <section class="hero">
-<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="lazy"></div>
 <div class="container hero-inner">
   <div>
     <h1>Couvreur <span>${escHtml(prep)}</span> (${dept.code}) — Devis Gratuit</h1>
@@ -913,7 +920,7 @@ function buildCityPages() {
 
     const body = `
 <section class="hero">
-<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="lazy"></div>
 <div class="container hero-inner">
   <div>
     <h1>Couvreur à <span>${escHtml(nom)}</span> (${cp}) — Devis Gratuit</h1>
@@ -924,7 +931,7 @@ function buildCityPages() {
       <div class="trust-badge"><div class="icon">✓</div> Garantie décennale</div>
     </div>
   </div>
-  ${quoteFormHtml(nom)}
+  ${quoteFormHtml(nom, { cp, ville: nom })}
 </div>
 </section>
 
@@ -983,7 +990,7 @@ function buildCityPages() {
     ${faqHtml(faqs)}
   </div>
   <div class="sidebar">
-    ${quoteFormHtml(nom)}
+    ${quoteFormHtml(nom, { cp, ville: nom })}
   </div>
 </div>
 </section>
@@ -1015,7 +1022,7 @@ function buildServiceIndexPage() {
 
   const body = `
 <section class="hero">
-<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="lazy"></div>
 <div class="container hero-inner">
   <div>
     <h1>Services de <span>Couverture</span> — Devis Gratuit</h1>
@@ -1143,7 +1150,7 @@ function buildServicePages() {
 
     const body = `
 <section class="hero">
-<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="lazy"></div>
 <div class="container hero-inner">
   <div>
     <h1>${escHtml(service.titre)} — <span>Devis Gratuit</span></h1>
@@ -1235,7 +1242,7 @@ function buildGuideIndexPage() {
 
   const body = `
 <section class="hero">
-<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="lazy"></div>
 <div class="container hero-inner">
   <div>
     <h1>Guides <span>Toiture</span> — Conseils d'Experts</h1>
@@ -1442,6 +1449,55 @@ function buildLegalPages() {
       [{ label: 'Accueil', url: '/' }, { label: page.title, url }],
       body));
   }
+}
+
+// ---------------------
+// Generate: A propos page
+// ---------------------
+function buildAboutPage() {
+  const url = '/a-propos/';
+  const title = 'A propos de Devis Couvreur France';
+  const desc = 'Devis Couvreur France met en relation les particuliers avec des couvreurs qualifies partout en France. Service gratuit, sans engagement.';
+
+  const body = `
+<section class="section">
+<div class="container">
+  <div class="content-area" style="max-width:800px;margin:0 auto">
+    <h1>A propos de ${SITE_NAME}</h1>
+
+    <p><strong>${SITE_NAME}</strong> est un service de mise en relation gratuit entre particuliers et couvreurs qualifies. Notre objectif : vous permettre de comparer facilement les devis pour vos travaux de toiture, en toute transparence et sans engagement.</p>
+
+    <h2>Notre mission</h2>
+    <p>Trouver un couvreur fiable ne devrait pas etre un parcours du combattant. Nous simplifions cette recherche en vous connectant directement avec des artisans certifies de votre secteur. En quelques clics, vous recevez jusqu'a 3 devis detailles pour comparer les prix, les delais et les prestations.</p>
+
+    <h2>Comment ca fonctionne</h2>
+    <p>Notre plateforme fonctionne en 3 etapes :</p>
+    <ul>
+      <li><strong>Vous decrivez votre projet</strong> — type de travaux, localisation, urgence et details du chantier.</li>
+      <li><strong>Nous transmettons votre demande</strong> — votre projet est envoye a des couvreurs qualifies et assures de votre zone geographique.</li>
+      <li><strong>Vous comparez et choisissez</strong> — vous recevez jusqu'a 3 devis sous 48h et selectionnez l'artisan qui vous convient. Aucune obligation.</li>
+    </ul>
+
+    <h2>Nos engagements</h2>
+    <ul>
+      <li><strong>100 % gratuit</strong> — notre service ne vous coute rien. Les artisans financent la mise en relation.</li>
+      <li><strong>Sans engagement</strong> — recevoir des devis ne vous oblige a rien. Vous etes libre de comparer et de choisir.</li>
+      <li><strong>Artisans verifies</strong> — nous travaillons avec des couvreurs disposant d'une assurance decennale valide. La majorite sont certifies RGE.</li>
+      <li><strong>Couverture nationale</strong> — notre reseau couvre l'ensemble du territoire francais, de la metropole aux DOM-TOM.</li>
+    </ul>
+
+    <h2>Notre couverture</h2>
+    <p>${SITE_NAME} intervient sur tous les types de travaux de toiture : reparation, renovation complete, nettoyage et demoussage, isolation, charpente, zinguerie, pose de Velux, etancheite et urgences. Nous couvrons <strong>${regions.length} regions</strong>, <strong>${departements.length} departements</strong> et plus de <strong>${communes.length.toLocaleString('fr-FR')} communes</strong> en France.</p>
+
+    <h2>Nous contacter</h2>
+    <p>Une question sur notre service ? Ecrivez-nous a <strong>contact@deviscouvreurfrance.com</strong>. Nous repondons sous 24h.</p>
+  </div>
+</div>
+</section>`;
+
+  writePage(url, layout(`${title} | ${SITE_NAME}`, desc, url,
+    [{ label: 'Accueil', url: '/' }, { label: 'A propos', url }],
+    body));
 }
 
 // ---------------------
@@ -1670,7 +1726,8 @@ function copyAssets() {
   buildLegalPages();
   build404Page();
   buildMerciPage();
-  console.log('  ✓ Pages légales + 404 + merci');
+  buildAboutPage();
+  console.log('  ✓ Pages légales + 404 + merci + à propos');
 
   console.log('\n📦 Assets et fichiers techniques...');
   copyAssets();

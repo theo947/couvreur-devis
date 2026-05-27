@@ -1,12 +1,27 @@
 /* Couvreur Devis — JS Principal */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile menu toggle
+  // Mobile menu slide-in
   const toggle = document.querySelector('.mobile-toggle');
   const nav = document.querySelector('.main-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', () => nav.classList.toggle('active'));
+  const overlay = document.querySelector('.mobile-overlay');
+  const closeBtn = document.querySelector('.mobile-close');
+  function openMenu() {
+    nav && nav.classList.add('active');
+    overlay && overlay.classList.add('active');
+    toggle && toggle.classList.add('active');
+    document.body.style.overflow = 'hidden';
   }
+  function closeMenu() {
+    nav && nav.classList.remove('active');
+    overlay && overlay.classList.remove('active');
+    toggle && toggle.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  if (toggle) toggle.addEventListener('click', () => nav.classList.contains('active') ? closeMenu() : openMenu());
+  if (overlay) overlay.addEventListener('click', closeMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  if (nav) nav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
   // FAQ : <details>/<summary> natif — ferme les autres à l'ouverture d'un item
   document.querySelectorAll('.faq-section').forEach(section => {
@@ -26,13 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const steps = form.querySelectorAll('.form-step');
     const indicators = card.querySelectorAll('.form-step-indicator');
 
+    let currentN = 1;
     function goToStep(n) {
-      steps.forEach(s => s.classList.toggle('form-step-active', +s.dataset.step === n));
+      const direction = n > currentN ? 'left' : 'right';
+      const currentEl = form.querySelector('.form-step-active');
+      if (currentEl && +currentEl.dataset.step !== n) {
+        currentEl.classList.remove('form-step-active');
+        currentEl.classList.add('slide-out-' + direction);
+        currentEl.addEventListener('animationend', () => {
+          currentEl.classList.remove('slide-out-' + direction);
+        }, { once: true });
+      }
+      steps.forEach(s => {
+        if (+s.dataset.step === n) s.classList.add('form-step-active');
+        else if (s !== currentEl) s.classList.remove('form-step-active');
+      });
       indicators.forEach(ind => {
         const step = +ind.dataset.step;
         ind.classList.toggle('active', step === n);
         ind.classList.toggle('done', step < n);
       });
+      currentN = n;
     }
 
     card.addEventListener('click', e => {
