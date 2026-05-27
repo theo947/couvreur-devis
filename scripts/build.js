@@ -482,6 +482,7 @@ function buildHomepage() {
 
   const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roof.webp" alt="Toiture en tuiles grises" width="1920" height="1440" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>Devis Couvreur — Trouvez un <span>couvreur qualifié</span> près de chez vous</h1>
@@ -660,6 +661,7 @@ function buildRegionPages() {
 
     const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>Couvreur en <span>${escHtml(region.nom)}</span> — Devis Gratuit et Sans Engagement</h1>
@@ -773,6 +775,7 @@ function buildDepartmentPages() {
 
     const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>Couvreur <span>${escHtml(prep)}</span> (${dept.code}) — Devis Gratuit</h1>
@@ -910,6 +913,7 @@ function buildCityPages() {
 
     const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>Couvreur à <span>${escHtml(nom)}</span> (${cp}) — Devis Gratuit</h1>
@@ -1011,6 +1015,7 @@ function buildServiceIndexPage() {
 
   const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>Services de <span>Couverture</span> — Devis Gratuit</h1>
@@ -1138,6 +1143,7 @@ function buildServicePages() {
 
     const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>${escHtml(service.titre)} — <span>Devis Gratuit</span></h1>
@@ -1229,6 +1235,7 @@ function buildGuideIndexPage() {
 
   const body = `
 <section class="hero">
+<div class="hero-bg"><img src="/assets/img/hero-roofer.webp" alt="Couvreur professionnel au travail" width="1920" height="1280" loading="eager"></div>
 <div class="container hero-inner">
   <div>
     <h1>Guides <span>Toiture</span> — Conseils d'Experts</h1>
