@@ -174,7 +174,7 @@ function layout(title, metaDesc, canonical, breadcrumbs, bodyContent, schemaJson
 ${opts.preloadImg ? `<link rel="preload" as="image" type="image/webp" href="${opts.preloadImg}">` : ''}
 <script type="application/ld+json">${JSON.stringify(breadcrumbSchema)}</script>
 ${schemaJsonLd ? `<script type="application/ld+json">${schemaJsonLd}</script>` : ''}
-</head>
+${canonical === '/' ? '<!-- 1010d62bcae8a332 -->\n<!-- 291a9609cb7e96b7a3aa17a1a87756cb -->\n' : ''}</head>
 <body>
 
 <header class="site-header">
